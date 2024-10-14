@@ -1,21 +1,28 @@
 class Product:
     def __init__(self):
         self.name = ""
+        self.description = ""
         self.price = 0.0
-
-    def update_name(self, name):
-        self.name = name
-
-    def update_price(self, price):
-        self.price = price
-
-    def get_name(self):
-        return self.name
-    def get_price(self):
-        return self.price
+        self.choiceLists = []
 
     def __str__(self):
-        return self.name + " has price " + str(self.price)
+        output = ""
+        display_name = self.name.lower().replace(
+            " ", "_"
+        ).replace(
+            ".", "_dot_"
+        ).replace(
+            "+", "_plus_"
+        ).replace(
+            "€", "_euro_"
+        )
+        if self.description != "":
+            output += f"dish {display_name}: {self.name} -- {self.description} € {self.price}\n"
+        else:
+            output += f"dish {display_name}: {self.name}  € {self.price}\n"
+        for choiceList in self.choiceLists:
+            output += f"{str(choiceList)}"
+        return output
 
     def __repr__(self):
         return self.__str__()
