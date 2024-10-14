@@ -13,6 +13,7 @@ class Choice:
         self.price: float = 0.0
 
     def __str__(self):
+        self.name = self.name.replace("€", " euro ")
         display_name = self.name.lower().replace(
             " ", "_"
         ).replace(

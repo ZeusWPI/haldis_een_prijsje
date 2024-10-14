@@ -7,6 +7,7 @@ class Product:
 
     def __str__(self):
         output = ""
+        self.name = self.name.replace("€", " euro ")
         display_name = self.name.lower().replace(
             " ", "_"
         ).replace(
