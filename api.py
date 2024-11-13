@@ -6,7 +6,6 @@ from scrapers.snackmetropol_scraper import MetropolScraper
 
 app = Flask(__name__)
 
-
 @app.route('/api/products', methods=['GET'])
 def get_products():
     restaurant_name = request.args.get('restaurant')

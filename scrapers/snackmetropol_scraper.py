@@ -47,12 +47,6 @@ class MetropolScraper(Scraper):
             # Parse the HTML content using BeautifulSoup
             soup = BeautifulSoup(response.text, 'html.parser')
 
-            # # Get the entire HTML content
-            # html_content = soup.prettify()
-            #
-            # # Print or save the HTML content
-            # print(html_content)
-
             # Find all divs with class 'product-prices span3'
             divs = soup.find_all('div', class_='product-section row-fluid')
 
