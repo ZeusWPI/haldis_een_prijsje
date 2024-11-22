@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 
+from data_types.common_choice_lists import create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list
 from data_types.location import Location
-from data_types.product import Product
+from data_types.product import Product, add_choiseList_to_product_by_name
 from scrapers.scraper import Scraper
 from utils import safe_get
 
@@ -65,5 +66,30 @@ class MetropolScraper(Scraper):
                     product.price = product_price.get_text().strip().split(" ")[-1].replace(',', '.')
                 # print(product)
                 products.add(product)
+
+        # add keuzes
+        vlees_keuze_list = create_metropol_vlees_keuze_list()
+        saus_keuze_list = create_metropol_sauzen_keuze_list()
+
+        # Map products to choice lists
+        product_choices = {
+            vlees_keuze_list: [
+                "Pita klein", "Pita groot", "Durum",
+                "Broodje Kapsalon klein", "Broodje Kapsalon groot",
+                "Lachmacun Delux", "DURUM KLEIN",
+                "BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"
+            ],
+            saus_keuze_list: [
+                "Pita klein", "Pita groot", "Durum",
+                "Broodje Kapsalon klein", "Broodje Kapsalon groot",
+                "Lahmacun", "Lachmacun Delux", "DURUM KLEIN",
+                "BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT",
+                "Dubbele Franse Hamburger", "Franse Hamburger"
+            ]
+        }
+
+        # Add choice lists to products
+        for choice_list, product_names in product_choices.items():
+            add_choiseList_to_product_by_name(products, choice_list, product_names)
 
         return products, locatie

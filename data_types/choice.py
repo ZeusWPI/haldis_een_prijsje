@@ -1,5 +1,7 @@
 from enum import Enum
 
+from utils import only_keep_UTF_8_chars
+
 
 class ChoiceType(Enum):
     SINGLE = 1
@@ -7,14 +9,14 @@ class ChoiceType(Enum):
 
 
 class Choice:
-    def __init__(self):
+    def __init__(self, name: str = "", price: float = 0.0):
         self.type: ChoiceType = ChoiceType.SINGLE
-        self.name: str = ""
-        self.price: float = 0.0
+        self.name: str = name
+        self.price: float = price
 
     def __str__(self):
-        self.name = self.name.replace("€", " euro ")
-        display_name = self.name.lower().replace(
+        self.name = only_keep_UTF_8_chars(self.name.replace("€", " euro "))
+        display_name = only_keep_UTF_8_chars(self.name.lower().replace(
             " ", "_"
         ).replace(
             ".", "_dot_"
@@ -22,7 +24,7 @@ class Choice:
             "+", "_plus_"
         ).replace(
             "€", "_euro_"
-        )
+        ))
         return f"{display_name}: {self.name}  € {self.price}"
 
     def __repr__(self):
@@ -30,11 +32,11 @@ class Choice:
 
 
 class ChoiceList:
-    def __init__(self):
+    def __init__(self, name: str = "", description: str = ""):
         self.type: ChoiceType = ChoiceType.SINGLE
         self.choices = []
-        self.name: str = ""
-        self.description: str = ""
+        self.name: str = name
+        self.description: str = description
 
     def __str__(self):
         output = ""
@@ -50,3 +52,6 @@ class ChoiceList:
 
     def __repr__(self):
         return self.__str__()
+
+    def add_choice(self, choice: Choice):
+        self.choices.append(choice)
