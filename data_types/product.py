@@ -1,3 +1,5 @@
+import re
+
 from data_types.choice import ChoiceList, Choice, ChoiceType
 from utils import only_keep_UTF_8_chars
 from typing import List
@@ -23,6 +25,8 @@ class Product:
         ).replace(
             "€", "_euro_"
         ))
+
+        self.name = re.sub(r'\s+', ' ', self.name).strip()
         if self.description != "":
             output += f"dish {self.display_name}: {self.name} -- {self.description} € {self.price}\n"
         else:
@@ -36,6 +40,9 @@ class Product:
 
     def add_choiceList(self, choiceList):
         self.choiceLists.append(choiceList)
+
+    def add_choiceList_indexed(self, index, choiceList):
+        self.choiceLists.insert(index, choiceList)
 
 
 def add_choiseList_to_product_by_name(products, choiceList, name_list: List[str]):
@@ -52,6 +59,22 @@ def translate_products_to_text(products):
     for product in product_list:
         output += str(product)
     return output
+
+
+def merge_products(all_products, merged_products_names, name, option_names):
+    # print(len(all_products))
+    product = [product for product in all_products if product.name == merged_products_names[0]][0]
+    all_products = [product for product in all_products if product.name not in merged_products_names[1:]]
+    # print(len(all_products))
+
+    merge_keuze_list = ChoiceList(name="groote", description="Welk groote?")
+
+    choises = [Choice(choice_name) for choice_name in option_names]
+    merge_keuze_list.choices = choises
+
+    product.name = name
+    product.add_choiceList_indexed(0, merge_keuze_list)
+    return all_products
 
 
 def create_test_product():

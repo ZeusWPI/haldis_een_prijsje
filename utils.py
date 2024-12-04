@@ -17,3 +17,4 @@ def safe_get(link: str):
         print("error happend: " + str(e))
         # exit(1)
         return ""
+

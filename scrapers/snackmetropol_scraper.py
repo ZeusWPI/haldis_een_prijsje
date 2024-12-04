@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup
 
-from data_types.common_choice_lists import create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list
+from data_types.common_choice_lists import (create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list,
+                                            create_metropol_groenten_keuze_list, create_metropol_extra_keuze_list)
 from data_types.location import Location
-from data_types.product import Product, add_choiseList_to_product_by_name
+from data_types.product import Product, add_choiseList_to_product_by_name, merge_products
 from scrapers.scraper import Scraper
 from utils import safe_get
 
@@ -67,23 +68,67 @@ class MetropolScraper(Scraper):
                 # print(product)
                 products.add(product)
 
+        # merge products of different sizes
+        products = merge_products(
+            products,
+            ["BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"],
+            "BROODJE FALAFEL",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["Pita klein", "Pita groot"],
+            "Pita",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["Broodje Kapsalon klein", "Broodje Kapsalon groot"],
+            "Broodje Kapsalon",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["DURUM KLEIN", "Durum"],
+            "Durum",
+            ["klein", "groot"]
+        )
+
         # add keuzes
         vlees_keuze_list = create_metropol_vlees_keuze_list()
         saus_keuze_list = create_metropol_sauzen_keuze_list()
-
+        groenten_keuze_list = create_metropol_groenten_keuze_list()
+        extra_keuze_list = create_metropol_extra_keuze_list()
         # Map products to choice lists
         product_choices = {
             vlees_keuze_list: [
-                "Pita klein", "Pita groot", "Durum",
-                "Broodje Kapsalon klein", "Broodje Kapsalon groot",
-                "Lachmacun Delux", "DURUM KLEIN",
-                "BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"
+                "Pita", "Durum",
+                "Broodje Kapsalon",
+                "Lachmacun Delux",
+                "BROODJE FALAFEL"
             ],
             saus_keuze_list: [
-                "Pita klein", "Pita groot", "Durum",
-                "Broodje Kapsalon klein", "Broodje Kapsalon groot",
-                "Lahmacun", "Lachmacun Delux", "DURUM KLEIN",
-                "BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT",
+                "Pita", "Durum",
+                "Broodje Kapsalon",
+                "Lahmacun", "Lachmacun Delux",
+                "BROODJE FALAFEL",
+                "Dubbele Franse Hamburger", "Franse Hamburger"
+            ],
+            groenten_keuze_list: [
+                "Pita", "Durum",
+                "Broodje Kapsalon",
+                "Lahmacun", "Lachmacun Delux",
+                "BROODJE FALAFEL",
+                "Dubbele Franse Hamburger", "Franse Hamburger"
+            ],
+            extra_keuze_list: [
+                "Pita", "Durum",
+                "Broodje Kapsalon",
+                "Lahmacun", "Lachmacun Delux",
+                "BROODJE FALAFEL",
                 "Dubbele Franse Hamburger", "Franse Hamburger"
             ]
         }

@@ -7,14 +7,17 @@ metropol: Metropol
 ==========================
 
 dish ayoubschotel: Ayoubschotel  € 34.50
-dish broodje_falafel_groot: BROODJE FALAFEL GROOT  € 8.50
+dish broodje_falafel: BROODJE FALAFEL  € 6.50
+	single_choice groote: Welk groote?
+		klein: klein  € 0.0
+		groot: groot  € 0.0
 	single_choice vlees: Welk vlees?
 		lam: lam  € 0.0
 		kip: kip  € 0.0
 		mix: mix  € 0.5
 		kipfilet: kipfilet  € 3.0
 		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -42,14 +45,40 @@ dish broodje_falafel_groot: BROODJE FALAFEL GROOT  € 8.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
-dish broodje_falafel_klein: BROODJE FALAFEL KLEIN  € 6.50
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
+dish broodje_kapsalon: Broodje Kapsalon  € 12.50
+	single_choice groote: Welk groote?
+		klein: klein  € 0.0
+		groot: groot  € 0.0
 	single_choice vlees: Welk vlees?
 		lam: lam  € 0.0
 		kip: kip  € 0.0
 		mix: mix  € 0.5
 		kipfilet: kipfilet  € 3.0
 		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -77,114 +106,32 @@ dish broodje_falafel_klein: BROODJE FALAFEL KLEIN  € 6.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
-dish broodje_kapsalon_groot: Broodje Kapsalon groot  € 15.00
-	single_choice vlees: Welk vlees?
-		lam: lam  € 0.0
-		kip: kip  € 0.0
-		mix: mix  € 0.5
-		kipfilet: kipfilet  € 3.0
-		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
-		look: look  € 0.0
-		samurai: samurai  € 0.0
-		andalous: andalous  € 0.0
-		mayonais: mayonais  € 0.0
-		t_dot_ketchup: T.ketchup  € 0.0
-		c_dot_ketchup: C.ketchup  € 0.0
-		jopie: jopie  € 0.0
-		amerikan: amerikan  € 0.0
-		cocktail: Cocktail  € 0.0
-		harissa: harissa  € 0.0
-		mammoet: mammoet  € 0.0
-		tartaar: tartaar  € 0.0
-		bicky_geel: bicky_geel  € 0.0
-		bicky_rood: bicky_rood  € 0.0
-		frietsaus: frietsaus  € 0.0
-		pilipili: pilipili  € 0.0
-		brasil: brasil  € 0.0
-		zoetzuursaus: zoetzuursaus  € 0.0
-		cheesysaus: cheesysaus  € 0.0
-		sambal: sambal  € 0.0
-		tabasco: tabasco  € 0.0
-		pepersaus: pepersaus  € 0.0
-		geele_cury: geele_cury  € 0.0
-		bbq_saus: bbq_saus  € 0.0
-		algerian: algerian  € 0.0
-		stoofvlees_saus: stoofvlees_saus  € 4.5
-		zonder_saus: zonder_saus  € 0.0
-dish broodje_kapsalon_klein: Broodje Kapsalon klein  € 12.50
-	single_choice vlees: Welk vlees?
-		lam: lam  € 0.0
-		kip: kip  € 0.0
-		mix: mix  € 0.5
-		kipfilet: kipfilet  € 3.0
-		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
-		look: look  € 0.0
-		samurai: samurai  € 0.0
-		andalous: andalous  € 0.0
-		mayonais: mayonais  € 0.0
-		t_dot_ketchup: T.ketchup  € 0.0
-		c_dot_ketchup: C.ketchup  € 0.0
-		jopie: jopie  € 0.0
-		amerikan: amerikan  € 0.0
-		cocktail: Cocktail  € 0.0
-		harissa: harissa  € 0.0
-		mammoet: mammoet  € 0.0
-		tartaar: tartaar  € 0.0
-		bicky_geel: bicky_geel  € 0.0
-		bicky_rood: bicky_rood  € 0.0
-		frietsaus: frietsaus  € 0.0
-		pilipili: pilipili  € 0.0
-		brasil: brasil  € 0.0
-		zoetzuursaus: zoetzuursaus  € 0.0
-		cheesysaus: cheesysaus  € 0.0
-		sambal: sambal  € 0.0
-		tabasco: tabasco  € 0.0
-		pepersaus: pepersaus  € 0.0
-		geele_cury: geele_cury  € 0.0
-		bbq_saus: bbq_saus  € 0.0
-		algerian: algerian  € 0.0
-		stoofvlees_saus: stoofvlees_saus  € 4.5
-		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish drank_1_dot_5_euro_ayran: DRANK 1.5 EURO AYRAN  € 1.50
-dish durum_klein: DURUM KLEIN  € 7.00
-	single_choice vlees: Welk vlees?
-		lam: lam  € 0.0
-		kip: kip  € 0.0
-		mix: mix  € 0.5
-		kipfilet: kipfilet  € 3.0
-		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
-		look: look  € 0.0
-		samurai: samurai  € 0.0
-		andalous: andalous  € 0.0
-		mayonais: mayonais  € 0.0
-		t_dot_ketchup: T.ketchup  € 0.0
-		c_dot_ketchup: C.ketchup  € 0.0
-		jopie: jopie  € 0.0
-		amerikan: amerikan  € 0.0
-		cocktail: Cocktail  € 0.0
-		harissa: harissa  € 0.0
-		mammoet: mammoet  € 0.0
-		tartaar: tartaar  € 0.0
-		bicky_geel: bicky_geel  € 0.0
-		bicky_rood: bicky_rood  € 0.0
-		frietsaus: frietsaus  € 0.0
-		pilipili: pilipili  € 0.0
-		brasil: brasil  € 0.0
-		zoetzuursaus: zoetzuursaus  € 0.0
-		cheesysaus: cheesysaus  € 0.0
-		sambal: sambal  € 0.0
-		tabasco: tabasco  € 0.0
-		pepersaus: pepersaus  € 0.0
-		geele_cury: geele_cury  € 0.0
-		bbq_saus: bbq_saus  € 0.0
-		algerian: algerian  € 0.0
-		stoofvlees_saus: stoofvlees_saus  € 4.5
-		zonder_saus: zonder_saus  € 0.0
 dish dubbele_franse_hamburger: Dubbele Franse Hamburger  € 8.50
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -212,14 +159,40 @@ dish dubbele_franse_hamburger: Dubbele Franse Hamburger  € 8.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
-dish durum: Durum  € 8.50
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
+dish durum: Durum  € 7.00
+	single_choice groote: Welk groote?
+		klein: klein  € 0.0
+		groot: groot  € 0.0
 	single_choice vlees: Welk vlees?
 		lam: lam  € 0.0
 		kip: kip  € 0.0
 		mix: mix  € 0.5
 		kipfilet: kipfilet  € 3.0
 		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -247,9 +220,32 @@ dish durum: Durum  € 8.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish friet_speciaal: FRIET SPECIAAL  € 1.50
 dish franse_hamburger: Franse Hamburger  € 6.50
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -277,6 +273,29 @@ dish franse_hamburger: Franse Hamburger  € 6.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish frietjes_familie: Frietjes familie  € 7.50
 dish frietjes_groot: Frietjes groot  € 5.50
 dish frietjes_klein: Frietjes klein  € 3.00
@@ -293,7 +312,7 @@ dish lachmacun_delux: Lachmacun Delux  € 8.00
 		mix: mix  € 0.5
 		kipfilet: kipfilet  € 3.0
 		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -321,8 +340,31 @@ dish lachmacun_delux: Lachmacun Delux  € 8.00
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish lahmacun: Lahmacun  € 4.00
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -350,6 +392,29 @@ dish lahmacun: Lahmacun  € 4.00
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish nieuw_product: Nieuw Product  € 0.00
 dish potje_vlees_10: POTJE VLEES 10  € 10.00
 dish potje_vlees_2_dot_50: POTJE VLEES 2.50  € 2.50
@@ -358,14 +423,17 @@ dish potje_vlees_4_dot_00: POTJE VLEES 4.00  € 4.00
 dish potje_vlees_4_dot_50: POTJE VLEES 4.50  € 4.50
 dish potje_vlees_5: POTJE VLEES 5  € 5.00
 dish potje_vlees_3_dot_50: POTJE VLEES 3.50  € 3.50
-dish pita_groot: Pita groot  € 8.50
+dish pita: Pita  € 6.50
+	single_choice groote: Welk groote?
+		klein: klein  € 0.0
+		groot: groot  € 0.0
 	single_choice vlees: Welk vlees?
 		lam: lam  € 0.0
 		kip: kip  € 0.0
 		mix: mix  € 0.5
 		kipfilet: kipfilet  € 3.0
 		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
+	single_choice saus: Welke saus?
 		look: look  € 0.0
 		samurai: samurai  € 0.0
 		andalous: andalous  € 0.0
@@ -393,41 +461,29 @@ dish pita_groot: Pita groot  € 8.50
 		algerian: algerian  € 0.0
 		stoofvlees_saus: stoofvlees_saus  € 4.5
 		zonder_saus: zonder_saus  € 0.0
-dish pita_klein: Pita klein  € 6.50
-	single_choice vlees: Welk vlees?
-		lam: lam  € 0.0
-		kip: kip  € 0.0
-		mix: mix  € 0.5
-		kipfilet: kipfilet  € 3.0
-		falafel: falafel  € 0.0
-	single_choice Saus: Welk saus?
-		look: look  € 0.0
-		samurai: samurai  € 0.0
-		andalous: andalous  € 0.0
-		mayonais: mayonais  € 0.0
-		t_dot_ketchup: T.ketchup  € 0.0
-		c_dot_ketchup: C.ketchup  € 0.0
-		jopie: jopie  € 0.0
-		amerikan: amerikan  € 0.0
-		cocktail: Cocktail  € 0.0
-		harissa: harissa  € 0.0
-		mammoet: mammoet  € 0.0
-		tartaar: tartaar  € 0.0
-		bicky_geel: bicky_geel  € 0.0
-		bicky_rood: bicky_rood  € 0.0
-		frietsaus: frietsaus  € 0.0
-		pilipili: pilipili  € 0.0
-		brasil: brasil  € 0.0
-		zoetzuursaus: zoetzuursaus  € 0.0
-		cheesysaus: cheesysaus  € 0.0
-		sambal: sambal  € 0.0
-		tabasco: tabasco  € 0.0
-		pepersaus: pepersaus  € 0.0
-		geele_cury: geele_cury  € 0.0
-		bbq_saus: bbq_saus  € 0.0
-		algerian: algerian  € 0.0
-		stoofvlees_saus: stoofvlees_saus  € 4.5
-		zonder_saus: zonder_saus  € 0.0
+	multi_choice groenten: Welke groenten?
+		alle_groenten: alle groenten  € 0.0
+		zonder_groenten: zonder groenten  € 0.0
+		peper: peper  € 0.5
+		frietjes: frietjes  € 1.5
+		fetakaas: fetakaas  € 1.0
+		mais: mais  € 0.5
+		ananas: ananas  € 0.5
+		cheddar_kaas: cheddar kaas  € 0.5
+		sate_kruiden: sate kruiden  € 0.5
+		coban_salta: coban salta  € 0.0
+		gedroogde_ajuin: gedroogde ajuin  € 0.5
+		mozarella_kaas: mozarella kaas  € 3.0
+		pikante_kruiden: pikante kruiden  € 0.0
+		tomaat: tomaat  € 0.0
+		fetakaas: fetakaas  € 1.0
+		ajuun: ajuun  € 0.0
+		sla: sla  € 0.0
+		wortel: wortel  € 0.0
+	multi_choice extra: Welke extra's?
+		extra_vlees: extra vlees  € 3.0
+		extra_saus: extra saus  € 1.0
+		extra_groenten: extra groenten  € 1.0
 dish potje: Potje  € 1.00
 dish redbul_renkliler: REDBUL RENKLILER  € 3.00
 dish slush_mix: SLUSH MIX  € 4.50
@@ -442,10 +498,10 @@ dish boullet: boullet  € 3.50
 dish broodjemexicano__plus_friet: broodjemexicano +friet  € 8.50
 dish cheesburger: cheesburger  € 5.50
 dish drank_2_dot_50_energiedranken: drank 2.50 ENERGIEDRANKEN  € 2.50
-dish drank__euro_1_goldenpower_en_andere_drink: drank  euro 1 GOLDENPOWER en andere drink  € 1.00
-dish drank__euro_2_frisdranken: drank  euro 2 FRISDRANKEN  € 2.00
+dish drank__euro_1_goldenpower_en_andere_drink: drank euro 1 GOLDENPOWER en andere drink  € 1.00
+dish drank__euro_2_frisdranken: drank euro 2 FRISDRANKEN  € 2.00
 dish frikandel: frikandel  € 3.00
-dish frikandel_speciaal: frikandel speciaal  € 4.00
+dish frikandel_speciaal: frikandel speciaal  € 4.50
 dish frikandelschotel: frikandelschotel  € 11.50
 dish frikandelschotel_groot: frikandelschotel groot  € 14.00
 dish kaasbol: kaasbol  € 3.50
