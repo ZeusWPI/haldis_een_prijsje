@@ -144,7 +144,8 @@ class MetropolScraper(Scraper):
                 "Broodje Kapsalon",
                 "Lachmacun Delux",
                 "BROODJE FALAFEL", "Schotel", "Ayoubschotel", "Hamburgerschotel",
-                "frikandelschotel", "Kapsalon", "GRILL MIXXL", "Nieuw Product"
+                "frikandelschotel", "Kapsalon", "GRILL MIXXL", "Nieuw Product",
+                "Taco", "TACO SNACK"
             ],
             saus_keuze_list: [
                 "Pita", "Durum",
@@ -153,7 +154,8 @@ class MetropolScraper(Scraper):
                 "BROODJE FALAFEL",
                 "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
                 "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
-                "Nieuw Product"
+                "Nieuw Product", "bickyburger", "cheesburger", "vishburger", "kipburger",
+                "broodjemexicano +friet", "Taco", "TACO SNACK", "Potje"
             ],
             groenten_keuze_list: [
                 "Pita", "Durum",
@@ -162,7 +164,8 @@ class MetropolScraper(Scraper):
                 "BROODJE FALAFEL",
                 "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
                 "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
-                "Nieuw Product"
+                "Nieuw Product", "bickyburger", "cheesburger", "vishburger", "kipburger",
+                "broodjemexicano +friet", "Taco", "TACO SNACK"
             ],
             extra_keuze_list: [
                 "Pita", "Durum",
@@ -171,7 +174,8 @@ class MetropolScraper(Scraper):
                 "BROODJE FALAFEL",
                 "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
                 "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
-                "Nieuw Product"
+                "Nieuw Product", "bickyburger", "cheesburger", "vishburger", "kipburger",
+                "broodjemexicano +friet", "Taco", "TACO SNACK"
             ]
         }
 
