@@ -97,6 +97,41 @@ class MetropolScraper(Scraper):
             ["klein", "groot"]
         )
 
+        products = merge_products(
+            products,
+            ["Schotel klein", "Schotel groot"],
+            "Schotel",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["Hamburgerschotel", "Hamburgerschotel Groot"],
+            "Hamburgerschotel",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["frikandelschotel", "frikandelschotel groot"],
+            "frikandelschotel",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["Kapsalon klein", "Kapsalon groot"],
+            "Kapsalon",
+            ["klein", "groot"]
+        )
+
+        products = merge_products(
+            products,
+            ["Frietjes klein", "Frietjes medium", "Frietjes groot", "Frietjes familie"],
+            "Frietjes",
+            ["klein", "medium", "groot", "familie"]
+        )
+
         # add keuzes
         vlees_keuze_list = create_metropol_vlees_keuze_list()
         saus_keuze_list = create_metropol_sauzen_keuze_list()
@@ -108,28 +143,35 @@ class MetropolScraper(Scraper):
                 "Pita", "Durum",
                 "Broodje Kapsalon",
                 "Lachmacun Delux",
-                "BROODJE FALAFEL"
+                "BROODJE FALAFEL", "Schotel", "Ayoubschotel", "Hamburgerschotel",
+                "frikandelschotel", "Kapsalon", "GRILL MIXXL", "Nieuw Product"
             ],
             saus_keuze_list: [
                 "Pita", "Durum",
                 "Broodje Kapsalon",
                 "Lahmacun", "Lachmacun Delux",
                 "BROODJE FALAFEL",
-                "Dubbele Franse Hamburger", "Franse Hamburger"
+                "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
+                "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
+                "Nieuw Product"
             ],
             groenten_keuze_list: [
                 "Pita", "Durum",
                 "Broodje Kapsalon",
                 "Lahmacun", "Lachmacun Delux",
                 "BROODJE FALAFEL",
-                "Dubbele Franse Hamburger", "Franse Hamburger"
+                "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
+                "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
+                "Nieuw Product"
             ],
             extra_keuze_list: [
                 "Pita", "Durum",
                 "Broodje Kapsalon",
                 "Lahmacun", "Lachmacun Delux",
                 "BROODJE FALAFEL",
-                "Dubbele Franse Hamburger", "Franse Hamburger"
+                "Dubbele Franse Hamburger", "Franse Hamburger", "Schotel", "Ayoubschotel",
+                "Hamburgerschotel", "frikandelschotel", "Kapsalon", "GRILL MIXXL",
+                "Nieuw Product"
             ]
         }
 

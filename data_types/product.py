@@ -62,14 +62,18 @@ def translate_products_to_text(products):
 
 
 def merge_products(all_products, merged_products_names, name, option_names):
-    # print(len(all_products))
+    prices = [float(product.price) for product in all_products if product.name in merged_products_names]
+    prices.sort()
     product = [product for product in all_products if product.name == merged_products_names[0]][0]
     all_products = [product for product in all_products if product.name not in merged_products_names[1:]]
-    # print(len(all_products))
 
     merge_keuze_list = ChoiceList(name="groote", description="Welk groote?")
 
     choises = [Choice(choice_name) for choice_name in option_names]
+
+    for i, choice in enumerate(choises):
+        choice.price = prices[i]-prices[0]
+
     merge_keuze_list.choices = choises
 
     product.name = name
