@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 from data_types.common_choice_lists import (create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list,
                                             create_metropol_groenten_keuze_list, create_metropol_extra_keuze_list)
 from data_types.location import Location
-from data_types.product import Product, add_choiseList_to_product_by_name, merge_products
+from data_types.product import Product, add_choiseList_to_product_by_name, merge_products, merge_products_by_sizes
 from scrapers.scraper import Scraper
-from utils import safe_get
+from utils import safe_get, fetch_and_parse_html
 
 
 class MetropolScraper(Scraper):
@@ -42,12 +42,10 @@ class MetropolScraper(Scraper):
             # Send a GET request to the webpage
             full_link = base_url + link
             # print(full_link)
-            response = safe_get(full_link)
-            if response == "":
-                return set(), locatie
-
-            # Parse the HTML content using BeautifulSoup
-            soup = BeautifulSoup(response.text, 'html.parser')
+            soup = fetch_and_parse_html(full_link)
+            if not soup:
+                print("Skipping " + full_link)
+                continue
 
             # Find all divs with class 'product-prices span3'
             divs = soup.find_all('div', class_='product-section row-fluid')
@@ -69,68 +67,18 @@ class MetropolScraper(Scraper):
                 products.add(product)
 
         # merge products of different sizes
-        products = merge_products(
-            products,
-            ["BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"],
-            "BROODJE FALAFEL",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Pita klein", "Pita groot"],
-            "Pita",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Broodje Kapsalon klein", "Broodje Kapsalon groot"],
-            "Broodje Kapsalon",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["DURUM KLEIN", "Durum"],
-            "Durum",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Schotel klein", "Schotel groot"],
-            "Schotel",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Hamburgerschotel", "Hamburgerschotel Groot"],
-            "Hamburgerschotel",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["frikandelschotel", "frikandelschotel groot"],
-            "frikandelschotel",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Kapsalon klein", "Kapsalon groot"],
-            "Kapsalon",
-            ["klein", "groot"]
-        )
-
-        products = merge_products(
-            products,
-            ["Frietjes klein", "Frietjes medium", "Frietjes groot", "Frietjes familie"],
-            "Frietjes",
-            ["klein", "medium", "groot", "familie"]
-        )
+        merge_specs = [
+            (["BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"], "BROODJE FALAFEL", ["klein", "groot"]),
+            (["Pita klein", "Pita groot"], "Pita", ["klein", "groot"]),
+            (["Broodje Kapsalon klein", "Broodje Kapsalon groot"], "Broodje Kapsalon", ["klein", "groot"]),
+            (["DURUM KLEIN", "Durum"], "Durum", ["klein", "groot"]),
+            (["Schotel klein", "Schotel groot"], "Schotel", ["klein", "groot"]),
+            (["Hamburgerschotel", "Hamburgerschotel Groot"], "Hamburgerschotel", ["klein", "groot"]),
+            (["frikandelschotel", "frikandelschotel groot"], "frikandelschotel", ["klein", "groot"]),
+            (["Kapsalon klein", "Kapsalon groot"], "Kapsalon", ["klein", "groot"]),
+            (["Frietjes klein", "Frietjes medium", "Frietjes groot", "Frietjes familie"], "Frietjes", ["klein", "medium", "groot", "familie"])
+        ]
+        products = merge_products_by_sizes(products, merge_specs)
 
         # add keuzes
         vlees_keuze_list = create_metropol_vlees_keuze_list()

@@ -5,7 +5,7 @@ from scrapers.snackmetropol_scraper import MetropolScraper
 metropol_products = MetropolScraper.get_prices()
 
 if __name__ == '__main__':
-    run_everything = False
+    run_everything = True
     restaurant_name = "bicyclette"
     if restaurant_name.lower() == "metropol" or run_everything:
         metropol_products, metropol_location = MetropolScraper.get_prices()

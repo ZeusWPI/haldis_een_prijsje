@@ -61,6 +61,18 @@ def translate_products_to_text(products):
     return output
 
 
+def merge_products_by_sizes(products: set, merge_specs: list[tuple]):
+    """
+    merge_specs = [
+        (["Pita klein", "Pita groot"], "Pita", ["klein", "groot"]),
+        ...
+    ]
+    """
+    for spec in merge_specs:
+        products = merge_products(products, *spec)
+    return products
+
+
 def merge_products(all_products, merged_products_names, name, option_names):
     prices = [float(product.price) for product in all_products if product.name in merged_products_names]
     prices.sort()
@@ -72,7 +84,7 @@ def merge_products(all_products, merged_products_names, name, option_names):
     choises = [Choice(choice_name) for choice_name in option_names]
 
     for i, choice in enumerate(choises):
-        choice.price = prices[i]-prices[0]
+        choice.price = prices[i] - prices[0]
 
     merge_keuze_list.choices = choises
 
