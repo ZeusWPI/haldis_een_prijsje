@@ -27,11 +27,12 @@ def safe_get(link: str):
 
 
 def extract_spans(div):
-    """Extract non-empty span texts from a div."""
-    return [
-        span.text.strip()
-        for span in div.find_all('span', string=lambda text: text and text.strip())
-    ]
+    """Extract all non-empty text content from a div, preserving structure with inline elements like <br>."""
+    results = []
+    for span in div.find_all('span', recursive=True):
+        if span.text.strip():  # Check for non-empty text
+            results.append(''.join(span.stripped_strings))
+    return results
 
 
 def filter_divs(soup, class_name, condition):

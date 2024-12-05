@@ -6,6 +6,13 @@ bicyclette: Bicyclette
 	website https://labicyclettepastabar.be/
 ==========================
 
+dish alfredo: Alfredo -- saus van Parmezaanse kaas met kippenspek & look € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
 dish bolognaise: Bolognaise -- tomatensaus & gehakt € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
@@ -13,7 +20,21 @@ dish bolognaise: Bolognaise -- tomatensaus & gehakt € 6.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
+dish carbonara: Carbonara -- kaassaus met kalkoenhamblokjes & champignons € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
 dish kaas_&_ham: Kaas & ham -- kaassaus & kalkoenhamblokjes € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish napolitana__diabolique: Napolitana Diabolique -- tomaten & gemixte groenten – pikante tomatensaus € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0

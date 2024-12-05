@@ -36,8 +36,11 @@ class BicycletteScraper(Scraper):
             top_level_divs = first_filtered_div.find_all(recursive=False)  # Only direct children
             for div in top_level_divs:
                 span_texts = extract_spans(div)
+                print(span_texts)
                 if len(span_texts) == 2:
                     products.add(Product(name=span_texts[0], description=span_texts[1]))
+                if len(span_texts) == 3:
+                    products.add(Product(name=span_texts[0], description=span_texts[2]))
         else:
             print("No pastas divs found.")
 
