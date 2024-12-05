@@ -1,0 +1,61 @@
+==========================
+bicyclette: Bicyclette
+	osm     https://www.openstreetmap.org/node/9787361791#map=19/51.030240/3.706148
+	phone   +32 468 13 09 20
+	address Voskenslaan 187, 9000 Gent
+	website https://labicyclettepastabar.be/
+==========================
+
+dish bolognaise: Bolognaise -- tomatensaus & gehakt € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish kaas_&_ham: Kaas & ham -- kaassaus & kalkoenhamblokjes € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish portie_kaas: Portie kaas  € 0.5
+dish portie_kaas_&_saus: Portie kaas & saus  € 1.5
+dish portie_saus: Portie saus  € 1.0
+dish potje_kaas_(apart): Potje kaas (apart)  € 0.6
+dish roze_peperroomsaus: Roze peperroomsaus -- met kippenballetjes € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish thai_chicken: Thai chicken -- Thaise currysaus & kipreepjes € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish vierkazen: Vierkazen -- vierkazensaus € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish wekelijkse_special: Wekelijkse special -- saus van de week € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0
+dish zalm: Zalm -- bieslooksaus & gerookte zalm € 6.0
+	single_choice : 
+		mini: Mini  € 0.0
+		small: Small  € 1.0
+		medium: Medium  € 2.0
+		large: Large  € 3.0
+		glutenvrij: Glutenvrij  € 4.0

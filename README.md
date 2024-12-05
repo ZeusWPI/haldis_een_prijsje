@@ -1,0 +1,1 @@
+Use a safe get to get the contents of a link.

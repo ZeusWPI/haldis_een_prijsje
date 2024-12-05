@@ -6,10 +6,10 @@ from typing import List
 
 
 class Product:
-    def __init__(self):
-        self.name = ""
-        self.description = ""
-        self.price = 0.0
+    def __init__(self, name: str = "", description: str = "", price: float = 0.0):
+        self.name = name
+        self.description = description
+        self.price = price
         self.choiceLists = []
         self.display_name = ""
 
