@@ -96,3 +96,19 @@ def create_metropol_extra_keuze_list():
         vlees, saus, groenten
     ]
     return extra_keuze_list
+
+############################
+#        simpizza          #
+############################
+
+def create_simpizza_extra_keuze_list():
+    extra_keuze_list = ChoiceList(name="extra", description="Welke extra's?", type=ChoiceType.MULTI)
+
+    vlees = Choice("extra vlees", 3.00)
+    saus = Choice("extra saus", 1.00)
+    groenten = Choice("extra groenten", 1.00)
+
+    extra_keuze_list.choices = [
+        vlees, saus, groenten
+    ]
+    return extra_keuze_list

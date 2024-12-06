@@ -1,5 +1,5 @@
 requests
 BeautifulSoup4
 flask
-gitpython
-giteapy
+selenium
+seleniumbase

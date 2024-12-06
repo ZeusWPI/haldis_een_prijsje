@@ -1,11 +1,9 @@
-from bs4 import BeautifulSoup
-
 from data_types.common_choice_lists import (create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list,
                                             create_metropol_groenten_keuze_list, create_metropol_extra_keuze_list)
 from data_types.location import Location
 from data_types.product import Product, add_choiseList_to_product_by_name, merge_products, merge_products_by_sizes
 from scrapers.scraper import Scraper
-from utils import safe_get, fetch_and_parse_html
+from utils import fetch_and_parse_html
 
 
 class MetropolScraper(Scraper):

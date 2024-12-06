@@ -1,10 +1,8 @@
-from bs4 import BeautifulSoup
-
 from data_types.choice import ChoiceList, Choice
 from data_types.location import Location
 from data_types.product import Product
 from scrapers.scraper import Scraper
-from utils import safe_get, extract_spans, filter_divs, create_heading_contains_h2_with, fetch_and_parse_html
+from utils import extract_spans, filter_divs, create_heading_contains_h2_with, fetch_and_parse_html
 
 
 class BicycletteScraper(Scraper):
