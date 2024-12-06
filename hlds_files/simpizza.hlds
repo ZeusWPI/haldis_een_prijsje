@@ -1,0 +1,3174 @@
+==========================
+simpizza: Simpizza
+	osm     https://www.openstreetmap.org/node/5803560353
+	phone   +32 9 321 02 00
+	address De Pintelaan 252, 9000 Gent
+	website https://www.simpizza.be/
+==========================
+
+dish 16_chicken_nuggets: 16 chicken nuggets -- met potje dipsaus € 16.0
+	single_choice Potje Saus: Welke Potje Saus
+		bbq_saus: BBQ saus  € 0.0
+		zoetzure_saus: Zoetzure saus  € 0.0
+dish 16_chicken_wings: 16 chicken wings -- 32 vl met potje dipsaus € 17.0
+	single_choice Potje Saus: Welke Potje Saus
+		bbq_saus: BBQ saus  € 0.0
+		zoetzure_saus: Zoetzure saus  € 0.0
+dish 4_seasons: 4 Seasons -- ham, salami, champignons, paprika € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish 8_chicken_nuggets: 8 chicken nuggets -- met potje dipsaus € 9.0
+	single_choice Potje Saus: Welke Potje Saus
+		bbq_saus: BBQ saus  € 0.0
+		zoetzure_saus: Zoetzure saus  € 0.0
+dish 8_chicken_wings: 8 chicken wings -- 16 vl met potje dipsaus € 10.0
+	single_choice Potje Saus: Welke Potje Saus
+		bbq_saus: BBQ saus  € 0.0
+		zoetzure_saus: Zoetzure saus  € 0.0
+dish aa_drink: AA Drink  € 2.5
+dish anchovy: Anchovy -- ui, ansjovis, paprika, olijven € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish andalouse: Andalouse  € 1.0
+dish ayran_25cl: Ayran 25cl  € 2.5
+dish bbq_bacon: BBQ Bacon -- BBQ-saus, bacon, ui, kip, jalapenos, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish bbq_merquez: BBQ Merquez -- BBq-saus, merquez, ui, paprika € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish bbq_special: BBQ Special -- BBQ-saus, pepperoni, kip, meatballs, ui, en swirl van looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish bbq_meatballs: Bbq meatballs -- bbqsaus, gekruide gehaktballetjes, ui, paprika, cherrytomaat € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish bestek: Bestek  € 0.35
+dish bolognese_de_luxe: Bolognese de luxe -- bolognesesaus, verse look, ui, extra gehakt € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish buffalo: Buffalo -- Peperoni, rode ui, gehakt, afgewerkt met ijsbergsla,  potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish calzone: Calzone -- dubbelgevouwen, ham, salami, champignons, paprika en bolognesesaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish chicken_bbq: Chicken bbq -- bbq-saus, gegrilde kip, ui, paprika € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish chicken_time: Chicken time -- kip, paprika, olijven, cherrytomaat € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish cola_33_cl: Cola 33 cl  € 2.5
+dish cola_zero_33_cl: Cola zero 33 cl  € 2.5
+dish creamy_chicken: Creamy chicken -- room, kip, ui, verse look, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish creamy_multi_cheese: Creamy multi cheese -- roomsaus, gorgonzola, feta, mozzarella, extra kaas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish cup_bbq: Cup BBQ  € 0.5
+dish cup_zoetzure: Cup Zoetzure  € 0.5
+dish curry: Curry -- currysaus, champ, ui, ananas, paprika, kip, mozzarella en potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish deal_1_(small): Deal 1 (small)  € 16.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza 1?: Welke Pizza 1?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+	single_choice Voorgerecht?: Welke Voorgerecht?
+		portie_potatoes: Portie Potatoes  € 0.0
+		4_wings: 4 wings  € 0.0
+		4_nuggets: 4 nuggets  € 0.0
+	single_choice Drank?: Welke Drank?
+		cola: Cola  € 0.0
+		cola_zero: Cola Zero  € 0.0
+		fanta: Fanta  € 0.0
+		fanta_exotic: Fanta Exotic  € 0.0
+		fanta_cassis: Fanta Cassis  € 0.0
+		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
+		tropico: Tropico  € 0.0
+		ice_tea: Ice Tea  € 0.0
+		ice_tea_peach: Ice Tea Peach  € 0.0
+		sprite: Sprite  € 0.0
+		spa_plat: Spa Plat  € 0.0
+		spa_bruis: Spa Bruis  € 0.0
+		uludag: Uludag  € 0.0
+		oasis_tropical: Oasis Tropical  € 0.0
+dish deal_4_(medium): Deal 4 (medium)  € 31.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza 1?: Welke Pizza 1?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Bodem 2?: Welke Bodem 2?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza 2?: Welke Pizza 2?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Sla mix of lookbrood?: Welke Sla mix of lookbrood?
+		salade_mix: Salade mix  € 0.0
+		lookbrood: Lookbrood  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.5
+		ananas: ananas  € 1.5
+		pikante_pepers: pikante pepers  € 1.5
+		mas: mas  € 1.5
+		champignons: champignons  € 1.5
+		rode_ui: rode ui  € 1.5
+		kappertjes: kappertjes  € 1.5
+		cherrytomaat: Cherrytomaat  € 1.5
+		paprika: paprika  € 1.5
+		verse_look: Verse Look  € 1.5
+		olijven: olijven  € 1.5
+		ui: ui  € 1.5
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.5
+		ham: ham  € 1.5
+		gehakt: gehakt  € 1.5
+		salami: salami  € 1.5
+		pepperoni: pepperoni  € 1.5
+		meatballs: meatballs  € 1.5
+		bacon: bacon  € 1.5
+		kebabvlees: kebabvlees  € 1.5
+		merguez: merguez  € 1.5
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.5
+		tonijn: tonijn  € 1.5
+		ansjovis: ansjovis  € 1.5
+		scampi: Scampi  € 1.5
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.5
+		fetakaas: fetakaas  € 1.5
+		gorgonzola: gorgonzola  € 1.5
+		extra_kaas: extra kaas  € 1.5
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.5
+		swirl_bbqsaus: Swirl BBQSaus  € 1.5
+		swirl_looksaus: Swirl looksaus  € 1.5
+		tabascosaus: Tabascosaus  € 1.5
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.5
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.5
+	single_choice Voorgerecht?: Welke Voorgerecht?
+		portie_potatoes: Portie Potatoes  € 0.0
+		4_wings: 4 wings  € 0.0
+		4_nuggets: 4 nuggets  € 0.0
+	single_choice Fles?: Welke Fles?
+		fles_cola_1,5l: Fles cola 1,5L  € 0.0
+		fles_cola_zero_1,5l: Fles Cola Zero 1,5L  € 0.0
+		fles_fanta_1,5l: Fles Fanta 1,5L  € 0.0
+		fles_ice_tea_1,5l: Fles Ice Tea 1,5L  € 0.0
+dish deal_5_(large): Deal 5 (large)  € 42.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 3.0
+	single_choice Pizza 1?: Welke Pizza 1?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Bodem 2?: Welke Bodem 2?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 3.0
+	single_choice Pizza 2?: Welke Pizza 2?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.75
+		ananas: ananas  € 1.75
+		pikante_pepers: pikante pepers  € 1.75
+		mas: mas  € 1.75
+		champignons: champignons  € 1.75
+		rode_ui: rode ui  € 1.75
+		kappertjes: kappertjes  € 1.75
+		cherrytomaat: Cherrytomaat  € 1.75
+		paprika: paprika  € 1.75
+		verse_look: Verse Look  € 1.75
+		olijven: olijven  € 1.75
+		ui: ui  € 1.75
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.75
+		ham: ham  € 1.75
+		gehakt: gehakt  € 1.75
+		salami: salami  € 1.75
+		pepperoni: pepperoni  € 1.75
+		meatballs: meatballs  € 1.75
+		bacon: bacon  € 1.75
+		kebabvlees: kebabvlees  € 1.75
+		merguez: merguez  € 1.75
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.75
+		tonijn: tonijn  € 1.75
+		ansjovis: ansjovis  € 1.75
+		scampi: Scampi  € 1.75
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.75
+		fetakaas: fetakaas  € 1.75
+		gorgonzola: gorgonzola  € 1.75
+		extra_kaas: extra kaas  € 1.75
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.75
+		swirl_bbqsaus: Swirl BBQSaus  € 1.75
+		swirl_looksaus: Swirl looksaus  € 1.75
+		tabascosaus: Tabascosaus  € 1.75
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.75
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.75
+	single_choice Voorgerecht?: Welke Voorgerecht?
+		portie_potatoes: Portie Potatoes  € 0.0
+		4_wings: 4 wings  € 0.0
+		4_nuggets: 4 nuggets  € 0.0
+	single_choice Fles?: Welke Fles?
+		fles_cola_1,5l: Fles cola 1,5L  € 0.0
+		fles_cola_zero_1,5l: Fles Cola Zero 1,5L  € 0.0
+		fles_fanta_1,5l: Fles Fanta 1,5L  € 0.0
+		fles_ice_tea_1,5l: Fles Ice Tea 1,5L  € 0.0
+dish deals_2_(medium): Deals 2 (medium)  € 19.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza 1?: Welke Pizza 1?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.5
+		ananas: ananas  € 1.5
+		pikante_pepers: pikante pepers  € 1.5
+		mas: mas  € 1.5
+		champignons: champignons  € 1.5
+		rode_ui: rode ui  € 1.5
+		kappertjes: kappertjes  € 1.5
+		cherrytomaat: Cherrytomaat  € 1.5
+		paprika: paprika  € 1.5
+		verse_look: Verse Look  € 1.5
+		olijven: olijven  € 1.5
+		ui: ui  € 1.5
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.5
+		ham: ham  € 1.5
+		gehakt: gehakt  € 1.5
+		salami: salami  € 1.5
+		pepperoni: pepperoni  € 1.5
+		meatballs: meatballs  € 1.5
+		bacon: bacon  € 1.5
+		kebabvlees: kebabvlees  € 1.5
+		merguez: merguez  € 1.5
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.5
+		tonijn: tonijn  € 1.5
+		ansjovis: ansjovis  € 1.5
+		scampi: Scampi  € 1.5
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.5
+		fetakaas: fetakaas  € 1.5
+		gorgonzola: gorgonzola  € 1.5
+		extra_kaas: extra kaas  € 1.5
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+	single_choice Voorgerecht?: Welke Voorgerecht?
+		portie_potatoes: Portie Potatoes  € 0.0
+		4_wings: 4 wings  € 0.0
+		4_nuggets: 4 nuggets  € 0.0
+	single_choice Drank?: Welke Drank?
+		cola: Cola  € 0.0
+		cola_zero: Cola Zero  € 0.0
+		fanta: Fanta  € 0.0
+		fanta_exotic: Fanta Exotic  € 0.0
+		fanta_cassis: Fanta Cassis  € 0.0
+		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
+		tropico: Tropico  € 0.0
+		ice_tea: Ice Tea  € 0.0
+		ice_tea_peach: Ice Tea Peach  € 0.0
+		sprite: Sprite  € 0.0
+		spa_plat: Spa Plat  € 0.0
+		spa_bruis: Spa Bruis  € 0.0
+		uludag: Uludag  € 0.0
+		oasis_tropical: Oasis Tropical  € 0.0
+dish deals_3_(large): Deals 3 (large)  € 23.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 3.0
+	single_choice Pizza 1?: Welke Pizza 1?
+		margherita: Margherita  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		anchovy: Anchovy  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		bbq_merquez: BBQ Merquez  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		calzone: Calzone  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		chicken_time: Chicken time  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		curry: Curry  € 0.0
+		full_option: Full option  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		green_fista: Green fista  € 0.0
+		hawa: Hawa  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		meat_lovers: Meat lovers  € 0.0
+		meatballs: Meatballs  € 0.0
+		mega_fish: Mega fish  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		popeye: Popeye  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		seafood: Seafood  € 0.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		tabasco: Tabasco  € 0.0
+		tuna: Tuna  € 0.0
+		veggie: Veggie  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.75
+		ananas: ananas  € 1.75
+		pikante_pepers: pikante pepers  € 1.75
+		mas: mas  € 1.75
+		champignons: champignons  € 1.75
+		rode_ui: rode ui  € 1.75
+		kappertjes: kappertjes  € 1.75
+		cherrytomaat: Cherrytomaat  € 1.75
+		paprika: paprika  € 1.75
+		verse_look: Verse Look  € 1.75
+		olijven: olijven  € 1.75
+		ui: ui  € 1.75
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.75
+		ham: ham  € 1.75
+		gehakt: gehakt  € 1.75
+		salami: salami  € 1.75
+		pepperoni: pepperoni  € 1.75
+		meatballs: meatballs  € 1.75
+		bacon: bacon  € 1.75
+		kebabvlees: kebabvlees  € 1.75
+		merguez: merguez  € 1.75
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.75
+		tonijn: tonijn  € 1.75
+		ansjovis: ansjovis  € 1.75
+		scampi: Scampi  € 1.75
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.75
+		fetakaas: fetakaas  € 1.75
+		gorgonzola: gorgonzola  € 1.75
+		extra_kaas: extra kaas  € 1.75
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.75
+		swirl_bbqsaus: Swirl BBQSaus  € 1.75
+		swirl_looksaus: Swirl looksaus  € 1.75
+		tabascosaus: Tabascosaus  € 1.75
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.75
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.75
+	single_choice Voorgerecht?: Welke Voorgerecht?
+		portie_potatoes: Portie Potatoes  € 0.0
+		4_wings: 4 wings  € 0.0
+		4_nuggets: 4 nuggets  € 0.0
+	single_choice Fles?: Welke Fles?
+		fles_cola_1,5l: Fles cola 1,5L  € 0.0
+		fles_cola_zero_1,5l: Fles Cola Zero 1,5L  € 0.0
+		fles_fanta_1,5l: Fles Fanta 1,5L  € 0.0
+		fles_ice_tea_1,5l: Fles Ice Tea 1,5L  € 0.0
+dish fanta_33_cl: Fanta 33 cl  € 2.5
+dish fanta_cassis: Fanta Cassis  € 2.5
+dish fanta_exotic: Fanta exotic  € 2.5
+dish fanta_strawberry_&_kiwi: Fanta strawberry & kiwi  € 2.5
+dish fifty-fifty_large: Fifty-fifty Large -- voor elke helft een toppizza naar keuze € 22.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 3.0
+	single_choice 50-50 Pizza 1?: Welke 50-50 Pizza 1?
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		hawa: Hawa  € 0.0
+		popey: Popey  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		seafood: Seafood  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		full_option: Full option  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		mega_fish: Mega fish  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		green_fista: Green fista  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		veggie: Veggie  € 0.0
+		meat_lovers: Meat lovers  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		tabasco: Tabasco  € 0.0
+		chicken_time: Chicken time  € 0.0
+		meatballs: Meatballs  € 0.0
+		tuna: Tuna  € 0.0
+		anchovy: Anchovy  € 0.0
+		calzone: Calzone  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		margherita: Margherita  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bbq_merguez: BBQ Merguez  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		curry: Curry  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice 50-50 Pizza 2?: Welke 50-50 Pizza 2?
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		hawa: Hawa  € 0.0
+		popey: Popey  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		seafood: Seafood  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		full_option: Full option  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		mega_fish: Mega fish  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		green_fista: Green fista  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		veggie: Veggie  € 0.0
+		meat_lovers: Meat lovers  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		tabasco: Tabasco  € 0.0
+		chicken_time: Chicken time  € 0.0
+		meatballs: Meatballs  € 0.0
+		tuna: Tuna  € 0.0
+		anchovy: Anchovy  € 0.0
+		calzone: Calzone  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		margherita: Margherita  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bbq_merguez: BBQ Merguez  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 3.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		curry: Curry  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.75
+		ananas: ananas  € 1.75
+		pikante_pepers: pikante pepers  € 1.75
+		mas: mas  € 1.75
+		champignons: champignons  € 1.75
+		rode_ui: rode ui  € 1.75
+		kappertjes: kappertjes  € 1.75
+		cherrytomaat: Cherrytomaat  € 1.75
+		paprika: paprika  € 1.75
+		verse_look: Verse Look  € 1.75
+		olijven: olijven  € 1.75
+		ui: ui  € 1.75
+		spinazie: Spinazie  € 1.75
+		rucola: Rucola  € 1.75
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.75
+		ham: ham  € 1.75
+		gehakt: gehakt  € 1.75
+		salami: salami  € 1.75
+		pepperoni: pepperoni  € 1.75
+		meatballs: meatballs  € 1.75
+		bacon: bacon  € 1.75
+		kebabvlees: kebabvlees  € 1.75
+		merguez: merguez  € 1.75
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.75
+		tonijn: tonijn  € 1.75
+		ansjovis: ansjovis  € 1.75
+		scampi: Scampi  € 1.75
+		mosselen: Mosselen  € 1.75
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.75
+		fetakaas: fetakaas  € 1.75
+		gorgonzola: gorgonzola  € 1.75
+		extra_kaas: extra kaas  € 1.75
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.75
+		swirl_bbqsaus: Swirl BBQSaus  € 1.75
+		swirl_looksaus: Swirl looksaus  € 1.75
+		tabascosaus: Tabascosaus  € 1.75
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.75
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.75
+dish fifty-fifty_medium: Fifty-fifty Medium -- voor elke helft een toppizza naar keuze € 19.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice 50-50 Pizza 1?: Welke 50-50 Pizza 1?
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		hawa: Hawa  € 0.0
+		popey: Popey  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		seafood: Seafood  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		full_option: Full option  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		mega_fish: Mega fish  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		green_fista: Green fista  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		veggie: Veggie  € 0.0
+		meat_lovers: Meat lovers  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		tabasco: Tabasco  € 0.0
+		chicken_time: Chicken time  € 0.0
+		meatballs: Meatballs  € 0.0
+		tuna: Tuna  € 0.0
+		anchovy: Anchovy  € 0.0
+		calzone: Calzone  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		margherita: Margherita  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bbq_merguez: BBQ Merguez  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 2.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		curry: Curry  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice 50-50 Pizza 2?: Welke 50-50 Pizza 2?
+		bolognese_de_luxe: Bolognese de luxe  € 0.0
+		hawa: Hawa  € 0.0
+		popey: Popey  € 0.0
+		pepperoni: Pepperoni  € 0.0
+		seafood: Seafood  € 0.0
+		hot_pizzaaah!!!: Hot pizzaaah!!!  € 0.0
+		salmon_delight: Salmon delight  € 0.0
+		full_option: Full option  € 0.0
+		pitza_kebab: Pitza kebab  € 0.0
+		multi_cheese: Multi cheese  € 0.0
+		4_seasons: 4 Seasons  € 0.0
+		mega_fish: Mega fish  € 0.0
+		creamy_multi_cheese: Creamy multi cheese  € 0.0
+		green_fista: Green fista  € 0.0
+		chicken_bbq: Chicken bbq  € 0.0
+		funky_chicken: Funky chicken  € 0.0
+		veggie: Veggie  € 0.0
+		meat_lovers: Meat lovers  € 0.0
+		scampi_mampi: Scampi mampi  € 0.0
+		tabasco: Tabasco  € 0.0
+		chicken_time: Chicken time  € 0.0
+		meatballs: Meatballs  € 0.0
+		tuna: Tuna  € 0.0
+		anchovy: Anchovy  € 0.0
+		calzone: Calzone  € 0.0
+		bbq_meatballs: Bbq meatballs  € 0.0
+		creamy_chicken: Creamy chicken  € 0.0
+		margherita: Margherita  € 0.0
+		bbq_special: BBQ Special  € 0.0
+		bbq_merguez: BBQ Merguez  € 0.0
+		bbq_bacon: BBQ Bacon  € 0.0
+		meat_lover_deluxe: Meat Lover Deluxe  € 2.0
+		spicy_chicken: Spicy Chicken  € 0.0
+		curry: Curry  € 0.0
+		kebab_deluxe: Kebab Deluxe  € 0.0
+		buffalo: Buffalo  € 0.0
+		rucola: Rucola  € 0.0
+		mexican: Mexican  € 0.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.5
+		ananas: ananas  € 1.5
+		pikante_pepers: pikante pepers  € 1.5
+		mas: mas  € 1.5
+		champignons: champignons  € 1.5
+		rode_ui: rode ui  € 1.5
+		kappertjes: kappertjes  € 1.5
+		cherrytomaat: Cherrytomaat  € 1.5
+		paprika: paprika  € 1.5
+		verse_look: Verse Look  € 1.5
+		olijven: olijven  € 1.5
+		ui: ui  € 1.5
+		spinazie: Spinazie  € 1.5
+		rucola: Rucola  € 1.5
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.5
+		ham: ham  € 1.5
+		gehakt: gehakt  € 1.5
+		salami: salami  € 1.5
+		pepperoni: pepperoni  € 1.5
+		meatballs: meatballs  € 1.5
+		bacon: bacon  € 1.5
+		kebabvlees: kebabvlees  € 1.5
+		merguez: merguez  € 1.5
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.5
+		tonijn: tonijn  € 1.5
+		ansjovis: ansjovis  € 1.5
+		scampi: Scampi  € 1.5
+		mosselen: Mosselen  € 1.5
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.5
+		fetakaas: fetakaas  € 1.5
+		gorgonzola: gorgonzola  € 1.5
+		extra_kaas: extra kaas  € 1.5
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.5
+		swirl_bbqsaus: Swirl BBQSaus  € 1.5
+		swirl_looksaus: Swirl looksaus  € 1.5
+		tabascosaus: Tabascosaus  € 1.5
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.5
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.5
+dish fles_cola_1,5l: Fles Cola 1,5L  € 4.95
+dish fles_cola_zero_1,5l: Fles Cola Zero 1,5L  € 4.95
+dish fles_fanta_1,5l: Fles Fanta 1,5L  € 4.95
+dish fles_ice_tea_1,5l: Fles Ice Tea 1,5L  € 4.95
+dish fristi: Fristi  € 2.5
+dish full_option: Full option -- salami, paprika, ui, olijven, kip, ananas, maïs, gehakt, extra kaas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish funky_chicken: Funky chicken -- ui, ananas, paprika, kip € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish gini: Gini  € 2.5
+dish green_fista: Green fista -- roomsaus, spinazie, verse look, döner kebab, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish hawa: Hawa -- ham, kip, maïs, ananas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish hot_&_cheesy_5_stuks: Hot & cheesy 5 stuks -- potje dipsaus incl. € 5.5
+	single_choice Potje Saus: Welke Potje Saus
+		mayonaise: Mayonaise  € 0.0
+		ketchup: Ketchup  € 0.0
+		looksaus: Looksaus  € 0.0
+dish hot_pizzaaah!!!: Hot pizzaaah!!! -- gehakt, jalapenos, ui, pepperoni € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish ice_tea_33cl: Ice Tea 33cl  € 2.5
+dish ice_tea_peach_33cl: Ice Tea Peach 33cl  € 2.5
+dish kebab_deluxe: Kebab Deluxe -- kebab, feta, rode ui, bqq swirl € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish ketchup: Ketchup  € 0.75
+dish lbag_bolognese: LBAG Bolognese -- Bolognesesaus, salami, mozzarella. € 6.45
+dish lbag_chicken_kebab: LBAG Chicken Kebab -- Tomatensaus, ui, kip, kebabvlees, mozzarella. € 6.45
+dish lbag_hot: LBAG HOT -- Tabascotomatensaus, ui, pepperoni, jalapenos, mozzarella. € 6.45
+dish lbag_pesto: LBAG Pesto -- Pesto, tomatensaus, cherrytomaat, mozzarella. € 6.45
+dish lbag_tuna: LBAG Tuna -- Tomatensaus, ui, tonijn, olijven, mozzarella. € 6.45
+dish lookbrood_kaas: Lookbrood kaas -- Halve baguette gesmeerd met huisgemaakte lookboter € 4.0
+dish lookbrood_kaas_&_cherrytomaat: Lookbrood kaas & cherrytomaat -- Halve baguette gesmeerd met huisgemaakte lookboter € 4.5
+dish lookbrood_kaas_&_ham: Lookbrood kaas & ham -- Halve baguette gesmeerd met huisgemaakte lookboter € 4.5
+dish lookbrood_kaas_&_kip: Lookbrood kaas & kip -- Halve baguette gesmeerd met huisgemaakte lookboter € 4.5
+dish lookbrood_kaas_&_salami: Lookbrood kaas & salami -- Halve baguette gesmeerd met huisgemaakte lookboter € 4.5
+dish lookbrood_natuur: Lookbrood natuur -- Halve baguette gesmeerd met huisgemaakte lookboter € 3.5
+dish looksaus: Looksaus  € 1.0
+dish margherita: Margherita -- basispizza kaas & tomaat € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mayonaise: Mayonaise  € 0.75
+dish meat_lover_deluxe: Meat Lover Deluxe -- ham, salami, pepperoni, bacon, meatballs, merguez en swirl van looksaus € 16.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish meat_lovers: Meat lovers -- ham, salami, pepperoni, extra gehakt € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish meatballs: Meatballs -- gekruide gehaktballetjes, ui, paprika, cherrytomaat € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mega_fish: Mega fish -- ansjovis, tonijn, champignons, ui € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mexican: Mexican -- Peperoni, olijven, ui, potje pikante looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mogu_mogu_strawberry: Mogu Mogu Strawberry  € 2.5
+dish mogu_mogu_zwarte_bessen: Mogu Mogu Zwarte Bessen  € 2.5
+dish mogu_mogu_mango: Mogu Mogu mango  € 2.5
+dish mozarella_sticks: Mozarella sticks -- potje dipsaus incl. € 0.0
+	single_choice Portie's: Welke Portie's
+		8: 8  € 5.5
+		16: 16  € 10.0
+	single_choice Potje Saus: Welke Potje Saus
+		mayonaise: Mayonaise  € 0.0
+		ketchup: Ketchup  € 0.0
+		looksaus: Looksaus  € 0.0
+dish multi_cheese: Multi cheese -- gorgonzola, feta, extra kaas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mydoony's_party: Mydoony's Party  € 3.0
+dish mydoony's_pinky: Mydoony's Pinky  € 3.0
+dish mydoony's_rosy: Mydoony's Rosy  € 3.0
+dish oasis_tropical: Oasis tropical  € 2.5
+dish onion_rings: Onion rings -- potje dipsaus incl. € 0.0
+	single_choice Portie's: Welke Portie's
+		8: 8  € 5.5
+		16: 16  € 10.0
+	single_choice Potje Saus: Welke Potje Saus
+		mayonaise: Mayonaise  € 0.0
+		ketchup: Ketchup  € 0.0
+		looksaus: Looksaus  € 0.0
+dish pasta_bolognaise: Pasta Bolognaise -- Met huisbereid bolognesesaus € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_chicken_arabiata: Pasta Chicken arabiata -- Roomsaus, rode pesto, kip, chili, groentemix € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_chicken_pesto_spinazie: Pasta Chicken pesto spinazie -- Roomsaus, pesto, kip, look, ui, chili, cherrytomaat, spinazie € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_chicken_picanto: Pasta Chicken picanto -- Roomsaus, rode pesto, kip, extra chili, groentemix € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_deal: Pasta Deal -- Kleine portie pasta, lookbrood naar keuze, frisdrank € 18.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Drank?: Welke Drank?
+		cola: Cola  € 0.0
+		cola_zero: Cola Zero  € 0.0
+		fanta: Fanta  € 0.0
+		fanta_exotic: Fanta Exotic  € 0.0
+		fanta_cassis: Fanta Cassis  € 0.0
+		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
+		tropico: Tropico  € 0.0
+		ice_tea: Ice Tea  € 0.0
+		ice_tea_peach: Ice Tea Peach  € 0.0
+		sprite: Sprite  € 0.0
+		spa_plat: Spa Plat  € 0.0
+		spa_bruis: Spa Bruis  € 0.0
+		uludag: Uludag  € 0.0
+		oasis_tropical: Oasis Tropical  € 0.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+	single_choice Pasta: Welke Pasta
+		pasta_bolognese: Pasta Bolognese  € 0.0
+		pasta_kaassaus: Pasta kaassaus  € 0.0
+		pasta_kip_en_kaassaus: Pasta kip en kaassaus  € 0.0
+		pasta_ham_en_kaassaus: Pasta ham en kaassaus  € 0.0
+		pasta_milano: Pasta Milano  € 0.0
+		pasta_scampi: Pasta scampi  € 0.0
+		pasta_multi_cheese: Pasta Multi cheese  € 0.0
+		pasta_veggie: Pasta Veggie  € 0.0
+		pasta_pesto_chicken: Pasta Pesto Chicken  € 0.0
+		pasta_veggie: Pasta Veggie  € 0.0
+		pasta_exotique: Pasta Exotique  € 0.0
+		pasta_chicken_pesto_spinazie: Pasta Chicken pesto spinazie  € 0.0
+		pasta_gambaretti_spinazie: Pasta Gambaretti spinazie  € 0.0
+		pasta_chicken_arabiata: Pasta Chicken arabiata  € 0.0
+		pasta_chicken_picanto: Pasta Chicken picanto  € 0.0
+	single_choice Lookbrood: Welke Lookbrood
+		lookbrood_natuur: Lookbrood natuur  € 0.0
+		lookbrood_kaas: Lookbrood kaas  € 0.0
+		lookbrood_kaas_&_ham: Lookbrood kaas & ham  € 0.0
+		lookbrood_kaas_&_tomaat: Lookbrood kaas & tomaat  € 0.0
+		lookbrood_kaas_&_salami: Lookbrood kaas & salami  € 0.0
+		lookbrood_kaas_&_kip: Lookbrood kaas & kip  € 0.0
+dish pasta_exotique: Pasta Exotique -- Tomatenroomsaus, ananas, champignons, chili, cherrytomaat, paprika € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_gambaretti_spinazie: Pasta Gambaretti spinazie -- Roomsaus, pesto, scampi, look, ui, chili, cherrytomaat, spinazie € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_ham_en_kasssaus: Pasta Ham en kasssaus -- Met huisbereid kaassaus € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_kaassaus: Pasta Kaassaus -- Met huisbereid kaassaus € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_kip_en_kaassaus: Pasta Kip en Kaassaus -- Met huisbereid kaassaus € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_milano: Pasta Milano -- kip, champignons, ui, room, look & curry € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_multi_cheese: Pasta Multi Cheese -- roomsaus, gorgonzola, feta, belpaese, extra kaas € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_pesto_chicken: Pasta Pesto Chicken -- Pestoroomsaus en kip € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_scampi: Pasta Scampi -- scampi, champignons, ui, room, look & curry € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pasta_veggie: Pasta Veggie -- Tomatenroomsaus,champ,ui, paprika en cherrytomaat € 13.95
+	single_choice Spaghetti/penne: Welke Spaghetti/penne
+		spaghetti: spaghetti  € 0.0
+		penne: penne  € 0.0
+	single_choice Portie's: Welke Portie's
+		klein: klein  € 0.0
+		groot: groot  € 3.0
+	single_choice Garnering: Welke Garnering
+		scampi: Scampi  € 1.5
+		kip: kip  € 1.5
+		ham: Ham  € 1.5
+		extra_kaas: extra kaas  € 1.5
+		extra_saus: extra saus  € 1.5
+		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
+		bestek: bestek  € 0.35
+dish pepperoni: Pepperoni -- dubbele portie pepperoni, paprika, jalapenos € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish pikant_olie: Pikant Olie  € 0.05
+dish pikante_looksaus: Pikante Looksaus  € 1.0
+dish pitza_kebab: Pitza kebab -- verse look, ui, pitavlees, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish popeye: Popeye -- extra spinazie, ei, room, extra kaas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish potje_kaas: Potje Kaas  € 1.5
+dish redbull_25cl: RedBull 25cl  € 3.0
+dish rucola: Rucola -- Ham, cherry tomaat, afgewerkt met rucola, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish salade_mix: Salade mix -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 6.0
+dish salade_mix__mozzarella: Salade mix Mozzarella -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 8.5
+dish salade_mix_feta: Salade mix Feta -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 8.5
+dish salade_mix_kip: Salade mix Kip -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 9.5
+dish salade_mix_tuna: Salade mix Tuna -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 8.5
+dish salmon_delight: Salmon delight -- roomsaus, ui, gerookte zalm, kappertjes € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish samurai: Samurai  € 1.0
+dish scampi_mampi: Scampi mampi -- ui, verse look, scampi, cherrytomaat € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish seafood: Seafood -- tonijn, calamares, mosselen, garnalen € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish smaakmaker_1: Smaakmaker 1 -- 6 wings, 6 nuggets, portie potatoes, en frisdrank € 16.95
+	single_choice Drank?: Welke Drank?
+		cola: Cola  € 0.0
+		cola_zero: Cola Zero  € 0.0
+		fanta: Fanta  € 0.0
+		fanta_exotic: Fanta Exotic  € 0.0
+		fanta_cassis: Fanta Cassis  € 0.0
+		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
+		tropico: Tropico  € 0.0
+		ice_tea: Ice Tea  € 0.0
+		sprite: Sprite  € 0.0
+		spa_plat: Spa Plat  € 0.0
+		spa_bruis: Spa Bruis  € 0.0
+		uludag: Uludag  € 0.0
+		oasis_tropical: Oasis Tropical  € 0.0
+dish smaakmaker_2: Smaakmaker 2 -- 6 onion rings, 6 spicy cheeseballs, 6 mozarellasticks, en frisdrank € 16.95
+	single_choice Drank?: Welke Drank?
+		cola: Cola  € 0.0
+		cola_zero: Cola Zero  € 0.0
+		fanta: Fanta  € 0.0
+		fanta_exotic: Fanta Exotic  € 0.0
+		fanta_cassis: Fanta Cassis  € 0.0
+		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
+		tropico: Tropico  € 0.0
+		ice_tea: Ice Tea  € 0.0
+		sprite: Sprite  € 0.0
+		spa_plat: Spa Plat  € 0.0
+		spa_bruis: Spa Bruis  € 0.0
+		uludag: Uludag  € 0.0
+		oasis_tropical: Oasis Tropical  € 0.0
+dish spa_bruis_50_cl: Spa bruis 50 cl  € 2.5
+dish spa_plat_50_cl: Spa plat 50 cl  € 2.5
+dish spicy_cheeseballs: Spicy Cheeseballs -- potje dipsaus incl. € 0.0
+	single_choice Portie's: Welke Portie's
+		8: 8  € 7.5
+		16: 16  € 14.0
+	single_choice Potje Saus: Welke Potje Saus
+		mayonaise: Mayonaise  € 0.0
+		ketchup: Ketchup  € 0.0
+		looksaus: Looksaus  € 0.0
+dish spicy_chicken: Spicy Chicken -- Rode ui, jalapenos, kip, paprika, mozzarella, potje looksaus € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish sprite_33_cl: Sprite 33 cl  € 2.5
+dish tabasco: Tabasco -- tabasco pizzasaus, ui, paprika, champignons, pepperoni € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish tropico_33cl: Tropico 33cl  € 2.5
+dish tuna: Tuna -- ui, tonijn, olijven, extra kaas € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish usa_potatoes: USA POTATOES  € 5.5
+	single_choice Usa potatoes?: Welke Usa potatoes?
+		mayonaise: mayonaise  € 0.0
+		ketchup: ketchup  € 0.0
+		looksaus: Looksaus  € 0.0
+dish uludag_33cl: Uludag 33cl  € 2.5
+dish veggie: Veggie -- champignons, paprika, ui, maïs, cherrytomaat, olijven € 13.95
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
+	single_choice Pizza size?: Welke Pizza size?
+		small: small  € 0.0
+		medium: medium  € 3.0
+		large: large  € 6.0
+	single_choice Groenten: Welke Groenten
+		ei: ei  € 1.25
+		ananas: ananas  € 1.25
+		pikante_pepers: pikante pepers  € 1.25
+		mas: mas  € 1.25
+		champignons: champignons  € 1.25
+		rode_ui: rode ui  € 1.25
+		kappertjes: kappertjes  € 1.25
+		cherrytomaat: Cherrytomaat  € 1.25
+		paprika: paprika  € 1.25
+		verse_look: Verse Look  € 1.25
+		olijven: olijven  € 1.25
+		ui: ui  € 1.25
+		spinazie: Spinazie  € 1.25
+		rucola: Rucola  € 1.25
+	single_choice Vlees: Welke Vlees
+		kip: kip  € 1.25
+		ham: ham  € 1.25
+		gehakt: gehakt  € 1.25
+		salami: salami  € 1.25
+		pepperoni: pepperoni  € 1.25
+		meatballs: meatballs  € 1.25
+		bacon: bacon  € 1.25
+		kebabvlees: kebabvlees  € 1.25
+		merguez: merguez  € 1.25
+	single_choice Vis: Welke Vis
+		calamari: calamari  € 1.25
+		tonijn: tonijn  € 1.25
+		ansjovis: ansjovis  € 1.25
+		scampi: Scampi  € 1.25
+		mosselen: Mosselen  € 1.25
+	single_choice Kaas: Welke Kaas
+		bel_paese: bel paese  € 1.25
+		fetakaas: fetakaas  € 1.25
+		gorgonzola: gorgonzola  € 1.25
+		extra_kaas: extra kaas  € 1.25
+	single_choice Saus: Welke Saus
+		swirl_roomsaus: Swirl Roomsaus  € 1.25
+		swirl_bbqsaus: Swirl BBQSaus  € 1.25
+		swirl_looksaus: Swirl looksaus  € 1.25
+		tabascosaus: Tabascosaus  € 1.25
+		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
+		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
