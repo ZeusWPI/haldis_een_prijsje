@@ -15,6 +15,7 @@ class SimpizzaScraper(Scraper):
 
     @staticmethod
     def get_prices() -> (set[Product], Location):
+        start_time = time.time()
         products = set()
         locatie = Location(
             "simpizza: Simpizza",
@@ -41,8 +42,6 @@ class SimpizzaScraper(Scraper):
                 sb.wait(1.0)
                 product_sections = sb.find_elements(".product-section.row-fluid")
                 add_product_buttons = sb.find_elements("input.add-product-button")
-                print(len(product_sections))
-                print(len(add_product_buttons))
 
                 # Loop through each product section and extract the details
                 for section, product_button in zip(product_sections, add_product_buttons):
@@ -127,4 +126,10 @@ class SimpizzaScraper(Scraper):
                     except Exception as e:
                         print(f"Error extracting product information: {e}")
 
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        # Convert seconds to minutes and seconds
+        minutes = int(elapsed_time // 60)
+        seconds = elapsed_time % 60
+        print(f"get_prices executed in {minutes} minute(s) and {seconds:.2f} second(s).")
         return products, locatie
