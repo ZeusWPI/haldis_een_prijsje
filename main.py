@@ -3,11 +3,9 @@ from scrapers.bicyclette_scraper import BicycletteScraper
 from scrapers.simpizza_scraper import SimpizzaScraper
 from scrapers.snackmetropol_scraper import MetropolScraper
 
-metropol_products = MetropolScraper.get_prices()
-
 if __name__ == '__main__':
-    run_everything = False
-    restaurant_name = "simpizza"
+    run_everything = True
+    restaurant_name = "metropol"
     if restaurant_name.lower() == "metropol" or run_everything:
         metropol_products, metropol_location = MetropolScraper.get_prices()
         # Open a file and write the result to it
