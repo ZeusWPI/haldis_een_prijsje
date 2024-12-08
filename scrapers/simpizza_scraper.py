@@ -1,5 +1,6 @@
 import time
 
+from selenium.common import StaleElementReferenceException
 from selenium.webdriver.common.by import By
 
 from data_types.choice import Choice, ChoiceList
@@ -39,7 +40,7 @@ class SimpizzaScraper(Scraper):
                 label.click()  # Click the label
                 # print(f"Clicked: {label.text}")
 
-                sb.wait(1.0)
+                sb.wait(2.0)
                 product_sections = sb.find_elements(".product-section.row-fluid")
                 add_product_buttons = sb.find_elements("input.add-product-button")
 
@@ -62,10 +63,31 @@ class SimpizzaScraper(Scraper):
                         else:
                             print("Invalid")
 
-                        product_button.click()
+                        try:
+                            product_button.click()
+                        except StaleElementReferenceException:
+                            sb.wait(2.0)
+                            product_button.click()
 
-                        # Wait for the variety selector to be visible
-                        sb.wait(1.0)
+                        print(f"clicked on {prod.name}")
+
+                        try:
+                            sb.wait_for_element_visible("#food-variety-header-0",
+                                                        timeout=5)  # TODO lower time as low as posible
+                        except Exception as e:
+                            sb.wait(2.0)
+                            try:
+                                sb.wait_for_element_visible("#food-variety-header-0",
+                                                            timeout=5)  # TODO lower time as low as posible
+                            except Exception as e:
+                                print(f"No variety components found for {prod.name}. Moving on...")
+                                cancel_button = sb.find_element(".ui-dialog-titlebar-close")
+
+                                # Click the button
+                                cancel_button.click()
+                                sb.wait_for_element_not_visible("#ui-widget-overlay ui-front", timeout=10)
+                                products.add(prod)
+                                continue
 
                         # Extract selected options and their prices from `product-item-list`
                         # Initialize an empty list to store the IDs
@@ -86,6 +108,8 @@ class SimpizzaScraper(Scraper):
                                     break  # Stop the loop if the element is not found
                             except Exception as e:
                                 break  # Stop the loop on any unexpected issue
+                        if not component_ids:
+                            print(f"No components found for {prod}")
                         # print(f"{component_ids=}")
                         for index, element in enumerate(component_ids):
                             sb.wait_for_element_visible(f"#{element}")
@@ -99,29 +123,56 @@ class SimpizzaScraper(Scraper):
                             parent_div_id = f"ui-accordion-accordion-panel-{index}"
                             child_divs = sb.find_elements(f"#{parent_div_id} > div")  # Direct child <div>s
 
+                            is_multi_choice = any(
+                                div.find_elements("css selector", "input[type='checkbox']") for div in child_divs
+                            )
+                            keuzelijst.multi_choice = is_multi_choice
+
                             # Iterate over each child div and extract text from the first span
                             for child_div in child_divs:
-                                text = child_div.text.split("\n")
-                                if len(text) == 1:
-                                    keuzelijst.add_choice(Choice(name=text[0]))
-                                elif len(text) == 2:
-                                    if text[1].startswith("€"):
-                                        keuzelijst.add_choice(
-                                            Choice(
-                                                name=text[0],
-                                                price=float(text[1].split("+")[1].replace(",", "."))
-                                            )
+                                max_retries = 3  # Set the maximum number of retries
+                                retry_count = 0
+
+                                spans = child_div.find_elements("tag name",
+                                                                "span")  # Find all <span> elements inside the child div
+                                span_contents = [span.text for span in
+                                                 spans]  # Extract text from each span and store it in a list
+
+                                # Retry loop if all spans are empty
+                                while (len(span_contents) != 3 or all(
+                                        content == "" for content in span_contents) or
+                                       span_contents[2] == "" and span_contents[1] != "") and retry_count < max_retries:
+                                    print(f"{span_contents}, retrying (attempt {retry_count + 1})...")
+                                    retry_count += 1
+                                    # Wait or perform an action to try again (for example, wait for a new state or refresh the page)
+                                    sb.wait(2.0)  # Adjust wait time as needed
+                                    spans = child_div.find_elements("tag name", "span")  # Re-fetch the spans
+                                    span_contents = [span.text for span in spans]  # Extract the new text from the spans
+
+                                # print(f"Spans in child div: {span_contents}")
+                                # print(f"choice: {text}")
+                                if span_contents[1] == "":
+                                    keuzelijst.add_choice(Choice(name=span_contents[0]))
+                                elif span_contents[1].startswith("€"):
+                                    keuzelijst.add_choice(
+                                        Choice(
+                                            name=span_contents[0],
+                                            price=float(span_contents[2].replace(",", "."))
                                         )
-                                    else:
-                                        keuzelijst.add_choice(Choice(name=text[0]))
+                                    )
                                 else:
-                                    print("errored on: " + text)
+                                    try:
+                                        keuzelijst.add_choice(Choice(name=span_contents[0]))
+                                    except Exception as e:
+                                        print("errored on: " + str(span_contents))
                             prod.add_choiceList(keuzelijst)
                         # Find the button with the class name "select-variety-btn btn"
                         cancel_button = sb.find_element(".ui-dialog-titlebar-close")
 
                         # Click the button
                         cancel_button.click()
+                        sb.wait_for_element_not_visible("#ui-widget-overlay ui-front", timeout=10)
+
                         products.add(prod)
                     except Exception as e:
                         print(f"Error extracting product information: {e}")

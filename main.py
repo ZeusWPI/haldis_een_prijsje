@@ -8,7 +8,7 @@ from scrapers.snackmetropol_scraper import MetropolScraper
 if __name__ == '__main__':
     start_time = time.time()
     run_everything = True
-    restaurant_name = "metropol"
+    restaurant_name = "simpizza"
     if restaurant_name.lower() == "metropol" or run_everything:
         metropol_products, metropol_location = MetropolScraper.get_prices()
         # Open a file and write the result to it

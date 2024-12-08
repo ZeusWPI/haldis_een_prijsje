@@ -2950,7 +2950,6 @@ dish smaakmaker_2: Smaakmaker 2 -- 6 onion rings, 6 spicy cheeseballs, 6 mozarel
 		spa_bruis: Spa Bruis  € 0.0
 		uludag: Uludag  € 0.0
 		oasis_tropical: Oasis Tropical  € 0.0
-dish spa_bruis_50_cl: Spa bruis 50 cl  € 2.5
 dish spa_plat_50_cl: Spa plat 50 cl  € 2.5
 dish spicy_cheeseballs: Spicy Cheeseballs -- potje dipsaus incl. € 0.0
 	single_choice Portie's: Welke Portie's
