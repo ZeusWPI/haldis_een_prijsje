@@ -1144,10 +1144,10 @@ dish nieuw_product: Nieuw Product  € 0.0
 		vlees: vlees  € 3.0
 		saus: SAUS  € 1.0
 		extra_groenten: EXTRA GROENTEN  € 1.0
-dish potje_vlees__3_dot_50: POTJE VLEES 3.50 -- POTJE  VLEES 3.50 € 3.5
 dish potje_vlees_10: POTJE VLEES 10 -- POTJE VLEES  10.00 € 10.0
 dish potje_vlees_2_dot_50: POTJE VLEES 2.50 -- POTJE VLEES 2.50 € 2.5
 dish potje_vlees_3_dot_00: POTJE VLEES 3.00 -- POTJE VLEES 3.00 € 3.0
+dish potje_vlees_3_dot_50: POTJE VLEES 3.50 -- POTJE  VLEES 3.50 € 3.5
 dish potje_vlees_4_dot_00: POTJE VLEES 4.00 -- POTJE VLEES 4.00 € 4.0
 dish potje_vlees_4_dot_50: POTJE VLEES 4.50 -- POTJE VLEES 4.50 € 4.5
 dish potje_vlees_5: POTJE VLEES 5 -- POTJE VLEES 5.00 € 5.0
@@ -1695,8 +1695,8 @@ dish cheesburger: cheesburger  € 5.5
 		vlees: vlees  € 3.0
 		extra_groenten: EXTRA GROENTEN  € 1.0
 dish drank_2_dot_50_energiedranken: drank 2.50 ENERGIEDRANKEN  € 2.5
-dish drank__euro_1__goldenpower_en_andere_drink: drank euro 1 GOLDENPOWER en andere drink  € 1.0
-dish drank__euro_2_frisdranken: drank euro 2 FRISDRANKEN  € 2.0
+dish drank_euro_1_goldenpower_en_andere_drink: drank euro 1 GOLDENPOWER en andere drink  € 1.0
+dish drank_euro_2_frisdranken: drank euro 2 FRISDRANKEN  € 2.0
 dish frikandel: frikandel  € 3.0
 dish frikandel_speciaal: frikandel speciaal  € 4.5
 dish frikandelschotel: frikandelschotel  € 11.5
