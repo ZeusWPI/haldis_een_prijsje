@@ -3,12 +3,9 @@ import time
 from selenium.webdriver.common.by import By
 
 from data_types.choice import ChoiceList, Choice
-from data_types.common_choice_lists import (create_metropol_vlees_keuze_list, create_metropol_sauzen_keuze_list,
-                                            create_metropol_groenten_keuze_list, create_metropol_extra_keuze_list)
 from data_types.location import Location
-from data_types.product import Product, add_choiseList_to_product_by_name, merge_products, merge_products_by_sizes
+from data_types.product import Product, merge_products_by_sizes
 from scrapers.scraper import Scraper
-from utils import fetch_and_parse_html
 
 from seleniumbase import SB
 
@@ -40,7 +37,7 @@ class MetropolScraper(Scraper):
             # Loop through the labels and print their text
             for label in labels:
                 label.click()  # Click the label
-                print(f"Clicked: {label.text}")
+                # print(f"Clicked: {label.text}")
 
                 sb.wait(1.0)
                 product_sections = sb.find_elements(".product-section.row-fluid")
@@ -134,6 +131,21 @@ class MetropolScraper(Scraper):
                         products.add(prod)
                     except Exception as e:
                         print(f"Error extracting product information: {e}")
+
+        # merge products of different sizes
+        # TODO some products have other options small and large
+        # merge_specs = [
+        #     (["BROODJE FALAFEL KLEIN", "BROODJE FALAFEL GROOT"], "BROODJE FALAFEL", ["klein", "groot"]),
+        #     (["Pita klein", "Pita groot"], "Pita", ["klein", "groot"]),
+        #     (["Broodje Kapsalon klein", "Broodje Kapsalon groot"], "Broodje Kapsalon", ["klein", "groot"]),
+        #     (["DURUM KLEIN", "Durum"], "Durum", ["klein", "groot"]),
+        #     (["Schotel klein", "Schotel groot"], "Schotel", ["klein", "groot"]),
+        #     (["Hamburgerschotel", "Hamburgerschotel Groot"], "Hamburgerschotel", ["klein", "groot"]),
+        #     (["frikandelschotel", "frikandelschotel groot"], "frikandelschotel", ["klein", "groot"]),
+        #     (["Kapsalon klein", "Kapsalon groot"], "Kapsalon", ["klein", "groot"]),
+        #     (["Frietjes klein", "Frietjes medium", "Frietjes groot", "Frietjes familie"], "Frietjes", ["klein", "medium", "groot", "familie"])
+        # ]
+        # products = merge_products_by_sizes(products, merge_specs)
 
         end_time = time.time()
         elapsed_time = end_time - start_time

@@ -1,3 +1,5 @@
+import time
+
 from data_types.choice import ChoiceList, Choice
 from data_types.location import Location
 from data_types.product import Product
@@ -8,7 +10,7 @@ from utils import extract_spans, filter_divs, create_heading_contains_h2_with, f
 class BicycletteScraper(Scraper):
     @staticmethod
     def get_prices() -> (set[Product], Location):
-
+        start_time = time.time()
         base_url = "https://labicyclettepastabar.be/menu/"
 
         products = set()
@@ -34,7 +36,7 @@ class BicycletteScraper(Scraper):
             top_level_divs = first_filtered_div.find_all(recursive=False)  # Only direct children
             for div in top_level_divs:
                 span_texts = extract_spans(div)
-                print(span_texts)
+                # print(span_texts)
                 if len(span_texts) == 2:
                     products.add(Product(name=span_texts[0], description=span_texts[1]))
                 if len(span_texts) == 3:
@@ -76,4 +78,10 @@ class BicycletteScraper(Scraper):
         else:
             print("No extra divs found.")
 
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        # Convert seconds to minutes and seconds
+        minutes = int(elapsed_time // 60)
+        seconds = elapsed_time % 60
+        print(f"get_prices executed in {minutes} minute(s) and {seconds:.2f} second(s).")
         return products, locatie

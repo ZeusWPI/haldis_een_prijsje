@@ -1,9 +1,12 @@
+import time
+
 from data_types.product import translate_products_to_text
 from scrapers.bicyclette_scraper import BicycletteScraper
 from scrapers.simpizza_scraper import SimpizzaScraper
 from scrapers.snackmetropol_scraper import MetropolScraper
 
 if __name__ == '__main__':
+    start_time = time.time()
     run_everything = True
     restaurant_name = "metropol"
     if restaurant_name.lower() == "metropol" or run_everything:
@@ -29,6 +32,13 @@ if __name__ == '__main__':
             file.write(str(simpizza_location) + "\n")
             file.write(translate_products_to_text(simpizza_products))
         print("simpizza done")
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    # Convert seconds to minutes and seconds
+    minutes = int(elapsed_time // 60)
+    seconds = elapsed_time % 60
+    print(f"main executed in {minutes} minute(s) and {seconds:.2f} second(s).")
 
 # print(metropol_products)
 # print(len(metropol_products))

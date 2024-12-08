@@ -37,7 +37,7 @@ class SimpizzaScraper(Scraper):
             # Loop through the labels and print their text
             for label in labels:
                 label.click()  # Click the label
-                print(f"Clicked: {label.text}")
+                # print(f"Clicked: {label.text}")
 
                 sb.wait(1.0)
                 product_sections = sb.find_elements(".product-section.row-fluid")
