@@ -2,6 +2,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from data_types.product import translate_products_to_text
 from scrapers.bicyclette_scraper import BicycletteScraper
+from scrapers.bocca_ovp_scraper import BoccaOvpScraper
 from scrapers.simpizza_scraper import SimpizzaScraper
 from scrapers.snackmetropol_scraper import MetropolScraper
 
@@ -30,11 +31,19 @@ def run_simpizza():
     print("simpizza done")
 
 
+def run_bocca_ovp():
+    bocca_ovp_products, bocca_ovp_location = BoccaOvpScraper.get_prices()
+    with open("hlds_files/bocca_ovp.hlds", "w", encoding="utf-8") as file:
+        file.write(str(bocca_ovp_location) + "\n")
+        file.write(translate_products_to_text(bocca_ovp_products))
+    print("bocca_ovp done")
+
+
 if __name__ == '__main__':
     start_time = time.time()
     run_everything = False
     use_parallelism = False  # Set this to False to disable parallelism
-    restaurant_name = "simpizza"
+    restaurant_name = "bocca_ovp"
 
     tasks = []
     if restaurant_name.lower() == "metropol" or run_everything:
@@ -43,6 +52,8 @@ if __name__ == '__main__':
         tasks.append(run_bicyclette)
     if restaurant_name.lower() == "simpizza" or run_everything:
         tasks.append(run_simpizza)
+    if restaurant_name.lower() == "bocca_ovp" or run_everything:
+        tasks.append(run_bocca_ovp)
 
     if use_parallelism:
         # Run tasks in parallel

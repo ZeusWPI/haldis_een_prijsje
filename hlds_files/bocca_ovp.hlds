@@ -1,0 +1,44 @@
+==========================
+bocca: Bocca
+	osm     https://www.openstreetmap.org/node/1462321981#map=19/51.038423/3.726819
+	phone   +32 (0)9 245 37 99
+	address Citadellaan 4, 9000 Ghent
+	website http://www.bocca.be/
+==========================
+
+dish sauce_to_go_arrabbiata: SAUCE TO GO Arrabbiata  € 7.5
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 7.5
+dish sauce_to_go_bocca: SAUCE TO GO Bocca  € 7.5
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 7.5
+dish sauce_to_go_bolognese: SAUCE TO GO Bolognese  € 7.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 7.0
+dish sauce_to_go_cheese_&_ham: SAUCE TO GO Cheese & ham  € 7.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 7.0
+dish sauce_to_go_curry_with_or_without_smoked_salmon: SAUCE TO GO Curry with or without smoked salmon  € 9.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 9.0
+dish sauce_to_go_four_cheeses: SAUCE TO GO Four Cheeses  € 7.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 7.0
+dish sauce_to_go_marisol: SAUCE TO GO Marisol  € 9.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 9.0
+dish sauce_to_go_pasta_of_the_week: SAUCE TO GO Pasta of the week  € 9.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 9.0
+dish sauce_to_go_veggie: SAUCE TO GO Veggie  € 9.0
+	single_choice what size?: 
+		0,5l: 0,5L  € 0.0
+		1l: 1L  € 9.0
