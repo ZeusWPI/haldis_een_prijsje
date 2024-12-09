@@ -183,3 +183,16 @@ Retrieves the dimensions of a specified page in a PDF.
   - `page_number` (int): The 1-based index of the page. Defaults to 1.
 - **Returns**: A tuple containing the width and height of the page in points.
 
+## `comma_float(inp: str) -> float`
+Converts a string representation of a number with a comma as a decimal separator to a float.
+
+- **Parameters**: 
+  - `inp` (str): The input string containing the number (e.g., `"1,23"`).
+
+- **Returns**: 
+  - A `float` where commas in the input string are replaced with dots to adhere to standard decimal notation (e.g., `1.23`).
+
+- **Example**:
+  ```python
+  number = comma_float("1,23")
+  print(number)  # Output: 1.23

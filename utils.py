@@ -12,6 +12,7 @@ from selenium.common.exceptions import StaleElementReferenceException
 def comma_float(inp: str) -> float:
     return float(inp.replace(',', '.'))
 
+
 def fetch_and_parse_html(url: str) -> BeautifulSoup:
     response = safe_get(url)
     if response == "":
@@ -134,6 +135,7 @@ def get_page_dimensions(file_path, page_number=1):
     except Exception as e:
         print(f"Failed to retrieve page dimensions: {e}")
 
+
 def retry_on_stale(max_retries=3, wait_time=1):
     """
     Decorator to retry a function in case of a StaleElementReferenceException.
@@ -217,4 +219,3 @@ class SeleniumUtils:
         :param keys: The keys to send.
         """
         element.send_keys(keys)
-
