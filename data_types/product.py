@@ -31,7 +31,15 @@ class Product:
             output += f"dish {self.display_name}: {self.name} -- {self.description} € {self.price}\n"
         else:
             output += f"dish {self.display_name}: {self.name}  € {self.price}\n"
-        for choiceList in self.choiceLists:
+        # for choiceList in self.choiceLists:
+        #     output += f"{str(choiceList)}"
+
+        # Separate "size" or "groote" ChoiceLists so quantity choices are displayed at top
+        size_choices = [cl for cl in self.choiceLists if "size" in cl.name.lower() or "groote" in cl.name.lower()]
+        other_choices = [cl for cl in self.choiceLists if cl not in size_choices]
+
+        # Output size-related ChoiceLists first
+        for choiceList in size_choices + other_choices:
             output += f"{str(choiceList)}"
         return output
 

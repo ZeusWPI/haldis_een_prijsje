@@ -40,7 +40,7 @@ class MetropolScraper(Scraper):
                 label.click()  # Click the label
                 # print(f"Clicked: {label.text}")
 
-                sb.wait(2.0)
+                sb.wait(2.0)  # TODO make conditional wait
                 product_sections = sb.find_elements(".product-section.row-fluid")
                 add_product_buttons = sb.find_elements("input.add-product-button")
 
@@ -75,12 +75,12 @@ class MetropolScraper(Scraper):
                         # Wait for the variety selector to be visible
                         try:
                             sb.wait_for_element_visible("#food-variety-header-0",
-                                                        timeout=10)  # TODO lower time as low as posible
+                                                        timeout=10)
                         except Exception as e:
-                            sb.wait(2.0)
+                            # sb.wait(2.0)
                             try:
                                 sb.wait_for_element_visible("#food-variety-header-0",
-                                                            timeout=10)  # TODO lower time as low as posible
+                                                            timeout=10)
                             except Exception as e:
                                 print(f"No variety components found for {prod.name}. Moving on...")
                                 cancel_button = sb.find_element(".ui-dialog-titlebar-close")
@@ -138,7 +138,7 @@ class MetropolScraper(Scraper):
 
                             # Iterate over each child div and extract text from the first span
                             for child_div in child_divs:
-                                max_retries = 3  # Set the maximum number of retries
+                                max_retries = 6  # Set the maximum number of retries
                                 retry_count = 0
 
                                 spans = child_div.find_elements("tag name",
@@ -147,13 +147,16 @@ class MetropolScraper(Scraper):
                                                  spans]  # Extract text from each span and store it in a list
 
                                 # Retry loop if all spans are empty
-                                while (len(span_contents) != 3 or all(
-                                        content == "" for content in span_contents) or
-                                       span_contents[2] == "" and span_contents[1] != "") and retry_count < max_retries:
+                                while (
+                                       len(span_contents) != 3 or span_contents[0] == "" or
+                                       all( content == "" for content in span_contents) or
+                                       span_contents[2] == "" and span_contents[1] != ""
+                                ) and retry_count < max_retries:
                                     print(f"{span_contents}, retrying (attempt {retry_count + 1})...")
                                     retry_count += 1
-                                    # Wait or perform an action to try again (for example, wait for a new state or refresh the page)
-                                    sb.wait(2.0)  # Adjust wait time as needed
+                                    # Wait or perform an action to try again (for example, wait for a new state or
+                                    # refresh the page)
+                                    sb.wait(0.5)  # Adjust wait time as needed
                                     spans = child_div.find_elements("tag name", "span")  # Re-fetch the spans
                                     span_contents = [span.text for span in spans]  # Extract the new text from the spans
 
