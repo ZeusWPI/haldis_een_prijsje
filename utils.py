@@ -9,6 +9,9 @@ import pdfplumber
 from selenium.common.exceptions import StaleElementReferenceException
 
 
+def comma_float(inp: str) -> float:
+    return float(inp.replace(',', '.'))
+
 def fetch_and_parse_html(url: str) -> BeautifulSoup:
     response = safe_get(url)
     if response == "":

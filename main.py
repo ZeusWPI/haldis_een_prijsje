@@ -41,7 +41,7 @@ def run_bocca_ovp():
 
 if __name__ == '__main__':
     start_time = time.time()
-    run_everything = True
+    run_everything = False
     use_parallelism = False  # Set this to False to disable parallelism
     restaurant_name = "bocca_ovp"
 

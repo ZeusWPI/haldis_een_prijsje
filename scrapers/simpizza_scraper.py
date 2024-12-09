@@ -38,7 +38,10 @@ class SimpizzaScraper(Scraper):
             # Loop through the labels and print their text
             for label in labels:
                 label.click()  # Click the label
-                # print(f"Clicked: {label.text}")
+                curr_cat = label.text
+                if curr_cat in ["PIZZA","Fifty-fifty pizza's" , "PASTA'S", "CHICKEN", "SALADES", "LOOKBROOD", "USA POTATOES", "Belegde Lookbaguette", "Snack's", "DESSERTS"]:
+                    continue
+                print(f"Clicked: {label.text}")
 
                 sb.wait(2.0)  # TODO make conditional wait
                 product_sections = sb.find_elements(".product-section.row-fluid")
@@ -77,23 +80,29 @@ class SimpizzaScraper(Scraper):
 
                         print(f"clicked on {prod.name}")
 
-                        try:
-                            sb.wait_for_element_visible("#food-variety-header-0",
-                                                        timeout=2)  # TODO lower time as low as posible
-                        except Exception as e:
-                            # sb.wait(2.0)
+                        if not curr_cat in ["DRANKEN"]:  # TODO make work to skip DRANKEN
                             try:
                                 sb.wait_for_element_visible("#food-variety-header-0",
                                                             timeout=2)  # TODO lower time as low as posible
                             except Exception as e:
-                                print(f"No variety components found for {prod.name}. Moving on...")
-                                cancel_button = sb.find_element(".ui-dialog-titlebar-close")
+                                # sb.wait(2.0)
+                                try:
+                                    sb.wait_for_element_visible("#food-variety-header-0",
+                                                                timeout=2)  # TODO lower time as low as posible
+                                except Exception as e:
+                                    print(f"No variety components found for {prod.name}. Moving on...")
+                                    cancel_button = sb.find_element(".ui-dialog-titlebar-close")
 
-                                # Click the button
-                                cancel_button.click()
-                                sb.wait_for_element_not_visible("#ui-widget-overlay ui-front", timeout=10)
-                                products.add(prod)
-                                continue
+                                    # Click the button
+                                    cancel_button.click()
+                                    sb.wait_for_element_not_visible("#ui-widget-overlay ui-front", timeout=10)
+                                    products.add(prod)
+                                    continue
+                        else:
+                            cancel_button.click()
+                            sb.wait_for_element_not_visible("#ui-widget-overlay ui-front", timeout=10)
+                            products.add(prod)
+                            continue
 
                         # Extract selected options and their prices from `product-item-list`
                         # Initialize an empty list to store the IDs

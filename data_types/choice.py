@@ -38,6 +38,11 @@ class ChoiceList:
         self.name: str = name
         self.description: str = description
 
+    def update_name(self, new_name: str):
+        temp = ChoiceList(name=new_name)
+        temp.choices = self.choices
+        return temp
+
     def __str__(self):
         output = ""
         if self.type == ChoiceType.SINGLE:
