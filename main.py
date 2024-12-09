@@ -43,7 +43,7 @@ if __name__ == '__main__':
     start_time = time.time()
     run_everything = False
     use_parallelism = False  # Set this to False to disable parallelism
-    restaurant_name = "bocca_ovp"
+    restaurant_name = "simpizza"
 
     tasks = []
     if restaurant_name.lower() == "metropol" or run_everything:
