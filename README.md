@@ -94,3 +94,92 @@ To add support for a new restaurant scraper:
 - Ensure your code is well-documented.
 
 ---
+
+# Utility Functions Documentation
+
+This document provides an overview of all utility functions included in the script.
+
+## `fetch_and_parse_html(url: str) -> BeautifulSoup`
+Fetches and parses the HTML content from a given URL.
+
+- **Parameters**: 
+  - `url` (str): The URL to fetch.
+- **Returns**: A `BeautifulSoup` object containing the parsed HTML, or `None` if fetching fails.
+
+---
+
+## `only_keep_UTF_8_chars(text: str) -> str`
+Filters out non-UTF-8 characters from the given text.
+
+- **Parameters**: 
+  - `text` (str): The input text to filter.
+- **Returns**: A string containing only UTF-8 characters.
+
+---
+
+## `safe_get(link: str)`
+Performs a GET request to the given URL and handles `ConnectionError`.
+
+- **Parameters**: 
+  - `link` (str): The URL to fetch.
+- **Returns**: A `requests.Response` object if successful, or an empty string if a `ConnectionError` occurs.
+
+---
+
+## `extract_spans(div)`
+Extracts all non-empty text content from `<span>` elements within a given `<div>`.
+
+- **Parameters**: 
+  - `div`: A BeautifulSoup `<div>` element.
+- **Returns**: A list of strings containing the extracted text.
+
+---
+
+## `filter_divs(soup, class_name, condition)`
+Filters `<div>` elements from a parsed HTML based on a user-defined condition.
+
+- **Parameters**: 
+  - `soup`: A `BeautifulSoup` object containing the HTML content.
+  - `class_name` (str): The class name of the `<div>` elements to filter.
+  - `condition` (callable): A function that takes a `<div>` element and returns `True` if the `<div>` matches the condition.
+- **Returns**: A list of `<div>` elements that match the condition.
+
+---
+
+## `create_heading_contains_h2_with(text_to_search)`
+Generates a condition function to check if a `<div>` contains an `<h2>` tag with the specified text.
+
+- **Parameters**: 
+  - `text_to_search` (str): The text to search for within an `<h2>` tag.
+- **Returns**: A function that takes a `<div>` and returns `True` if it contains an `<h2>` tag with the specified text.
+
+---
+
+## `download_pdf(url: str, save_path: str)`
+Downloads a PDF from a given URL and saves it locally.
+
+- **Parameters**: 
+  - `url` (str): The URL of the PDF to download.
+  - `save_path` (str): The local path to save the downloaded PDF.
+- **Returns**: None. Prints a success or failure message.
+
+---
+
+## `parse_pdf(file_path: str, coords: tuple = None)`
+Extracts text from a PDF file. Optionally extracts text from a specified rectangular region.
+
+- **Parameters**: 
+  - `file_path` (str): Path to the PDF file.
+  - `coords` (tuple, optional): A tuple defining the rectangle (x0, top, x1, bottom). Defaults to `None` for full-page extraction.
+- **Returns**: Extracted text as a string.
+
+---
+
+## `get_page_dimensions(file_path: str, page_number: int = 1)`
+Retrieves the dimensions of a specified page in a PDF.
+
+- **Parameters**: 
+  - `file_path` (str): Path to the PDF file.
+  - `page_number` (int): The 1-based index of the page. Defaults to 1.
+- **Returns**: A tuple containing the width and height of the page in points.
+
