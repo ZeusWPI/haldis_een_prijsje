@@ -63,11 +63,17 @@ class SimpizzaScraper(Scraper):
                         else:
                             print("Invalid")
 
-                        try:
-                            product_button.click()
-                        except StaleElementReferenceException:
-                            sb.wait(2.0)
-                            product_button.click()
+                        max_retries = 3
+                        for attempt in range(max_retries):
+                            try:
+                                product_button.click()
+                                break
+                            except StaleElementReferenceException:
+                                if attempt < max_retries - 1:
+                                    sb.wait(1)  # Wait before retrying
+                                    product_button = sb.find_element("input.add-product-button")  # Refetch element
+                                else:
+                                    raise
 
                         print(f"clicked on {prod.name}")
 

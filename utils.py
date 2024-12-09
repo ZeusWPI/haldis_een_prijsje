@@ -1,10 +1,12 @@
 import re
+import time
 
 import PyPDF2
 import requests
 from bs4 import BeautifulSoup
 from requests.exceptions import ConnectionError
 import pdfplumber
+from selenium.common.exceptions import StaleElementReferenceException
 
 
 def fetch_and_parse_html(url: str) -> BeautifulSoup:
@@ -128,3 +130,88 @@ def get_page_dimensions(file_path, page_number=1):
 
     except Exception as e:
         print(f"Failed to retrieve page dimensions: {e}")
+
+def retry_on_stale(max_retries=3, wait_time=1):
+    """
+    Decorator to retry a function in case of a StaleElementReferenceException.
+
+    :param max_retries: Maximum number of retries before giving up.
+    :param wait_time: Time to wait (in seconds) between retries.
+    """
+
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return func(*args, **kwargs)
+                except StaleElementReferenceException as e:
+                    if attempt < max_retries - 1:
+                        print(f"Retrying due to stale element (attempt {attempt + 1}/{max_retries})...")
+                        time.sleep(wait_time)  # Wait before retrying
+                    else:
+                        raise e  # Reraise the exception if max retries exceeded
+
+        return wrapper
+
+    return decorator
+
+
+class SeleniumUtils:
+    @staticmethod
+    @retry_on_stale(max_retries=3, wait_time=1)
+    def find_element_with_retry(driver, locator_type, locator):
+        """
+        Find a single element with retry on stale reference.
+
+        :param driver: Selenium WebDriver instance.
+        :param locator_type: Locator type (e.g., By.ID, By.CLASS_NAME).
+        :param locator: Locator string.
+        :return: The found WebElement.
+        """
+        return driver.find_element(locator_type, locator)
+
+    @staticmethod
+    @retry_on_stale(max_retries=3, wait_time=1)
+    def find_elements_with_retry(driver, locator_type, locator):
+        """
+        Find multiple elements with retry on stale reference.
+
+        :param driver: Selenium WebDriver instance.
+        :param locator_type: Locator type (e.g., By.ID, By.CLASS_NAME).
+        :param locator: Locator string.
+        :return: A list of found WebElements.
+        """
+        return driver.find_elements(locator_type, locator)
+
+    @staticmethod
+    @retry_on_stale(max_retries=3, wait_time=1)
+    def click_element_with_retry(element):
+        """
+        Click on a web element with retry on stale reference.
+
+        :param element: The WebElement to click.
+        """
+        element.click()
+
+    @staticmethod
+    @retry_on_stale(max_retries=3, wait_time=1)
+    def get_text_with_retry(element):
+        """
+        Get text from a web element with retry on stale reference.
+
+        :param element: The WebElement to extract text from.
+        :return: The text of the element.
+        """
+        return element.text
+
+    @staticmethod
+    @retry_on_stale(max_retries=3, wait_time=1)
+    def send_keys_with_retry(element, keys):
+        """
+        Send keys to a web element with retry on stale reference.
+
+        :param element: The WebElement to send keys to.
+        :param keys: The keys to send.
+        """
+        element.send_keys(keys)
+

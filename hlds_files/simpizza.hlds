@@ -15,13 +15,13 @@ dish 16_chicken_wings: 16 chicken wings -- 32 vl met potje dipsaus € 17.0
 		bbq_saus: BBQ saus  € 0.0
 		zoetzure_saus: Zoetzure saus  € 0.0
 dish 4_seasons: 4 Seasons -- ham, salami, champignons, paprika € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -75,13 +75,13 @@ dish 8_chicken_wings: 8 chicken wings -- 16 vl met potje dipsaus € 10.0
 		zoetzure_saus: Zoetzure saus  € 0.0
 dish aa_drink: AA Drink  € 2.5
 dish anchovy: Anchovy -- ui, ansjovis, paprika, olijven € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -128,13 +128,13 @@ dish anchovy: Anchovy -- ui, ansjovis, paprika, olijven € 13.95
 dish andalouse: Andalouse  € 1.0
 dish ayran_25cl: Ayran 25cl  € 2.5
 dish bbq_bacon: BBQ Bacon -- BBQ-saus, bacon, ui, kip, jalapenos, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -179,13 +179,13 @@ dish bbq_bacon: BBQ Bacon -- BBQ-saus, bacon, ui, kip, jalapenos, potje looksaus
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish bbq_merquez: BBQ Merquez -- BBq-saus, merquez, ui, paprika € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -230,13 +230,13 @@ dish bbq_merquez: BBQ Merquez -- BBq-saus, merquez, ui, paprika € 13.95
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish bbq_special: BBQ Special -- BBQ-saus, pepperoni, kip, meatballs, ui, en swirl van looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -281,13 +281,13 @@ dish bbq_special: BBQ Special -- BBQ-saus, pepperoni, kip, meatballs, ui, en swi
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish bbq_meatballs: Bbq meatballs -- bbqsaus, gekruide gehaktballetjes, ui, paprika, cherrytomaat € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -333,13 +333,13 @@ dish bbq_meatballs: Bbq meatballs -- bbqsaus, gekruide gehaktballetjes, ui, papr
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish bestek: Bestek  € 0.35
 dish bolognese_de_luxe: Bolognese de luxe -- bolognesesaus, verse look, ui, extra gehakt € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -384,13 +384,13 @@ dish bolognese_de_luxe: Bolognese de luxe -- bolognesesaus, verse look, ui, extr
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish buffalo: Buffalo -- Peperoni, rode ui, gehakt, afgewerkt met ijsbergsla,  potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -435,13 +435,13 @@ dish buffalo: Buffalo -- Peperoni, rode ui, gehakt, afgewerkt met ijsbergsla,  p
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish calzone: Calzone -- dubbelgevouwen, ham, salami, champignons, paprika en bolognesesaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -486,13 +486,13 @@ dish calzone: Calzone -- dubbelgevouwen, ham, salami, champignons, paprika en bo
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish chicken_bbq: Chicken bbq -- bbq-saus, gegrilde kip, ui, paprika € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -537,13 +537,13 @@ dish chicken_bbq: Chicken bbq -- bbq-saus, gegrilde kip, ui, paprika € 13.95
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish chicken_time: Chicken time -- kip, paprika, olijven, cherrytomaat € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -590,13 +590,13 @@ dish chicken_time: Chicken time -- kip, paprika, olijven, cherrytomaat € 13.95
 dish cola_33_cl: Cola 33 cl  € 2.5
 dish cola_zero_33_cl: Cola zero 33 cl  € 2.5
 dish creamy_chicken: Creamy chicken -- room, kip, ui, verse look, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -641,13 +641,13 @@ dish creamy_chicken: Creamy chicken -- room, kip, ui, verse look, potje looksaus
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish creamy_multi_cheese: Creamy multi cheese -- roomsaus, gorgonzola, feta, mozzarella, extra kaas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -694,13 +694,13 @@ dish creamy_multi_cheese: Creamy multi cheese -- roomsaus, gorgonzola, feta, moz
 dish cup_bbq: Cup BBQ  € 0.5
 dish cup_zoetzure: Cup Zoetzure  € 0.5
 dish curry: Curry -- currysaus, champ, ui, ananas, paprika, kip, mozzarella en potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1586,13 +1586,13 @@ dish fles_fanta_1,5l: Fles Fanta 1,5L  € 4.95
 dish fles_ice_tea_1,5l: Fles Ice Tea 1,5L  € 4.95
 dish fristi: Fristi  € 2.5
 dish full_option: Full option -- salami, paprika, ui, olijven, kip, ananas, maïs, gehakt, extra kaas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1637,13 +1637,13 @@ dish full_option: Full option -- salami, paprika, ui, olijven, kip, ananas, maï
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish funky_chicken: Funky chicken -- ui, ananas, paprika, kip € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1689,13 +1689,13 @@ dish funky_chicken: Funky chicken -- ui, ananas, paprika, kip € 13.95
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish gini: Gini  € 2.5
 dish green_fista: Green fista -- roomsaus, spinazie, verse look, döner kebab, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1740,13 +1740,13 @@ dish green_fista: Green fista -- roomsaus, spinazie, verse look, döner kebab, p
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish hawa: Hawa -- ham, kip, maïs, ananas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1796,13 +1796,13 @@ dish hot_&_cheesy_5_stuks: Hot & cheesy 5 stuks -- potje dipsaus incl. € 5.5
 		ketchup: Ketchup  € 0.0
 		looksaus: Looksaus  € 0.0
 dish hot_pizzaaah!!!: Hot pizzaaah!!! -- gehakt, jalapenos, ui, pepperoni € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1849,13 +1849,13 @@ dish hot_pizzaaah!!!: Hot pizzaaah!!! -- gehakt, jalapenos, ui, pepperoni € 13
 dish ice_tea_33cl: Ice Tea 33cl  € 2.5
 dish ice_tea_peach_33cl: Ice Tea Peach 33cl  € 2.5
 dish kebab_deluxe: Kebab Deluxe -- kebab, feta, rode ui, bqq swirl € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1913,13 +1913,13 @@ dish lookbrood_kaas_&_salami: Lookbrood kaas & salami -- Halve baguette gesmeerd
 dish lookbrood_natuur: Lookbrood natuur -- Halve baguette gesmeerd met huisgemaakte lookboter € 3.5
 dish looksaus: Looksaus  € 1.0
 dish margherita: Margherita -- basispizza kaas & tomaat € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -1965,13 +1965,13 @@ dish margherita: Margherita -- basispizza kaas & tomaat € 13.95
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish mayonaise: Mayonaise  € 0.75
 dish meat_lover_deluxe: Meat Lover Deluxe -- ham, salami, pepperoni, bacon, meatballs, merguez en swirl van looksaus € 16.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2016,13 +2016,13 @@ dish meat_lover_deluxe: Meat Lover Deluxe -- ham, salami, pepperoni, bacon, meat
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish meat_lovers: Meat lovers -- ham, salami, pepperoni, extra gehakt € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2067,13 +2067,13 @@ dish meat_lovers: Meat lovers -- ham, salami, pepperoni, extra gehakt € 13.95
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish meatballs: Meatballs -- gekruide gehaktballetjes, ui, paprika, cherrytomaat € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2118,13 +2118,13 @@ dish meatballs: Meatballs -- gekruide gehaktballetjes, ui, paprika, cherrytomaat
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish mega_fish: Mega fish -- ansjovis, tonijn, champignons, ui € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2169,13 +2169,13 @@ dish mega_fish: Mega fish -- ansjovis, tonijn, champignons, ui € 13.95
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish mexican: Mexican -- Peperoni, olijven, ui, potje pikante looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2231,13 +2231,13 @@ dish mozarella_sticks: Mozarella sticks -- potje dipsaus incl. € 0.0
 		ketchup: Ketchup  € 0.0
 		looksaus: Looksaus  € 0.0
 dish multi_cheese: Multi cheese -- gorgonzola, feta, extra kaas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2554,13 +2554,13 @@ dish pasta_veggie: Pasta Veggie -- Tomatenroomsaus,champ,ui, paprika en cherryto
 		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
 		bestek: bestek  € 0.35
 dish pepperoni: Pepperoni -- dubbele portie pepperoni, paprika, jalapenos € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2607,13 +2607,13 @@ dish pepperoni: Pepperoni -- dubbele portie pepperoni, paprika, jalapenos € 13
 dish pikant_olie: Pikant Olie  € 0.05
 dish pikante_looksaus: Pikante Looksaus  € 1.0
 dish pitza_kebab: Pitza kebab -- verse look, ui, pitavlees, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2658,13 +2658,13 @@ dish pitza_kebab: Pitza kebab -- verse look, ui, pitavlees, potje looksaus € 1
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish popeye: Popeye -- extra spinazie, ei, room, extra kaas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2711,13 +2711,13 @@ dish popeye: Popeye -- extra spinazie, ei, room, extra kaas € 13.95
 dish potje_kaas: Potje Kaas  € 1.5
 dish redbull_25cl: RedBull 25cl  € 3.0
 dish rucola: Rucola -- Ham, cherry tomaat, afgewerkt met rucola, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2767,13 +2767,13 @@ dish salade_mix_feta: Salade mix Feta -- Ijsbergsla, cherrytomaat, mais, olijven
 dish salade_mix_kip: Salade mix Kip -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 9.5
 dish salade_mix_tuna: Salade mix Tuna -- Ijsbergsla, cherrytomaat, mais, olijven, rucola, potje bieslook € 8.5
 dish salmon_delight: Salmon delight -- roomsaus, ui, gerookte zalm, kappertjes € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2819,13 +2819,13 @@ dish salmon_delight: Salmon delight -- roomsaus, ui, gerookte zalm, kappertjes �
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish samurai: Samurai  € 1.0
 dish scampi_mampi: Scampi mampi -- ui, verse look, scampi, cherrytomaat € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2870,13 +2870,13 @@ dish scampi_mampi: Scampi mampi -- ui, verse look, scampi, cherrytomaat € 13.9
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish seafood: Seafood -- tonijn, calamares, mosselen, garnalen € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -2960,13 +2960,13 @@ dish spicy_cheeseballs: Spicy Cheeseballs -- potje dipsaus incl. € 0.0
 		ketchup: Ketchup  € 0.0
 		looksaus: Looksaus  € 0.0
 dish spicy_chicken: Spicy Chicken -- Rode ui, jalapenos, kip, paprika, mozzarella, potje looksaus € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -3012,13 +3012,13 @@ dish spicy_chicken: Spicy Chicken -- Rode ui, jalapenos, kip, paprika, mozzarell
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish sprite_33_cl: Sprite 33 cl  € 2.5
 dish tabasco: Tabasco -- tabasco pizzasaus, ui, paprika, champignons, pepperoni € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -3064,13 +3064,13 @@ dish tabasco: Tabasco -- tabasco pizzasaus, ui, paprika, champignons, pepperoni 
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish tropico_33cl: Tropico 33cl  € 2.5
 dish tuna: Tuna -- ui, tonijn, olijven, extra kaas € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25
@@ -3121,13 +3121,13 @@ dish usa_potatoes: USA POTATOES  € 5.5
 		looksaus: Looksaus  € 0.0
 dish uludag_33cl: Uludag 33cl  € 2.5
 dish veggie: Veggie -- champignons, paprika, ui, maïs, cherrytomaat, olijven € 13.95
-	single_choice Bodem?: Welke Bodem?
-		italian_classic_bodem: italian classic bodem  € 0.0
-		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Pizza size?: Welke Pizza size?
 		small: small  € 0.0
 		medium: medium  € 3.0
 		large: large  € 6.0
+	single_choice Bodem?: Welke Bodem?
+		italian_classic_bodem: italian classic bodem  € 0.0
+		cheesy_crust_bodem: cheesy crust bodem  € 2.0
 	single_choice Groenten: Welke Groenten
 		ei: ei  € 1.25
 		ananas: ananas  € 1.25

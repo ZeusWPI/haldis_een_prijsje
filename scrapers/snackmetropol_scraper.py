@@ -64,11 +64,17 @@ class MetropolScraper(Scraper):
                             print("Invalid")
                         # print(prod)
 
-                        try:
-                            product_button.click()
-                        except StaleElementReferenceException:
-                            sb.wait(2.0)
-                            product_button.click()
+                        max_retries = 3
+                        for attempt in range(max_retries):
+                            try:
+                                product_button.click()
+                                break
+                            except StaleElementReferenceException:
+                                if attempt < max_retries - 1:
+                                    sb.wait(1)  # Wait before retrying
+                                    product_button = sb.find_element("input.add-product-button")  # Refetch element
+                                else:
+                                    raise
 
                         print(f"clicked on {prod.name}")
 
@@ -83,7 +89,7 @@ class MetropolScraper(Scraper):
                                                             timeout=10)
                             except Exception as e:
                                 print(f"No variety components found for {prod.name}. Moving on...")
-                                cancel_button = sb.find_element(".ui-dialog-titlebar-close")
+                                cancel_button = sb.find_element(".ui-dialog-titlebar-close", timout=20)
 
                                 # Click the button
                                 cancel_button.click()
