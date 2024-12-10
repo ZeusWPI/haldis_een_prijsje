@@ -1,14 +1,9 @@
 import time
 
-from selenium.common import StaleElementReferenceException
-from selenium.webdriver.common.by import By
-
 from data_types.choice import Choice, ChoiceList, ChoiceType
 from data_types.location import Location
 from data_types.product import Product
 from scrapers.scraper import Scraper
-
-from seleniumbase import SB
 
 from utils import download_pdf, parse_pdf, get_page_dimensions, comma_float
 

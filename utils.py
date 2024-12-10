@@ -56,6 +56,41 @@ def filter_divs(soup, class_name, condition):
     return [div for div in candidate_divs if condition(div)]
 
 
+def condition_has_text(div):  # README
+    """
+    A condition function to check if a div contains text.
+
+    :param div: A BeautifulSoup tag object representing a div.
+    :return: True if the div contains non-empty text; False otherwise.
+    """
+    return bool(div.get_text(strip=True))
+
+
+def list_p_tags_in_div(div):  # README
+    """
+    List all <p> tags within a given <div>.
+
+    :param div: A BeautifulSoup tag object representing a <div>.
+    :return: A list of <p> tag elements within the <div>.
+    """
+    return div.find_all('p')
+
+
+def get_non_empty_p_texts(div):  # README
+    """
+    Extract text from all <p> tags within a <div>, keeping only non-empty texts.
+    only_keep_UTF_8_chars
+
+    :param div: A BeautifulSoup tag object representing a <div>.
+    :return: A list of non-empty text content from <p> tags within the <div>.
+    """
+    return [
+        only_keep_UTF_8_chars(p.get_text(strip=True))
+        for p in div.find_all('p')
+        if only_keep_UTF_8_chars(p.get_text(strip=True))
+    ]
+
+
 def create_heading_contains_h2_with(text_to_search):
     """
     Create a function that checks if a div contains an h2 with the given text.
