@@ -1,16 +1,11 @@
 import time
 
-from selenium.common import StaleElementReferenceException
-from selenium.webdriver.common.by import By
-
 from data_types.choice import Choice, ChoiceList, ChoiceType
 from data_types.location import Location
 from data_types.product import Product
 from scrapers.scraper import Scraper
 
-from seleniumbase import SB
-
-from utils import download_pdf, parse_pdf, get_page_dimensions, comma_float
+from utils import download_pdf, get_page_dimensions, comma_float, parse_pdf_with_strip_split_enters
 
 
 # http://www.bocca.be/menus/take-away.html
@@ -34,13 +29,9 @@ class BoccaOvpScraper(Scraper):
         # Download and parse the PDF
         download_pdf(pdf_url, local_file_path)
         width, height = get_page_dimensions(local_file_path, page_number=1)
-        x_lim = 200
-        top_y_lim = 200
-        bottom_y_lim = 350
-        sauce_to_go = parse_pdf(local_file_path, coords=(0, top_y_lim, x_lim, height - bottom_y_lim))
 
         # Split text by lines, then process each line
-        lines = sauce_to_go.strip().split("\n")
+        lines = parse_pdf_with_strip_split_enters(local_file_path, coords=(0, 200, 200, height - 350))
         parts = lines[0].split(" ")
         size_small = parts[len(parts) - 2].strip()
         size_large = parts[len(parts) - 1].strip()
@@ -74,13 +65,11 @@ class BoccaOvpScraper(Scraper):
         x_lim = 400
         top_y_lim = 200
         bottom_y_lim = 250
-        sizes_section = parse_pdf(local_file_path, coords=(left_x_lim, top_y_lim, x_lim, height - bottom_y_lim))
 
         groote_keuze = ChoiceList(name="what size?")
-        lines = sizes_section.strip().split("\n")
+        lines = parse_pdf_with_strip_split_enters(local_file_path, coords=(left_x_lim, top_y_lim, x_lim, height - bottom_y_lim))
         small_prize = comma_float(lines[0])
         for i in range(0, len(lines) - 1, 2):
-            # print(lines[i+1], "costs:", float(lines[i].replace(",", ".")))
             groote_keuze.add_choice(Choice(name=lines[i + 1], price=comma_float(lines[i])-small_prize))
 
 
@@ -88,10 +77,9 @@ class BoccaOvpScraper(Scraper):
         x_lim = 400
         top_y_lim = 670
         bottom_y_lim = 0
-        pasta_section = parse_pdf(local_file_path, coords=(left_x_lim, top_y_lim, x_lim, height - bottom_y_lim))
 
         pasta_keuze = ChoiceList(name="what pasta?")
-        lines = pasta_section.strip().split("\n")
+        lines = parse_pdf_with_strip_split_enters(local_file_path, coords=(left_x_lim, top_y_lim, x_lim, height - bottom_y_lim))
         pasta_1 = lines[0].lower()
         pasta_keuze.add_choice(Choice(name=pasta_1, price=0.0))
         pasta_2 = (lines[1] + " " + lines[2]).lower().split("+")
@@ -105,8 +93,7 @@ class BoccaOvpScraper(Scraper):
         right_x_lim = 650
         top_y_lim = 125
         bottom_y_lim = 0
-        sauce_section = parse_pdf(local_file_path, coords=(left_x_lim, top_y_lim, right_x_lim, height - bottom_y_lim))
-        lines = sauce_section.split("\n")
+        lines = parse_pdf_with_strip_split_enters(local_file_path, coords=(left_x_lim, top_y_lim, right_x_lim, height - bottom_y_lim))
 
         bocca = Product(name=lines[0].strip(), description=" ".join([lines[1].strip(), lines[2].strip()]), price=small_prize)
         bollo = Product(name=lines[3].strip(), description=lines[4].strip(), price=small_prize)
@@ -127,15 +114,13 @@ class BoccaOvpScraper(Scraper):
         right_x_lim = width
         top_y_lim = 125
         bottom_y_lim = 250
-        toppings_section = parse_pdf(local_file_path, coords=(left_x_lim, top_y_lim, right_x_lim, height - bottom_y_lim))
-        lines = toppings_section.split("\n")
+        lines = parse_pdf_with_strip_split_enters(local_file_path, coords=(left_x_lim, top_y_lim, right_x_lim, height - bottom_y_lim))
         toppings_keuze = ChoiceList(name="what topping?", type=ChoiceType.MULTI)
         toppings_keuze.add_choice(Choice(name=lines[0].strip().split(" ")[0]))
         prev_prod_name = None
         prev_prod_price = None
         for line in lines[1:]:
             try:
-                # line.split("+")[1]
                 new_prod_name = line.split("+")[0]
                 new_prod_price = comma_float(line.split("+")[1])
                 if prev_prod_name != None and prev_prod_price != None:
@@ -170,9 +155,8 @@ class BoccaOvpScraper(Scraper):
         right_x_lim = width
         top_y_lim = height-270
         bottom_y_lim = 50
-        extra_section = parse_pdf(local_file_path,
+        lines = parse_pdf_with_strip_split_enters(local_file_path,
                                      coords=(left_x_lim, top_y_lim, right_x_lim, height - bottom_y_lim))
-        lines = extra_section.split("\n")
 
         prod = Product(
             name=" ".join(lines[0].strip().split(" ")[:-1]),
