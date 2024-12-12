@@ -85,9 +85,9 @@ def get_non_empty_p_texts(div):  # README
     :return: A list of non-empty text content from <p> tags within the <div>.
     """
     return [
-        only_keep_UTF_8_chars(p.get_text(strip=True))
+        only_keep_UTF_8_chars(p.get_text(separator=' ', strip=True))
         for p in div.find_all('p')
-        if only_keep_UTF_8_chars(p.get_text(strip=True))
+        if only_keep_UTF_8_chars(p.get_text(separator=' ', strip=True))
     ]
 
 
@@ -121,7 +121,7 @@ def download_pdf(url, save_path):
 
 def parse_pdf(file_path, coords=None):
     """
-    Extract and print text from a PDF file.
+    Extract and return text from a PDF file.
     If coords is provided, it will extract text from the rectangle defined by these coordinates.
     Coordinates are provided as a tuple: (x0, top, x1, bottom).
     """
@@ -139,6 +139,32 @@ def parse_pdf(file_path, coords=None):
                     return page.extract_text()
     except Exception as e:
         print(f"Failed to parse PDF: {e}")
+
+
+def parse_pdf_with_strip_split_enters(file_path, coords=None):
+    """
+    Extract and return text from a PDF file.
+    If coords is provided, it will extract text from the rectangle defined by these coordinates.
+    Coordinates are provided as a tuple: (x0(left), y0(top), x1(right), y1(bottom)).
+    strip the output and split it at each enter
+    """
+    output = parse_pdf(file_path, coords)
+    return output.strip().split("\n")
+
+
+def parse_pdf_section(pdf_url: str, local_file_path: str, coords: tuple, page_number: int = 1) -> list:
+    """
+    Downloads a PDF, retrieves its dimensions, and extracts text from a specified section.
+
+    :param pdf_url: URL of the PDF to download.
+    :param local_file_path: Local path to save the PDF.
+    :param coords: Tuple specifying the coordinates for text extraction (x1, y1, x2, y2).
+    :param page_number: Page number to extract dimensions from (default is 1).
+    :return: A list of text lines extracted from the specified section.
+    """
+    download_pdf(pdf_url, local_file_path)
+    _, height = get_page_dimensions(local_file_path, page_number=page_number)
+    return parse_pdf_with_strip_split_enters(local_file_path, coords=coords)
 
 
 def get_page_dimensions(file_path, page_number=1):
