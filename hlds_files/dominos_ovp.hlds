@@ -1,0 +1,79 @@
+==========================
+dominos_ovp: Dominos overpoort
+	osm     https://www.openstreetmap.org/node/5803560353
+	phone   092981999
+	address Bierkorfstraat 1, 9000 Gent
+	website https://www.dominos.be/nl
+==========================
+
+dish 1_pizza__plus__1_drink__plus__1_side_item_vanaf__euro_12: 1 PIZZA + 1 DRINK + 1 SIDE ITEM VANAF euro 12 -- 1 Pizza + 1 Drink + 1 Side Item vanaf €12 € 0.0
+dish 2_drankjes_voor__euro_4: 2 DRANKJES VOOR euro 4 -- 2 drankjes voor €4 € 0.0
+dish alle_regular_pizza's_voor__euro_6,_medium_voor__euro_8,_large__euro_11_en_xxl_voor__euro_13: ALLE REGULAR PIZZA'S VOOR euro 6, MEDIUM VOOR euro 8, LARGE euro 11 EN XXL VOOR euro 13 -- Pizza's voor €6-8-11-13 € 0.0
+dish be_the_chef: BE THE CHEF -- Stel je eigen pizza samen. Be the Chef! Begin met een basispizza... € 11.0
+dish cheese_volcano_hawaii: CHEESE VOLCANO HAWAII -- Geniet van de ultieme Volcano Hawaii pizza-ervaring met onze piz... € 17.0
+dish cheese_volcano_margherita: CHEESE VOLCANO MARGHERITA -- Geniet van de ultieme Volcano Margherita pizza-ervaring met onze... € 16.0
+dish cheese_volcano_pepperoni: CHEESE VOLCANO PEPPERONI -- Geniet van de ultieme Volcano Pepperoni pizza-ervaring met onze ... € 17.0
+dish half_half_pizza: HALF HALF PIZZA -- Het beste van twee werelden. Kies je twee favoriete smaken op éé... € 12.0
+dish meltzz_chicken_supreme: MELTZZ CHICKEN SUPREME -- Tomatensaus, mozzarella, gegrilde kip, ui, paprika, verse tomaa... € 7.0
+dish meltzz_margherita: MELTZZ MARGHERITA -- Tomatensaus, extra veel mozzarella & pizzakruiden € 5.0
+dish meltzz_pepperoni: MELTZZ PEPPERONI -- Tomatensaus, mozzarella & pepperoni € 6.0
+dish mini_pizza_bbq_chicken__plus__2_bijgerechten: MINI PIZZA BBQ CHICKEN + 2 BIJGERECHTEN -- Kies een mini pizza (18 cm) met twee bijgerechten naar keuze. Te... € 10.0
+dish mini_pizza_margherita__plus__2_bijgerechten: MINI PIZZA MARGHERITA + 2 BIJGERECHTEN -- Kies een mini pizza (18 cm) met twee bijgerechten naar keuze. Te... € 9.0
+dish mini_pizza_pepperoni_party__plus__2_bijgerechten: MINI PIZZA PEPPERONI PARTY + 2 BIJGERECHTEN -- Kies een mini pizza (18 cm) met twee bijgerechten naar keuze. Te... € 10.0
+dish mybox_meltzz_chicken_supreme: MYBOX MELTZZ CHICKEN SUPREME -- Kies een Meltzz met twee bijgerechten naar keuze. Te kiezen uit:... € 11.0
+dish mybox_meltzz_margherita: MYBOX MELTZZ MARGHERITA -- Kies een Meltzz met twee bijgerechten naar keuze. Te kiezen uit:... € 9.0
+dish mybox_meltzz_pepperoni: MYBOX MELTZZ PEPPERONI -- Kies een Meltzz met twee bijgerechten naar keuze. Te kiezen uit:... € 11.0
+dish pizza_(glutenvrij)_margherita: PIZZA (GLUTENVRIJ) MARGHERITA -- Gluten vrije bodem, Tomatensaus, mozzarella, pizzakruiden € 10.5
+dish pizza_(glutenvrij)_pepperoni: PIZZA (GLUTENVRIJ) PEPPERONI -- Gluten vrije bodem,tomatensaus, mozzarella, pepperoni € 10.5
+dish pizza_4_cheese: PIZZA 4 CHEESE -- Tomatensaus, mozzarella, emmentaler, geitenkaas & gorgonzola € 13.0
+dish pizza_4_stagioni: PIZZA 4 STAGIONI -- Tomatensaus, mozzarella, ham, pepperoni, champignons & paprika € 12.0
+dish pizza_bbq_chicken: PIZZA BBQ CHICKEN -- Tomatensaus, mozzarella, ui, paprika, kip & een swirl van BBQ sa... € 14.0
+dish pizza_bbq_chicken: PIZZA BBQ CHICKEN -- Tomatensaus, mozzarella, ui, paprika, kip & een swirl van BBQ sa... € 14.0
+dish pizza_bbq_chicken_&_bacon: PIZZA BBQ CHICKEN & BACON -- BBQ saus, mozzarella, gegrilde kip en bacon. € 14.0
+dish pizza_bbq_grill: PIZZA BBQ GRILL -- BBQ saus, mozzarella, ui, gehakt, bacon & een swirl heerlijke BB... € 13.0
+dish pizza_bicky_chicken: PIZZA BICKY CHICKEN -- Bicky Tomato Sauce, Bicky Hot Sauce, Mozzarella,Gegrilde kip, Au... € 12.0
+dish pizza_bicky_chicken: PIZZA BICKY CHICKEN -- Bicky Tomato Sauce, Bicky Hot Sauce, Mozzarella,Gegrilde kip, Au... € 12.0
+dish pizza_bicky_original: PIZZA BICKY ORIGINAL -- Bicky Tomato Sauce, Bicky Hot Sauce, Mozzarella, Gehakt, Augurke... € 12.0
+dish pizza_bicky_original: PIZZA BICKY ORIGINAL -- Bicky Tomato Sauce, Bicky Hot Sauce, Mozzarella, Gehakt, Augurke... € 12.0
+dish pizza_cannibale: PIZZA CANNIBALE -- BBQ Saus, mozzarella, gehakt, merguez, kip & een swirl van BBQ S... € 14.0
+dish pizza_cannibale: PIZZA CANNIBALE -- BBQ Saus, mozzarella, gehakt, merguez, kip & een swirl van BBQ S... € 14.0
+dish pizza_chicken_kebab: PIZZA CHICKEN KEBAB -- Tomatensaus, mozzarella, kip kebab, ui, paprika & swirl van samo... € 15.0
+dish pizza_chicken_kebab: PIZZA CHICKEN KEBAB -- Tomatensaus, mozzarella, kip kebab, ui, paprika & swirl van samo... € 15.0
+dish pizza_creamy_4_cheese: PIZZA CREAMY 4 CHEESE -- Crème fraîche, mozzarella, gorgonzola, emmentaler & geitenkaas € 14.0
+dish pizza_diabolika: PIZZA DIABOLIKA -- Tomatensaus, mozzarella, gehakt, merguez, ui & jalapeños € 13.0
+dish pizza_diabolika: PIZZA DIABOLIKA -- Tomatensaus, mozzarella, gehakt, merguez, ui & jalapeños € 13.0
+dish pizza_extravaganzza: PIZZA EXTRAVAGANZZA -- Tomatensaus, mozzarella, gehakt, ham, pepperoni, champignons, ui... € 14.0
+dish pizza_forestiere: PIZZA FORESTIERE -- Tomatensaus, mozzarella, ham, bacon & champignons € 13.0
+dish pizza_funghi: PIZZA FUNGHI -- Tomatensaus, mozzarella, champignons, pizzakruiden € 10.0
+dish pizza_funghi: PIZZA FUNGHI -- Tomatensaus, mozzarella, champignons, pizzakruiden € 10.0
+dish pizza_goatcheese_bacon: PIZZA GOATCHEESE BACON -- Tomatensaus, mozzarella, geitenkaas, bacon, verse spinazie & hon... € 15.0
+dish pizza_ham: PIZZA HAM -- Tomatensaus, mozzarella, ham € 11.0
+dish pizza_hawaii: PIZZA HAWAII -- Tomatensaus, mozzarella, ham, ananas & extra mozzarella € 12.5
+dish pizza_hot_&_spicy: PIZZA HOT & SPICY -- Tomatensaus, mozzarella, pepperoni, paprika, ui, kip & jalapeños € 13.0
+dish pizza_margherita: PIZZA MARGHERITA -- Tomatensaus, mozzarella, extra mozzarella & pizzakruiden € 10.0
+dish pizza_meatballs_marinara: PIZZA MEATBALLS MARINARA -- Tomatensaus, spinazie, mozzarella, ui, meatballs met tomatensaus... € 14.5
+dish pizza_pepperoni: PIZZA PEPPERONI -- Tomatensaus, mozzarella & pepperoni € 11.0
+dish pizza_pepperoni_party: PIZZA PEPPERONI PARTY -- Tomatensaus, mozzarella, pepperoni, extra pepperoni & extra mozz... € 15.0
+dish pizza_savoyarde: PIZZA SAVOYARDE -- Crème fraîche, mozzarella, reblochon, bacon & aardappelen € 15.0
+dish pizza_shoarma_supreme: PIZZA SHOARMA SUPREME -- Tomatensaus, mozzarella, shoarma, kipkebab, ui, paprika, een vle... € 16.0
+dish pizza_shoarma_supreme: PIZZA SHOARMA SUPREME -- Tomatensaus, mozzarella, shoarma, kipkebab, ui, paprika, een vle... € 16.0
+dish pizza_spicy_chicken_mix: PIZZA SPICY CHICKEN MIX -- Tomatensaus, mozzarella, kip kebab, gegrilde kip, ui, jalapeno's... € 15.0
+dish pizza_spicy_chicken_mix: PIZZA SPICY CHICKEN MIX -- Tomatensaus, mozzarella, kip kebab, gegrilde kip, ui, jalapeno's... € 15.0
+dish pizza_subzz_bbq_chicken: PIZZA SUBZZ BBQ CHICKEN -- Tomatensaus, mozzarella, ui, paprika, kip & een swirl van BBQ sa... € 5.0
+dish pizza_subzz_bicky: PIZZA SUBZZ BICKY -- Bicky tomatensaus, Bicky hotsauce, mozzarella, beef, komkommer s... € 5.5
+dish pizza_subzz_hawai: PIZZA SUBZZ HAWAI -- Tomatensaus, extra veel mozzarella, ham & ananas € 4.5
+dish pizza_subzz_meatballs_marinara: PIZZA SUBZZ MEATBALLS MARINARA -- Tomatensaus, mozzarella, meatballs met tomatensaus & pizza kruid... € 5.5
+dish pizza_subzz_pepperoni: PIZZA SUBZZ PEPPERONI -- Tomatensaus, mozzarella & pepperoni € 4.5
+dish pizza_subzz_veggi_harissa: PIZZA SUBZZ VEGGI HARISSA -- Tomatensaus, mozzarella, spinazie, paprika, ui & harissa € 4.5
+dish pizza_tonno: PIZZA TONNO -- Tomatensaus, mozzarella, tonijn, verse spinazie, ui & zwarte oli... € 13.5
+dish pizza_ultimate_cheese: PIZZA ULTIMATE CHEESE -- Crème fraîche, mozzarella, Emmentaler, Gouda & cheddar kaasmix, ... € 14.0
+dish pizza_vegan_margherita: PIZZA VEGAN MARGHERITA -- Tomatensaus, vegan kaas & pizzakruiden € 11.0
+dish pizza_vegan_spicy: PIZZA VEGAN SPICY -- Tomatensaus, vegan kaas, verse spinazie, verse tomaat, paprika, ... € 13.0
+dish pizza_veggi: PIZZA VEGGI -- Tomatensaus, mozzarella, champignons, verse spinazie, ui, zwarte... € 12.0
+dish pizzadog_bbq: PIZZADOG BBQ -- Pizzadog met tomatensaus, Gouda & Cheddar kaasmix, crispy onions... € 4.0
+dish pizzadog_ketchup: PIZZADOG KETCHUP -- Pizzadog met tomatensaus, Gouda & Cheddar kaasmix, cripsy onions... € 4.0
+dish pizzadog_ketchup_&_mosterd: PIZZADOG KETCHUP & MOSTERD -- Pizzadog met tomatensaus, Gouda & Cheddar kaasmix, cripsy onions... € 4.0
+dish thin_&_crispy_bbq_chicken: THIN & CRISPY BBQ CHICKEN -- Dunne, knapperige korst met tomatensaus, mozzarella, ui, paprika... € 13.5
+dish thin_&_crispy_margherita: THIN & CRISPY MARGHERITA -- Dunne, knapperige korst met tomatensaus, extra veel mozzarella &... € 9.5
+dish thin_&_crispy_pepperoni: THIN & CRISPY PEPPERONI -- Dunne, knapperige korst met tomatensaus, mozzarella & pepperoni € 10.5
+dish thin_&_crispy_veggi: THIN & CRISPY VEGGI -- Dunne, knapperige korst met tomatensaus, mozzarella, champignons... € 11.5
