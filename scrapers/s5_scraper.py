@@ -24,7 +24,7 @@ class S5Scraper(Scraper):
             "+32 000 00 00 00",  # TODO not found
             "https://www.ugent.be/student/nl/meer-dan-studeren/resto/restos/restocampussterre.htm"
         )
-
+        # TODO check if we need to parse "GET /extrafood.json"
         # Construct today's date dynamically for the endpoint
         today = datetime.now()
         api_url = f"https://hydra.ugent.be/api/2.0/resto/menu/nl/{today.year}/{today.month}/{today.day}.json"
@@ -47,6 +47,17 @@ class S5Scraper(Scraper):
                     products.add(Product(name=name, price=price))
             else:
                 print("No 'meals' section found in the JSON response.")
+
+            if "vegetables" in data:
+                for vegetable in data["vegetables"]:
+                    # Safely access the 'name' and 'price' keys
+                    name = vegetable.split(":")[1][1:]
+                    price = 0.0
+                    products.add(Product(name=name, price=price))
+            else:
+                print("No 'vegetables' section found in the JSON response.")
+            # print("\nFull JSON response:\n")
+            # print(json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False))
 
         except requests.exceptions.HTTPError as http_err:
             print(f"HTTP error occurred: {http_err}")

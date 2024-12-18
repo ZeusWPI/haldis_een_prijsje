@@ -45,7 +45,7 @@ def get_repo():
     else:
         print("Cloning repo")
         repo = git.Repo.clone_from(
-            f"https://{TOKEN}@{config['gitea']['server_url']}/{GIT_ORG}/{config['gitea']['remote_repo']}.git",
+            f"https://{TOKEN}@{config['gitea']['server_url']}/{GIT_ORG}/{config['gitea']['remote_repo']}",
             REPO_FOLDER,
         )
         with repo.config_writer() as cw:
@@ -77,7 +77,8 @@ def sync_file(repo, api_instance, file_info):
     path = file_info["local_file_path"]
     sync_to = file_info["metadata"]["sync-to"]
 
-    branch_name = f"codimd-sync_{sync_to}"
+    # branch_name = f"hlds-sync_{sync_to}"
+    branch_name = f"hlds_sync_{os.path.basename(sync_to).replace(".hlds", "")}"
     print(f"Starting sync of {path}")
     clear_repo(repo)
     print(f"  Checking out onto branch: {branch_name}")
@@ -91,7 +92,7 @@ def sync_file(repo, api_instance, file_info):
     if repo.git.diff() or repo.untracked_files:
         print("  Note has changes. Making a commit.")
         repo.index.add([sync_to])
-        repo.index.commit("Updating file with codimd version")
+        repo.index.commit("Updating file with hlds version")
         print(f"  Pushing to branch: {branch_name}")
         repo.git.push("-u", "origin", branch_name)
 
@@ -103,7 +104,7 @@ def sync_file(repo, api_instance, file_info):
             branch_requests = [r for r in resp if r.head.ref == branch_name]
             if len(branch_requests) > 0:
                 print(
-                    "  Creating a new merge request to update the git document with the new version from CodiMD."
+                    "  Creating a new merge request to update the git menu with the new version from the hlds menu."
                 )
                 api_instance.repo_create_pull_request(
                     GIT_ORG,
@@ -111,21 +112,21 @@ def sync_file(repo, api_instance, file_info):
                     body=giteapy.CreatePullRequestOption(
                         base="master",
                         head=branch_name,
-                        title=f"[CodiMD sync] Update document {sync_to}",
+                        title=f"[hlds sync] Update document {sync_to}",
                     ),
                 )
             else:
-                print("  Creating a new merge request to add the document to git.")
+                print("  Creating a new merge request to add the Menu to git.")
                 api_instance.repo_create_pull_request(
                     GIT_ORG,
                     GIT_REPO,
                     body=giteapy.CreatePullRequestOption(
                         base="master",
                         head=branch_name,
-                        title=f"[CodiMD sync] Add document {sync_to}",
+                        title=f"[hlds sync] Add document {sync_to}",
                     ),
                 )
         else:
             print("  Merge request was already open.")
     else:
-        print("  Note has no changes.")
+        print("  Menu has no changes.")
