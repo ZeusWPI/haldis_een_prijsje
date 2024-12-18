@@ -1,0 +1,40 @@
+{
+    "files": {
+        "hlds_files\\bicyclette.hlds": {
+            "local_file_path": "hlds_files\\bicyclette.hlds",
+            "metadata": {
+                "sync-to": "menus\\la_bicylette.hlds"
+            }
+        },
+        "hlds_files\\bocca_ovp.hlds": {
+            "local_file_path": "hlds_files\\bocca_ovp.hlds",
+            "metadata": {
+                "sync-to": "menus\\bocca_ovp.hlds"
+            }
+        },
+        "hlds_files\\metropol.hlds": {
+            "local_file_path": "hlds_files\\metropol.hlds",
+            "metadata": {
+                "sync-to": "menus\\pitta_metropol.hlds"
+            }
+        },
+        "hlds_files\\pizza_donna.hlds": {
+            "local_file_path": "hlds_files\\pizza_donna.hlds",
+            "metadata": {
+                "sync-to": "menus\\prima_donna.hlds"
+            }
+        },
+        "hlds_files\\s5.hlds": {
+            "local_file_path": "hlds_files\\s5.hlds",
+            "metadata": {
+                "sync-to": "menus\\s5.hlds"
+            }
+        },
+        "hlds_files\\simpizza.hlds": {
+            "local_file_path": "hlds_files\\simpizza.hlds",
+            "metadata": {
+                "sync-to": "menus\\simpizza.hlds"
+            }
+        }
+    }
+}

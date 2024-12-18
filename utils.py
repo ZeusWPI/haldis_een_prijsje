@@ -13,7 +13,7 @@ def comma_float(inp: str) -> float:
     return float(inp.replace(',', '.'))
 
 
-def fetch_and_parse_html(url: str) -> BeautifulSoup:
+def fetch_and_parse_html(url: str) -> BeautifulSoup | None:
     response = safe_get(url)
     if response == "":
         return None
@@ -139,6 +139,7 @@ def parse_pdf(file_path, coords=None):
                     return page.extract_text()
     except Exception as e:
         print(f"Failed to parse PDF: {e}")
+        return ""
 
 
 def parse_pdf_with_strip_split_enters(file_path, coords=None):
