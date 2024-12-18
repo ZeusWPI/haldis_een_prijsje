@@ -62,8 +62,13 @@ def clear_repo(repo):
 
 def checkout_branch(repo, branch_name):
     repo.git.switch("master")
+    branches = repo.git.branch()
+    # Print the branches
+    print("Available branches:\n", branches)
     if branch_name in repo.heads:
+        # repo.git.branch("-D", branch_name)  # Force delete the branch
         repo.git.switch(branch_name)
+        repo.git.pull("origin", branch_name)
     else:
         repo.git.switch("-c", branch_name)
     if branch_name in repo.remotes.origin.refs:
@@ -84,14 +89,16 @@ def sync_file(repo, api_instance, file_info):
     print(f"  Checking out onto branch: {branch_name}")
     checkout_branch(repo, branch_name)
     with open(path) as r:
-        pathlib.Path(f'{REPO_FOLDER}/{sync_to[:sync_to.rfind("/")]}').mkdir(
-            parents=True, exist_ok=True
-        )
-        with open(f"{REPO_FOLDER}/{sync_to}", "w") as w:
+        # pathlib.Path(f"{REPO_FOLDER}/{sync_to}").mkdir(
+        #     parents=True, exist_ok=True
+        # )
+        print(sync_to)
+        with open(f"{sync_to}", "w") as w:
             w.write(r.read())
     if repo.git.diff() or repo.untracked_files:
         print("  Note has changes. Making a commit.")
-        repo.index.add([sync_to])
+        print("working tree dir: ", repo.working_tree_dir)
+        repo.index.add([os.path.basename(sync_to)])
         repo.index.commit("Updating file with hlds version")
         print(f"  Pushing to branch: {branch_name}")
         repo.git.push("-u", "origin", branch_name)
