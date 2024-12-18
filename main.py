@@ -1,3 +1,4 @@
+import argparse
 import time
 from concurrent.futures import ThreadPoolExecutor
 from data_types.product import translate_products_to_text
@@ -48,23 +49,60 @@ def run_bocca_ovp():
     print("bocca_ovp done")
 
 
+def parse_arguments():
+    """
+    Parse command-line arguments for controlling the script.
+    """
+    parser = argparse.ArgumentParser(description="Run restaurant scrapers and save data.")
+    parser.add_argument(
+        "--run-everything",
+        action="store_true",
+        help="Run scrapers for all restaurants.",
+    )
+    parser.add_argument(
+        "--use-parallelism",
+        action="store_true",
+        help="Enable parallel execution of scrapers.",
+    )
+    parser.add_argument(
+        "--restaurant-name",
+        type=str,
+        nargs="*",  # Accepts a list of restaurant names
+        help="Specify the restaurants to scrape data for (space-separated list).",
+    )
+    return parser.parse_args()
+
+
 if __name__ == '__main__':
     start_time = time.time()
-    run_everything = False
-    use_parallelism = False  # Set this to False to disable parallelism
-    restaurant_name = "pizza_donna"
+    # Default values
+    default_run_everything = False
+    default_use_parallelism = False
+    default_restaurant_names = ["pizza_donna"]
+
+    # Parse command-line arguments
+    args = parse_arguments()
+
+    # Use arguments if provided, otherwise fall back to defaults
+    run_everything = args.run_everything if args.run_everything else default_run_everything
+    use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
+    restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
 
     tasks = []
-    if restaurant_name.lower() == "metropol" or run_everything:
+    if run_everything or "metropol" in [name.lower() for name in restaurant_names]:
         tasks.append(run_metropol)
-    if restaurant_name.lower() == "bicyclette" or run_everything:
+    if run_everything or "bicyclette" in [name.lower() for name in restaurant_names]:
         tasks.append(run_bicyclette)
-    if restaurant_name.lower() == "simpizza" or run_everything:
+    if run_everything or "simpizza" in [name.lower() for name in restaurant_names]:
         tasks.append(run_simpizza)
-    if restaurant_name.lower() == "bocca_ovp" or run_everything:
+    if run_everything or "bocca_ovp" in [name.lower() for name in restaurant_names]:
         tasks.append(run_bocca_ovp)
-    if restaurant_name.lower() == "pizza_donna" or run_everything:
+    if run_everything or "pizza_donna" in [name.lower() for name in restaurant_names]:
         tasks.append(run_pizza_donna)
+
+    print(f"Restaurants: {args.restaurant_name}, {restaurant_names}")
+    print(f"Parallel: {args.use_parallelism}, {use_parallelism}")
+    print(f"Run everything: {args.run_everything}, {run_everything}")
 
     if use_parallelism:
         # Run tasks in parallel

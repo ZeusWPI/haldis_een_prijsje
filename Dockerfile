@@ -7,4 +7,10 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+VOLUME hlds_files/
+
 ENTRYPOINT ["python", "main.py"]
+CMD []
+
+# docker build -t haldis-een-prijsje .
+# docker run -v $(pwd)/hlds_files:/haldis/hlds_files haldis-een-prijsje
