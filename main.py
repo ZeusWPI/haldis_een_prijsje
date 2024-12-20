@@ -5,6 +5,7 @@ from data_types.product import translate_products_to_text
 from scrapers.bicyclette_scraper import BicycletteScraper
 from scrapers.bocca_ovp_scraper import BoccaOvpScraper
 from scrapers.pizza_donna_scraper import PizzaDonnaScraper
+from scrapers.s5_scraper import S5Scraper
 from scrapers.simpizza_scraper import SimpizzaScraper
 from scrapers.snackmetropol_scraper import MetropolScraper
 
@@ -52,8 +53,9 @@ def run_bocca_ovp():
         file.write(translate_products_to_text(bocca_ovp_products))
     print("bocca_ovp done", flush=True)
     return len(bocca_ovp_products)
-  
-  def run_s5():
+
+
+def run_s5():
     s5_products, s5_location = S5Scraper.get_prices()
     with open("hlds_files/s5.hlds", "w", encoding="utf-8") as file:
         file.write(str(s5_location) + "\n")
@@ -157,7 +159,8 @@ if __name__ == "__main__":
     use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
     restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
 
-    print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
+    print(
+        f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
     print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
     print(f"Run everything: {args.run_everything},evaluates to {run_everything}")
 
