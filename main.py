@@ -100,9 +100,9 @@ if __name__ == '__main__':
     if run_everything or "pizza_donna" in [name.lower() for name in restaurant_names]:
         tasks.append(run_pizza_donna)
 
-    print(f"Restaurants: {args.restaurant_name}, {restaurant_names}")
-    print(f"Parallel: {args.use_parallelism}, {use_parallelism}")
-    print(f"Run everything: {args.run_everything}, {run_everything}")
+    print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
+    print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
+    print(f"Run everything: {args.run_everything},evaluates to {run_everything}")
 
     if use_parallelism:
         # Run tasks in parallel

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Scraper</title>
+    <script>
+        async function scrapeRestaurant(restaurant) {
+            const response = await fetch(`/scrape/${restaurant}`);
+            const result = await response.json();
+            alert(`Scraped ${result.restaurant}: ${result.output}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Restaurant Scraper</h1>
+    <button onclick="scrapeRestaurant('metropol')">Scrape Metropol</button>
+    <button onclick="scrapeRestaurant('bicyclette')">Scrape Bicyclette</button>
+    <button onclick="scrapeRestaurant('simpizza')">Scrape Simpizza</button>
+    <button onclick="scrapeRestaurant('pizza_donna')">Scrape Pizza Donna</button>
+    <button onclick="scrapeRestaurant('bocca_ovp')">Scrape Bocca OVP</button>
+</body>
+</html>
