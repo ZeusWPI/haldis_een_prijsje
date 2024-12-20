@@ -52,6 +52,14 @@ def run_bocca_ovp():
         file.write(translate_products_to_text(bocca_ovp_products))
     print("bocca_ovp done", flush=True)
     return len(bocca_ovp_products)
+  
+  def run_s5():
+    s5_products, s5_location = S5Scraper.get_prices()
+    with open("hlds_files/s5.hlds", "w", encoding="utf-8") as file:
+        file.write(str(s5_location) + "\n")
+        file.write(translate_products_to_text(s5_products))
+    print("s5 done")
+    return len(s5_products)
 
 
 def parse_arguments():
@@ -106,6 +114,8 @@ def run_scrapers(
         tasks.append(run_bocca_ovp)
     if run_everything or "pizza_donna" in [name.lower() for name in restaurant_names]:
         tasks.append(run_pizza_donna)
+    if run_everything or "s5" in [name.lower() for name in restaurant_names]:
+        tasks.append(run_s5)
 
     # print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
     # print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
