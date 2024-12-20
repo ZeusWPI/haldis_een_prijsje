@@ -190,5 +190,5 @@ class BoccaOvpScraper(Scraper):
         # Convert seconds to minutes and seconds
         minutes = int(elapsed_time // 60)
         seconds = elapsed_time % 60
-        print(f"get_prices executed in {minutes} minute(s) and {seconds:.2f} second(s).")
+        print(f"get_prices executed in {minutes} minute(s) and {seconds:.2f} second(s).", flush=True)
         return products, locatie

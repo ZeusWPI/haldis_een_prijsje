@@ -4,20 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Scraper</title>
-    <script>
-        async function scrapeRestaurant(restaurant) {
-            const response = await fetch(`/scrape/${restaurant}`);
-            const result = await response.json();
-            alert(`Scraped ${result.restaurant}: ${result.output}`);
+    <style>
+        /* General table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            text-align: left;
         }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ff7f00;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Row styling */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #ff7f00;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff7f00;
+        }
+
+        /* Status column styling */
+        .status {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .status.never-run {
+            color: #ff9800;
+        }
+
+        .status.running {
+            color: #2196f3;
+        }
+
+        .status.finished {
+            color: #ff7f00;
+        }
+
+    </style>
+    <script>
+        function scrapeRestaurant(restaurantName) {
+            // Create a fetch request to the backend to start the scraping process
+            fetch(`/scrape/${restaurantName}`, {
+                method: 'POST',  // Ensure POST method is used
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);  // Show a success message from the backend
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        }
+
+        // Function to scrape all restaurants at once
+        function scrapeAllRestaurants() {
+            fetch('/scrape-all', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);  // Show a success message from the backend
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        }
+
+        // Fetch and update the table periodically
+        function updateScraperTable() {
+            fetch('/update-scraper-info')
+                .then(response => response.text())
+                .then(html => {
+                    // Create a temporary DOM element to extract the tbody
+                    let tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = html;
+
+                    // Extract the new tbody from the fetched HTML and replace the old tbody
+                    let newTbody = tempDiv.querySelector('#scraper-table tbody');
+                    document.querySelector('#scraper-table tbody').innerHTML = newTbody.innerHTML;
+                });
+        }
+
+        // Set interval to update scraper table every 5 seconds
+        setInterval(updateScraperTable, 5000);
     </script>
 </head>
 <body>
-    <h1>Restaurant Scraper</h1>
-    <button onclick="scrapeRestaurant('metropol')">Scrape Metropol</button>
-    <button onclick="scrapeRestaurant('bicyclette')">Scrape Bicyclette</button>
-    <button onclick="scrapeRestaurant('simpizza')">Scrape Simpizza</button>
-    <button onclick="scrapeRestaurant('pizza_donna')">Scrape Pizza Donna</button>
-    <button onclick="scrapeRestaurant('bocca_ovp')">Scrape Bocca OVP</button>
+    <div>
+        <h1>Restaurant Scraper</h1>
+
+        <!-- Scrape All button -->
+        <button onclick="scrapeAllRestaurants()">Scrape All Restaurants</button>
+    </div>
+
+    <div>
+        <table id="scraper-table">
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Products Scraped</th>
+                    <th>Last Scraped</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for scraper in scraper_info %}
+                <tr>
+                    <td>{{ scraper[0] }}</td>
+                    <td>{{ scraper[1] }}</td>
+                    <td>{{ scraper[2] }}</td>
+                    <td class="status {% if scraper[3] == 'running' %}running{% elif scraper[3] == 'finished' %}finished{% else %}never-run{% endif %}">{{ scraper[3] }}</td>
+                    <td><button onclick="scrapeRestaurant('{{ scraper[0] }}')">Scrape</button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

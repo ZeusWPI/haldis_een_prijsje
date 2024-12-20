@@ -14,7 +14,8 @@ def run_metropol():
     with open("hlds_files/metropol.hlds", "w", encoding="utf-8") as file:
         file.write(str(metropol_location) + "\n")
         file.write(translate_products_to_text(metropol_products))
-    print("metropol done")
+    print("metropol done", flush=True)
+    return len(metropol_products)
 
 
 def run_bicyclette():
@@ -22,7 +23,8 @@ def run_bicyclette():
     with open("hlds_files/bicyclette.hlds", "w", encoding="utf-8") as file:
         file.write(str(bicyclette_location) + "\n")
         file.write(translate_products_to_text(bicyclette_products))
-    print("bicyclette done")
+    print("bicyclette done", flush=True)
+    return len(bicyclette_products)
 
 
 def run_simpizza():
@@ -30,7 +32,8 @@ def run_simpizza():
     with open("hlds_files/simpizza.hlds", "w", encoding="utf-8") as file:
         file.write(str(simpizza_location) + "\n")
         file.write(translate_products_to_text(simpizza_products))
-    print("simpizza done")
+    print("simpizza done", flush=True)
+    return len(simpizza_products)
 
 
 def run_pizza_donna():
@@ -38,7 +41,8 @@ def run_pizza_donna():
     with open("hlds_files/pizza_donna.hlds", "w", encoding="utf-8") as file:
         file.write(str(pizza_donna_location) + "\n")
         file.write(translate_products_to_text(pizza_donna_products))
-    print("pizza_donna done")
+    print("pizza_donna done", flush=True)
+    return len(pizza_donna_products)
 
 
 def run_bocca_ovp():
@@ -46,7 +50,8 @@ def run_bocca_ovp():
     with open("hlds_files/bocca_ovp.hlds", "w", encoding="utf-8") as file:
         file.write(str(bocca_ovp_location) + "\n")
         file.write(translate_products_to_text(bocca_ovp_products))
-    print("bocca_ovp done")
+    print("bocca_ovp done", flush=True)
+    return len(bocca_ovp_products)
 
 
 def parse_arguments():
@@ -73,20 +78,22 @@ def parse_arguments():
     return parser.parse_args()
 
 
-if __name__ == '__main__':
+def run_scrapers(
+        run_everything: bool = False,
+        use_parallelism: bool = False,
+        restaurant_names=None
+):
+    if restaurant_names is None:
+        restaurant_names = ["pizza_donna"]
     start_time = time.time()
     # Default values
-    default_run_everything = False
-    default_use_parallelism = False
-    default_restaurant_names = ["pizza_donna"]
-
     # Parse command-line arguments
-    args = parse_arguments()
+    # args = parse_arguments()
 
     # Use arguments if provided, otherwise fall back to defaults
-    run_everything = args.run_everything if args.run_everything else default_run_everything
-    use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
-    restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
+    # run_everything = args.run_everything if args.run_everything else default_run_everything
+    # use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
+    # restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
 
     tasks = []
     if run_everything or "metropol" in [name.lower() for name in restaurant_names]:
@@ -100,21 +107,43 @@ if __name__ == '__main__':
     if run_everything or "pizza_donna" in [name.lower() for name in restaurant_names]:
         tasks.append(run_pizza_donna)
 
-    print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
-    print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
-    print(f"Run everything: {args.run_everything},evaluates to {run_everything}")
+    # print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
+    # print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
+    # print(f"Run everything: {args.run_everything},evaluates to {run_everything}")
 
+    total_products = 0
     if use_parallelism:
         # Run tasks in parallel
         with ThreadPoolExecutor() as executor:
-            executor.map(lambda func: func(), tasks)
+            results = executor.map(lambda func: func(), tasks)
+            total_products = sum(results)
     else:
         # Run tasks sequentially
         for task in tasks:
-            task()
+            total_products += task()
 
     end_time = time.time()
     elapsed_time = end_time - start_time
     minutes = int(elapsed_time // 60)
     seconds = elapsed_time % 60
-    print(f"main executed in {minutes} minute(s) and {seconds:.2f} second(s).")
+    print(f"main executed in {minutes} minute(s) and {seconds:.2f} second(s).", flush=True)
+    return {
+        "restaurant_names": restaurant_names,
+        "total_products_scraped": total_products,
+    }
+
+
+if __name__ == "__main__":
+    # Default values
+    default_run_everything: bool = False
+    default_use_parallelism: bool = False
+    default_restaurant_names = ["pizza_donna"]
+
+    # Parse command-line arguments
+    args = parse_arguments()
+
+    # Use arguments if provided, otherwise fall back to defaults
+    run_everything = args.run_everything if args.run_everything else default_run_everything
+    use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
+    restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
+    run_scrapers(run_everything=run_everything, use_parallelism=use_parallelism, restaurant_names=restaurant_names)

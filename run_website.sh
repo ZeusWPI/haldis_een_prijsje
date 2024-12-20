@@ -6,7 +6,7 @@ set -e
 # Define the Docker image name, container name, and Dockerfile name
 IMAGE_NAME="haldis_website"
 CONTAINER_NAME="haldis_website_container"
-DOCKERFILE_NAME="Dockerfile.web"  # Variable for Dockerfile name
+DOCKERFILE_NAME="Dockerfile"  # Variable for Dockerfile name
 
 # Step 1: Build the Docker image using the specified Dockerfile
 echo "Building the Docker image using $DOCKERFILE_NAME..."
