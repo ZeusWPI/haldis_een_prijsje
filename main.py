@@ -137,7 +137,7 @@ if __name__ == "__main__":
     # Default values
     default_run_everything: bool = False
     default_use_parallelism: bool = False
-    default_restaurant_names = ["pizza_donna"]
+    default_restaurant_names = ["bocca_ovp"]
 
     # Parse command-line arguments
     args = parse_arguments()
@@ -146,4 +146,9 @@ if __name__ == "__main__":
     run_everything = args.run_everything if args.run_everything else default_run_everything
     use_parallelism = args.use_parallelism if args.use_parallelism else default_use_parallelism
     restaurant_names = args.restaurant_name if args.restaurant_name else default_restaurant_names
+
+    print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
+    print(f"Parallel: {args.use_parallelism},evaluates to {use_parallelism}")
+    print(f"Run everything: {args.run_everything},evaluates to {run_everything}")
+
     run_scrapers(run_everything=run_everything, use_parallelism=use_parallelism, restaurant_names=restaurant_names)

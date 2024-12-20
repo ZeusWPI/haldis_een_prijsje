@@ -25,7 +25,7 @@ class SimpizzaScraper(Scraper):
             "+32 9 321 02 00",
             "https://www.simpizza.be/"
         )
-        with (SB() as sb):
+        with SB() as sb:
             # Open the menu page
             sb.open("https://www.simpizza.be/Menu")
 

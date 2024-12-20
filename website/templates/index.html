@@ -99,7 +99,8 @@
             })
             .then(response => response.json())
             .then(data => {
-                alert(data.message);  // Show a success message from the backend
+                {#alert(data.message);  // Show a success message from the backend#}
+                console.log(data.message)
             })
             .catch(error => {
                 alert('Error: ' + error);
@@ -123,6 +124,7 @@
 
         // Set interval to update scraper table every 5 seconds
         setInterval(updateScraperTable, 5000);
+        setInterval(scrapeAllRestaurants, 30 * 60 * 1000);  // 30 minutes in milliseconds
     </script>
 </head>
 <body>
