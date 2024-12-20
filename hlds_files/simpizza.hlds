@@ -2220,7 +2220,6 @@ dish mexican: Mexican -- Peperoni, olijven, ui, potje pikante looksaus € 13.95
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
 dish mogu_mogu_strawberry: Mogu Mogu Strawberry  € 2.5
-dish mogu_mogu_zwarte_bessen: Mogu Mogu Zwarte Bessen  € 2.5
 dish mogu_mogu_mango: Mogu Mogu mango  € 2.5
 dish mozarella_sticks: Mozarella sticks -- potje dipsaus incl. € 0.0
 	single_choice Portie's: Welke Portie's
@@ -2281,9 +2280,11 @@ dish multi_cheese: Multi cheese -- gorgonzola, feta, extra kaas € 13.95
 		tabascosaus: Tabascosaus  € 1.25
 		swirl_tomatensaus: Swirl Tomatensaus  € 1.25
 		swirl_bolognaisesaus: Swirl Bolognaisesaus  € 1.25
+dish mydoony's_chocolade: Mydoony's Chocolade  € 3.0
 dish mydoony's_party: Mydoony's Party  € 3.0
 dish mydoony's_pinky: Mydoony's Pinky  € 3.0
 dish mydoony's_rosy: Mydoony's Rosy  € 3.0
+dish mydoony's_white_vanilla: Mydoony's White Vanilla  € 3.0
 dish oasis_tropical: Oasis tropical  € 2.5
 dish onion_rings: Onion rings -- potje dipsaus incl. € 0.0
 	single_choice Portie's: Welke Portie's
@@ -2354,55 +2355,6 @@ dish pasta_chicken_picanto: Pasta Chicken picanto -- Roomsaus, rode pesto, kip, 
 		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
 		bestek: bestek  € 0.35
 dish pasta_deal: Pasta Deal -- Kleine portie pasta, lookbrood naar keuze, frisdrank € 18.95
-	single_choice Spaghetti/penne: Welke Spaghetti/penne
-		spaghetti: spaghetti  € 0.0
-		penne: penne  € 0.0
-	single_choice Drank?: Welke Drank?
-		cola: Cola  € 0.0
-		cola_zero: Cola Zero  € 0.0
-		fanta: Fanta  € 0.0
-		fanta_exotic: Fanta Exotic  € 0.0
-		fanta_cassis: Fanta Cassis  € 0.0
-		fanta_strawberry_&_kiwi: Fanta Strawberry & Kiwi  € 0.0
-		tropico: Tropico  € 0.0
-		ice_tea: Ice Tea  € 0.0
-		ice_tea_peach: Ice Tea Peach  € 0.0
-		sprite: Sprite  € 0.0
-		spa_plat: Spa Plat  € 0.0
-		spa_bruis: Spa Bruis  € 0.0
-		uludag: Uludag  € 0.0
-		oasis_tropical: Oasis Tropical  € 0.0
-	single_choice Garnering: Welke Garnering
-		scampi: Scampi  € 1.5
-		kip: kip  € 1.5
-		ham: Ham  € 1.5
-		extra_kaas: extra kaas  € 1.5
-		extra_saus: extra saus  € 1.5
-		zakje_parmezaanse_kaas: Zakje Parmezaanse kaas  € 1.0
-		bestek: bestek  € 0.35
-	single_choice Pasta: Welke Pasta
-		pasta_bolognese: Pasta Bolognese  € 0.0
-		pasta_kaassaus: Pasta kaassaus  € 0.0
-		pasta_kip_en_kaassaus: Pasta kip en kaassaus  € 0.0
-		pasta_ham_en_kaassaus: Pasta ham en kaassaus  € 0.0
-		pasta_milano: Pasta Milano  € 0.0
-		pasta_scampi: Pasta scampi  € 0.0
-		pasta_multi_cheese: Pasta Multi cheese  € 0.0
-		pasta_veggie: Pasta Veggie  € 0.0
-		pasta_pesto_chicken: Pasta Pesto Chicken  € 0.0
-		pasta_veggie: Pasta Veggie  € 0.0
-		pasta_exotique: Pasta Exotique  € 0.0
-		pasta_chicken_pesto_spinazie: Pasta Chicken pesto spinazie  € 0.0
-		pasta_gambaretti_spinazie: Pasta Gambaretti spinazie  € 0.0
-		pasta_chicken_arabiata: Pasta Chicken arabiata  € 0.0
-		pasta_chicken_picanto: Pasta Chicken picanto  € 0.0
-	single_choice Lookbrood: Welke Lookbrood
-		lookbrood_natuur: Lookbrood natuur  € 0.0
-		lookbrood_kaas: Lookbrood kaas  € 0.0
-		lookbrood_kaas_&_ham: Lookbrood kaas & ham  € 0.0
-		lookbrood_kaas_&_tomaat: Lookbrood kaas & tomaat  € 0.0
-		lookbrood_kaas_&_salami: Lookbrood kaas & salami  € 0.0
-		lookbrood_kaas_&_kip: Lookbrood kaas & kip  € 0.0
 dish pasta_exotique: Pasta Exotique -- Tomatenroomsaus, ananas, champignons, chili, cherrytomaat, paprika € 13.95
 	single_choice Spaghetti/penne: Welke Spaghetti/penne
 		spaghetti: spaghetti  € 0.0
@@ -2950,6 +2902,7 @@ dish smaakmaker_2: Smaakmaker 2 -- 6 onion rings, 6 spicy cheeseballs, 6 mozarel
 		spa_bruis: Spa Bruis  € 0.0
 		uludag: Uludag  € 0.0
 		oasis_tropical: Oasis Tropical  € 0.0
+dish spa_bruis_50_cl: Spa bruis 50 cl  € 2.5
 dish spa_plat_50_cl: Spa plat 50 cl  € 2.5
 dish spicy_cheeseballs: Spicy Cheeseballs -- potje dipsaus incl. € 0.0
 	single_choice Portie's: Welke Portie's

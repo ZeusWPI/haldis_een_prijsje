@@ -25,7 +25,7 @@ class MetropolScraper(Scraper):
             "https://snackmetropol.be/"
         )
 
-        with (SB() as sb):
+        with SB() as sb:
             # Open the menu page
             sb.open("https://snackmetropol.be/Menu")
 

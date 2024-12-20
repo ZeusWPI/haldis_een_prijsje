@@ -32,7 +32,9 @@ class Choice:
 
 
 class ChoiceList:
-    def __init__(self, name: str = "", description: str = "", type: ChoiceType = ChoiceType.SINGLE, choices=[]):
+    def __init__(self, name: str = "", description: str = "", type: ChoiceType = ChoiceType.SINGLE, choices=None):
+        if choices is None:
+            choices = []
         self.type: ChoiceType = type
         self.choices = choices
         self.name: str = name

@@ -8,141 +8,15 @@ bocca: Bocca
 
 dish arrabbiata: ARRABBIATA -- Spicy tomato sauce. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -161,154 +35,17 @@ dish arrabbiata: ARRABBIATA -- Spicy tomato sauce. € 6.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish bocca: BOCCA -- Mildly spicy tomato cream sauce with or withour bacon. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -327,154 +64,17 @@ dish bocca: BOCCA -- Mildly spicy tomato cream sauce with or withour bacon. € 
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish bolognese: BOLOGNESE -- Minced meat, tomato, spices. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -493,44 +93,8 @@ dish bolognese: BOLOGNESE -- Minced meat, tomato, spices. € 6.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish basic_salad: Basic Salad -- Arugula, green or red pesto, sun-dried tomatos and mozzarella. € 6.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -549,154 +113,17 @@ dish basic_salad: Basic Salad -- Arugula, green or red pesto, sun-dried tomatos 
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish cheese_&_ham: CHEESE & HAM  € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -715,154 +142,17 @@ dish cheese_&_ham: CHEESE & HAM  € 6.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON -- Mild spicy. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -881,155 +171,18 @@ dish curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON --
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish chocolate_mousse: Chocolate mousse  € 4.5
 dish four_cheeses: FOUR CHEESES -- Cream cheese, Old Bruges, Parmesan & Emmental. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -1048,154 +201,17 @@ dish four_cheeses: FOUR CHEESES -- Cream cheese, Old Bruges, Parmesan & Emmental
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish green_pesto: GREEN PESTO -- Pine nuts, parmesan, basil, garlic & olive oil. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -1214,154 +230,17 @@ dish green_pesto: GREEN PESTO -- Pine nuts, parmesan, basil, garlic & olive oil.
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish marisol: MARISOL -- Herby chicken, roasted bell pepper in tomato sauce. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -1380,154 +259,17 @@ dish marisol: MARISOL -- Herby chicken, roasted bell pepper in tomato sauce. €
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish mix_2_sauces: MIX 2 SAUCES  € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -1546,61 +288,7 @@ dish mix_2_sauces: MIX 2 SAUCES  € 6.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what sauce mix 1?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
 		bocca: BOCCA  € 0.0
 		bolognese: BOLOGNESE  € 0.0
 		cheese_&_ham: CHEESE & HAM  € 0.0
@@ -1613,49 +301,6 @@ dish mix_2_sauces: MIX 2 SAUCES  € 6.5
 		red_pesto: RED PESTO  € 0.0
 		potw: POTW  € 0.0
 	single_choice what sauce mix 2?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
 		bocca: BOCCA  € 0.0
 		bolognese: BOLOGNESE  € 0.0
 		cheese_&_ham: CHEESE & HAM  € 0.0
@@ -1669,141 +314,15 @@ dish mix_2_sauces: MIX 2 SAUCES  € 6.5
 		potw: POTW  € 0.0
 dish mix_3_sauces_: MIX 3 SAUCES  € 10.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -1822,61 +341,7 @@ dish mix_3_sauces_: MIX 3 SAUCES  € 10.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what sauce mix 1?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
 		bocca: BOCCA  € 0.0
 		bolognese: BOLOGNESE  € 0.0
 		cheese_&_ham: CHEESE & HAM  € 0.0
@@ -1889,49 +354,6 @@ dish mix_3_sauces_: MIX 3 SAUCES  € 10.5
 		red_pesto: RED PESTO  € 0.0
 		potw: POTW  € 0.0
 	single_choice what sauce mix 2?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
 		bocca: BOCCA  € 0.0
 		bolognese: BOLOGNESE  € 0.0
 		cheese_&_ham: CHEESE & HAM  € 0.0
@@ -1944,49 +366,6 @@ dish mix_3_sauces_: MIX 3 SAUCES  € 10.5
 		red_pesto: RED PESTO  € 0.0
 		potw: POTW  € 0.0
 	single_choice what sauce mix 3?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
 		bocca: BOCCA  € 0.0
 		bolognese: BOLOGNESE  € 0.0
 		cheese_&_ham: CHEESE & HAM  € 0.0
@@ -2000,141 +379,15 @@ dish mix_3_sauces_: MIX 3 SAUCES  € 10.5
 		potw: POTW  € 0.0
 dish potw: POTW -- Pasta of the week. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -2153,154 +406,17 @@ dish potw: POTW -- Pasta of the week. € 6.5
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish red_pesto: RED PESTO -- Pine nuts, parmesan, basil, sun-dried tomatoes & olive oil. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -2319,660 +435,55 @@ dish red_pesto: RED PESTO -- Pine nuts, parmesan, basil, sun-dried tomatoes & ol
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_arrabbiata: SAUCE TO GO Arrabbiata  € 7.5
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
 		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_bocca: SAUCE TO GO Bocca  € 7.5
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
 		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_bolognese: SAUCE TO GO Bolognese  € 7.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_cheese_&_ham: SAUCE TO GO Cheese & ham  € 7.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_curry_with_or_without_smoked_salmon: SAUCE TO GO Curry with or without smoked salmon  € 9.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_four_cheeses: SAUCE TO GO Four Cheeses  € 7.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_marisol: SAUCE TO GO Marisol  € 9.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_pasta_of_the_week: SAUCE TO GO Pasta of the week  € 9.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish sauce_to_go_veggie: SAUCE TO GO Veggie  € 9.0
 	single_choice what size?: 
 		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
 		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 dish soup_to_go: Soup TO GO -- Soup 1 litre euro 6 € 3.0
 dish tiramisu_of_the_house: Tiramisu of the house  € 4.5
 dish veggie: VEGGIE -- Aubergine, courgette, bell peper, tomato & mushroom. € 6.5
 	single_choice what size?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
 		small: SMALL  € 0.0
 		medium: MEDIUM  € 2.0
 		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	single_choice what pasta?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
 		penne: penne  € 0.0
 		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
 		fusilli_whole_grain_: fusilli whole grain   € 1.0
 		gluten-free_pasta_: gluten-free pasta   € 2.0
-		emmental: EMMENTAL  € 0.0
-		extra_emmental_: EXTRA EMMENTAL   € 0.5
-		parmesan_: PARMESAN   € 1.3
-		emmental_&_parmesan: EMMENTAL & PARMESAN  € 1.3
-		grated_mozzarella_: GRATED MOZZARELLA   € 2.0
-		raspadura_: RASPADURA   € 2.1
-		feta_: FETA   € 3.5
-		bacon_: BACON   € 2.5
-		ham_: HAM   € 2.5
-		salmon_: SALMON   € 3.5
-		chicken_: CHICKEN   € 2.5
-		extra_sauce_: EXTRA SAUCE   € 1.5
-		sun-dried_tomatos_5_pieces: SUN-DRIED TOMATOS 5 PIECES  € 2.4
-		mozzarella_balls_5_pieces: MOZZARELLA BALLS 5 PIECES  € 2.0
-		pine_nuts_: PINE NUTS   € 3.2
-		rocket_salad_: ROCKET SALAD   € 0.8
-		olives_: OLIVES   € 2.4
-		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
 	multi_choice what topping?: 
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 7.5
-		0,5l: 0,5L  € 0.0
-		1l: 1L  € 9.0
-		small: SMALL  € 0.0
-		medium: MEDIUM  € 2.0
-		large: LARGE  € 3.0
-		penne: penne  € 0.0
-		spaghetti_whole_grain_: spaghetti whole grain   € 1.0
-		fusilli_whole_grain_: fusilli whole grain   € 1.0
-		gluten-free_pasta_: gluten-free pasta   € 2.0
 		emmental: EMMENTAL  € 0.0
 		extra_emmental_: EXTRA EMMENTAL   € 0.5
 		parmesan_: PARMESAN   € 1.3
@@ -2991,14 +502,3 @@ dish veggie: VEGGIE -- Aubergine, courgette, bell peper, tomato & mushroom. € 
 		rocket_salad_: ROCKET SALAD   € 0.8
 		olives_: OLIVES   € 2.4
 		topping_separately_: Topping separately   € 0.1
-		bocca: BOCCA  € 0.0
-		bolognese: BOLOGNESE  € 0.0
-		cheese_&_ham: CHEESE & HAM  € 0.0
-		veggie: VEGGIE  € 0.0
-		marisol: MARISOL  € 0.0
-		four_cheeses: FOUR CHEESES  € 0.0
-		curry_with_or_without_smoked_salmon: CURRY WITH OR WITHOUT SMOKED SALMON  € 0.0
-		arrabbiata: ARRABBIATA  € 0.0
-		green_pesto: GREEN PESTO  € 0.0
-		red_pesto: RED PESTO  € 0.0
-		potw: POTW  € 0.0
