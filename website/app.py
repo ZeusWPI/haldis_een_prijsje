@@ -10,6 +10,7 @@ import subprocess
 # Add the parent directory to the system path to allow imports from the higher-level directory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from main import run_scrapers
+from run_sync import sync_gitmate
 
 app = Flask(__name__)
 
@@ -196,6 +197,21 @@ def ls():
 def home():
     scraper_info = get_scraper_info()
     return render_template('index.html', scraper_info=scraper_info)
+
+
+@app.route("/sync-all", methods=["POST"])
+def sync_all_files():
+    """
+    Sync all files to GitMate.
+    """
+    try:
+        # Call the `sync_gitmate` function without arguments to sync all files
+        print("Syncing all files to GitMate...")
+        sync_gitmate()
+        print("Synced all files to GitMate")
+        return jsonify({"message": "All files synced successfully."}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":
