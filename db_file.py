@@ -54,6 +54,15 @@ def is_file_different(hlds_file: str, menu_file: str) -> bool:
     return hlds_hash != menu_hash
 
 
+def dos2unix(path: str) -> str:
+    """
+    Converts Windows-style backslashes in a file path to Unix-style forward slashes.
+    :param path: The input file path (string)
+    :return: The normalized file path with forward slashes
+    """
+    return path.replace("\\", "/")
+
+
 def get_manual_file_mapping() -> Dict[str, str]:
     """
     Creates a manual mapping of file names between the hlds_menus directory and the menus directory.
@@ -64,25 +73,46 @@ def get_manual_file_mapping() -> Dict[str, str]:
 
     # Manual mapping of file names
     file_mapping = {
-        os.path.join(hlds_dir, "bicyclette.hlds"): os.path.join(menu_dir, "la_bicylette.hlds"),
-        os.path.join(hlds_dir, "bocca_ovp.hlds"): os.path.join(menu_dir, "bocca_ovp.hlds"),
-        os.path.join(hlds_dir, "metropol.hlds"): os.path.join(menu_dir, "pitta_metropol.hlds"),
-        os.path.join(hlds_dir, "pizza_donna.hlds"): os.path.join(menu_dir, "prima_donna.hlds"),
-        os.path.join(hlds_dir, "s5.hlds"): os.path.join(menu_dir, "s5.hlds"),
-        os.path.join(hlds_dir, "simpizza.hlds"): os.path.join(menu_dir, "simpizza.hlds"),
+        dos2unix(os.path.join(hlds_dir, "bicyclette.hlds")): dos2unix(os.path.join(menu_dir, "la_bicylette.hlds")),
+        dos2unix(os.path.join(hlds_dir, "bocca_ovp.hlds")): dos2unix(os.path.join(menu_dir, "bocca_ovp.hlds")),
+        dos2unix(os.path.join(hlds_dir, "metropol.hlds")): dos2unix(os.path.join(menu_dir, "pitta_metropol.hlds")),
+        dos2unix(os.path.join(hlds_dir, "pizza_donna.hlds")): dos2unix(os.path.join(menu_dir, "prima_donna.hlds")),
+        dos2unix(os.path.join(hlds_dir, "s5.hlds")): dos2unix(os.path.join(menu_dir, "s5.hlds")),
+        dos2unix(os.path.join(hlds_dir, "simpizza.hlds")): dos2unix(os.path.join(menu_dir, "simpizza.hlds")),
         # Add more mappings here as needed
     }
 
     return file_mapping
 
 
+def get_mapped_path(file_path: str) -> str:
+    """
+    Maps a given file path using the manual mapping or returns the same path if not in the mapping.
+    Ensures the returned path uses forward slashes.
+    :param file_path: The input file path
+    :return: The mapped file path or the original path
+    """
+    file_mapping = get_manual_file_mapping()
+    normalized_path = dos2unix(file_path)
+    return file_mapping.get(normalized_path, normalized_path)
+
+
 def test_file_comparison():
     """
     Compares all files based on the manual mapping and prints whether they are different or identical.
     """
-    file_mapping = get_manual_file_mapping()
+    hlds_dir = "hlds_files"
+    menu_dir = "menus"
 
-    for hlds_file, menu_file in file_mapping.items():
+    # Get a list of files in the `hlds_files` directory
+    hlds_files = [
+        dos2unix(os.path.join(hlds_dir, f))
+        for f in os.listdir(hlds_dir) if os.path.isfile(os.path.join(hlds_dir, f))
+    ]
+
+    for hlds_file in hlds_files:
+        menu_file = get_mapped_path(hlds_file)
+
         if not os.path.exists(hlds_file):
             print(f"{hlds_file} does not exist. Skipping...")
             continue

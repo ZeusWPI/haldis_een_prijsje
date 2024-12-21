@@ -60,17 +60,55 @@ def clear_repo(repo):
     repo.git.restore("--", "*")
 
 
+def prune_remote(repo):
+    """
+    Prunes stale remote branches for the 'origin' remote.
+    """
+    print("Pruning stale remote branches...")
+    repo.git.remote("prune", "origin")
+    print("Pruning complete.")
+
+
+def delete_stale_local_branches(repo):
+    """
+    Deletes stale local branches that no longer exist on the remote.
+    """
+    print("Checking for stale local branches...")
+    remote_refs = [ref.strip() for ref in repo.git.branch("-r").split("\n")]
+    local_branches = [ref.strip("* ").strip() for ref in repo.git.branch().split("\n")]
+
+    # Identify local branches that are no longer on the remote
+    for branch in local_branches:
+        remote_branch_ref = f"origin/{branch}"
+        if branch != "master" and remote_branch_ref not in remote_refs:
+            print(f"Deleting stale local branch: {branch}")
+            repo.git.branch("-D", branch)  # Force delete the branch
+    print("Local cleanup complete.")
+
+
 def checkout_branch(repo, branch_name):
     repo.git.switch("master")
-    branches = repo.git.branch()
-    # Print the branches
-    print("Available branches:\n", branches)
-    if branch_name in repo.heads:
-        # repo.git.branch("-D", branch_name)  # Force delete the branch
-        repo.git.switch(branch_name)
+    prune_remote(repo)
+    delete_stale_local_branches(repo)
+    # status = repo.git.status()
+    # print("\nGit Status:\n", status)
+    repo.git.fetch("--all")
+    # Get a list of all remote branches
+    remote_branches = [ref.strip() for ref in repo.git.branch("-r").split("\n")]
+    # print(remote_branches)
+    remote_branch_full = f"origin/{branch_name}"
+    if remote_branch_full in remote_branches:
+        # If the branch exists on the remote, check it out and pull changes
+        print(f"Checking out existing branch: {branch_name}")
+        repo.git.checkout(branch_name)
         repo.git.pull("origin", branch_name)
     else:
-        repo.git.switch("-c", branch_name)
+        # If the branch doesn't exist, create it and push to the remote
+        print(f"Branch {branch_name} does not exist on origin. Creating the branch.")
+        repo.git.checkout("-b", branch_name)
+        repo.git.push("-u", "origin", branch_name)
+    # status = repo.git.status()
+    # print("\nGit Status:\n", status)
     if branch_name in repo.remotes.origin.refs:
         repo.heads[branch_name].set_tracking_branch(
             repo.remotes.origin.refs[branch_name]
@@ -83,11 +121,12 @@ def sync_file(repo, api_instance, file_info):
     sync_to = file_info["metadata"]["sync-to"]
 
     # branch_name = f"hlds-sync_{sync_to}"
-    branch_name = f"hlds_sync_{os.path.basename(sync_to).replace(".hlds", "")}"
+    branch_name = f"haldis_sync_{os.path.basename(sync_to).replace(".hlds", "")}"
     print(f"Starting sync of {path}")
     clear_repo(repo)
     print(f"  Checking out onto branch: {branch_name}")
     checkout_branch(repo, branch_name)
+    return  # barrier to stop PR's while testing
     with open(path) as r:
         # pathlib.Path(f"{REPO_FOLDER}/{sync_to}").mkdir(
         #     parents=True, exist_ok=True
