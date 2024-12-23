@@ -126,7 +126,7 @@ def sync_file(repo, api_instance, file_info):
     clear_repo(repo)
     print(f"  Checking out onto branch: {branch_name}")
     checkout_branch(repo, branch_name)
-    return  # barrier to stop PR's while testing
+    # return  # barrier to stop PR's while testing TODO remove
     with open(path) as r:
         # pathlib.Path(f"{REPO_FOLDER}/{sync_to}").mkdir(
         #     parents=True, exist_ok=True

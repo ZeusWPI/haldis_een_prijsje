@@ -7,3 +7,4 @@ pdfplumber==0.11.4
 requests==2.32.3
 selenium==4.27.1
 seleniumbase==4.33.11
+mattermostdriver
