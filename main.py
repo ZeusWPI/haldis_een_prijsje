@@ -149,7 +149,7 @@ if __name__ == "__main__":
     # Default values
     default_run_everything: bool = False
     default_use_parallelism: bool = False
-    default_restaurant_names = ["bocca_ovp"]
+    default_restaurant_names = ["s5"]
 
     # Parse command-line arguments
     args = parse_arguments()

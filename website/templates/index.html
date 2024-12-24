@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Scraper</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
     <style>
         /* General table styling */
         table {
@@ -100,7 +101,7 @@
             .then(response => response.json())
             .then(data => {
                 {#alert(data.message);  // Show a success message from the backend#}
-                console.log(data.message)
+                console.log(data.message);
             })
             .catch(error => {
                 alert('Error: ' + error);
@@ -122,9 +123,27 @@
                 });
         }
 
+        function syncAll() {
+            fetch('/sync-all', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                {#alert(data.message);  // Show a success message from the backend#}
+                console.log(data.message)
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        }
+
         // Set interval to update scraper table every 5 seconds
         setInterval(updateScraperTable, 5000);
         setInterval(scrapeAllRestaurants, 30 * 60 * 1000);  // 30 minutes in milliseconds
+        setInterval(syncAll, 30 * 60 * 1000);  // 30 minutes in milliseconds
     </script>
 </head>
 <body>
@@ -133,6 +152,8 @@
 
         <!-- Scrape All button -->
         <button onclick="scrapeAllRestaurants()">Scrape All Restaurants</button>
+        <!-- Button to sync all files -->
+        <button onclick="syncAll()">Sync All to GitMate</button>
     </div>
 
     <div>
