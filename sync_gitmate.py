@@ -9,6 +9,8 @@ import giteapy
 import tomllib
 from pprint import pprint
 
+from mattermost_comunication import send_message
+
 # import mattermost_communication
 
 with open("config.toml", mode="rb") as config_toml:
@@ -22,6 +24,11 @@ TOKEN = config["gitea"]["access_token"]
 
 GIT_ORG = config["gitea"]["remote_org"]
 GIT_REPO = config["gitea"]["remote_repo"]
+
+conf = {
+    "originating_mm_post_channel_id": "dm1abp4wfidezmig1yqyu53mmy",
+    "originating_mm_post_id": "dm1abp4wfidezmig1yqyu53mmy"
+}
 
 
 def init_sync():
@@ -152,6 +159,10 @@ def sync_file(repo, api_instance, file_info):
                 print(
                     "  Creating a new merge request to update the git menu with the new version from the hlds menu."
                 )
+                send_message(
+                    conf,
+                    f"[hlds sync] Creating a new merge request to update the git menu of {sync_to} with the new version from the hlds menu."
+                )
                 api_instance.repo_create_pull_request(
                     GIT_ORG,
                     GIT_REPO,
@@ -163,6 +174,10 @@ def sync_file(repo, api_instance, file_info):
                 )
             else:
                 print("  Creating a new merge request to add the Menu to git.")
+                send_message(
+                    conf,
+                    f"[hlds sync] Creating a new merge request to add the git menu of {sync_to} with the new version from the hlds menu."
+                )
                 api_instance.repo_create_pull_request(
                     GIT_ORG,
                     GIT_REPO,
@@ -174,5 +189,9 @@ def sync_file(repo, api_instance, file_info):
                 )
         else:
             print("  Merge request was already open.")
+            send_message(
+                conf,
+                f"[hlds sync] Merge request was already open for git menu of {sync_to}"
+            )
     else:
         print("  Menu has no changes.")

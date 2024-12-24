@@ -23,9 +23,8 @@ def send_message(file_info, message):
         )
     except mattermostdriver.exceptions.InvalidOrMissingParameters as e:
         # This will occur when we try to react to a file in a channel that is not the same as the originating channel.
-        unique_post_url = f"{config['mattermost']['server_url']}/pl/{post_id}"
         channel.create_post(
-            f"{unique_post_url}\n\n{message}",
+            f"{message}",
         )
 
 
@@ -51,10 +50,10 @@ Just add the following lines to your file, the location in your file is not impo
     send_message(file_info, message)
 
 
-send_message(
-    {
-        "originating_mm_post_channel_id": "dm1abp4wfidezmig1yqyu53mmy",
-        "originating_mm_post_id": "dm1abp4wfidezmig1yqyu53mmy"
-    },
-    "this is a test message"
-)
+# send_message(
+#     {
+#         "originating_mm_post_channel_id": "dm1abp4wfidezmig1yqyu53mmy",
+#         "originating_mm_post_id": "dm1abp4wfidezmig1yqyu53mmy"
+#     },
+#     "haldis_sync is started"
+# )
