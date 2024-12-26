@@ -160,6 +160,7 @@ def init_db():
             """, restaurants)
             conn.commit()
 
+
 @app.route("/")
 def home():
     scraper_info = get_scraper_info()
