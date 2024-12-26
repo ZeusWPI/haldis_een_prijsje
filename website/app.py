@@ -151,47 +151,14 @@ def init_db():
                 ('bicyclette', -1, epoch_zero, "never run"),
                 ('simpizza', -1, epoch_zero, "never run"),
                 ('pizza_donna', -1, epoch_zero, "never run"),
-                ('bocca_ovp', -1, epoch_zero, "never run")
+                ('bocca_ovp', -1, epoch_zero, "never run"),
+                ('s5', -1, epoch_zero, "never run")
             ]
             cursor.executemany("""
                 INSERT INTO scrapers (name, products_count, last_scraped, status)
                 VALUES (?, ?, ?, ?)
             """, restaurants)
             conn.commit()
-
-
-# route to display the current working directory and files (ls) used for debuting !!! remove afterward can be a
-# security issue
-@app.route("/ls")
-def ls():
-    try:
-        # Get the current working directory
-        cwd = os.getcwd()
-
-        # Run `ls` to get the list of files in the current directory
-        result = subprocess.run(['ls', '-l'], capture_output=True, text=True)
-
-        # Split the result into lines and format them neatly
-        files = result.stdout.splitlines()
-
-        # Format the ls output to display it nicely
-        formatted_files = []
-        for file in files:
-            parts = file.split()
-            filename = " ".join(parts[8:])
-            formatted_files.append(f"File: {filename}")
-
-        return jsonify({
-            'cwd': cwd,
-            'files': formatted_files
-        })
-    except Exception as e:
-        # Return the error message and log it
-        return jsonify({
-            "error": "An error occurred while listing files.",
-            "message": str(e)
-        }), 500
-
 
 @app.route("/")
 def home():

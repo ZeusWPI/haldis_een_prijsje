@@ -1,15 +1,18 @@
 import functools
 import re
 import time
+from typing import Callable, Optional, List, Tuple
 
 import PyPDF2
+import pdfplumber
 import requests
 from bs4 import BeautifulSoup
+from requests import Response
 from requests.exceptions import ConnectionError
-import pdfplumber
 from selenium.common.exceptions import StaleElementReferenceException
 
-def timer(func):
+
+def timer(func: Callable) -> Callable:
     """Print the runtime of the decorated function"""
 
     @functools.wraps(func)
@@ -23,24 +26,25 @@ def timer(func):
 
     return wrapper_timer
 
+
 def comma_float(inp: str) -> float:
     return float(inp.replace(',', '.'))
 
 
-def fetch_and_parse_html(url: str) -> BeautifulSoup | None:
+def fetch_and_parse_html(url: str) -> Optional[BeautifulSoup]:
     response = safe_get(url)
     if response == "":
         return None
     return BeautifulSoup(response.text, 'html.parser')
 
 
-def only_keep_UTF_8_chars(text):
+def only_keep_UTF_8_chars(text: str) -> str:
     output = ''.join([char for char in text if char.encode('utf-8', 'ignore')])
     output = re.sub(r'[^\x00-\x7F]+', '', output)
     return output
 
 
-def safe_get(link: str):
+def safe_get(link: str) -> Response | str:
     try:
         return requests.get(link)
     except ConnectionError as e:
@@ -49,7 +53,7 @@ def safe_get(link: str):
         return ""
 
 
-def extract_spans(div):
+def extract_spans(div) -> List[str]:
     """Extract all non-empty text content from a div, preserving structure with inline elements like <br>."""
     results = []
     for span in div.find_all('span', recursive=True):
@@ -63,6 +67,7 @@ def filter_divs(soup, class_name, condition):
     Filter divs based on a user-defined condition.
 
     :param soup: BeautifulSoup object containing the HTML content.
+    :param class_name: name of the class to filter by.
     :param condition: A callable that takes a div and returns True if the div should be included.
     :return: A list of divs that match the condition.
     """
@@ -70,7 +75,7 @@ def filter_divs(soup, class_name, condition):
     return [div for div in candidate_divs if condition(div)]
 
 
-def condition_has_text(div):  # README
+def condition_has_text(div) -> bool:  # README
     """
     A condition function to check if a div contains text.
 
@@ -114,14 +119,14 @@ def create_heading_contains_h2_with(text_to_search):
     """
 
     def heading_contains_h2_with(div):
-        h2_tag = div.find('div', class_='elementor-widget-container').find('h2', string=lambda
-            text: text_to_search in text if text else False)
+        h2_tag = div.find('div', class_='elementor-widget-container').find(
+            'h2', string=lambda text: text_to_search in text if text else False)
         return h2_tag is not None
 
     return heading_contains_h2_with
 
 
-def download_pdf(url, save_path):
+def download_pdf(url: str, save_path: str) -> None:
     """Download a PDF from a URL and save it locally."""
     try:
         response = requests.get(url)
@@ -133,7 +138,7 @@ def download_pdf(url, save_path):
         print(f"Failed to download PDF: {e}")
 
 
-def parse_pdf(file_path, coords=None):
+def parse_pdf(file_path: str, coords: Tuple[int, int, int, int] = None) -> str:
     """
     Extract and return text from a PDF file.
     If coords is provided, it will extract text from the rectangle defined by these coordinates.
@@ -156,7 +161,7 @@ def parse_pdf(file_path, coords=None):
         return ""
 
 
-def parse_pdf_with_strip_split_enters(file_path, coords=None):
+def parse_pdf_with_strip_split_enters(file_path: str, coords: Tuple[int, int, int, int] = None) -> List[str]:
     """
     Extract and return text from a PDF file.
     If coords is provided, it will extract text from the rectangle defined by these coordinates.
@@ -167,7 +172,7 @@ def parse_pdf_with_strip_split_enters(file_path, coords=None):
     return output.strip().split("\n")
 
 
-def parse_pdf_section(pdf_url: str, local_file_path: str, coords: tuple, page_number: int = 1) -> list:
+def parse_pdf_section(pdf_url: str, local_file_path: str, coords: Tuple[int, int, int, int], page_number: int = 1) -> List:
     """
     Downloads a PDF, retrieves its dimensions, and extracts text from a specified section.
 
@@ -182,7 +187,7 @@ def parse_pdf_section(pdf_url: str, local_file_path: str, coords: tuple, page_nu
     return parse_pdf_with_strip_split_enters(local_file_path, coords=coords)
 
 
-def get_page_dimensions(file_path, page_number=1):
+def get_page_dimensions(file_path: str, page_number: int = 1) -> Tuple[float, float]:
     """
     Get the dimensions of a specific page in a PDF.
 
@@ -212,7 +217,7 @@ def get_page_dimensions(file_path, page_number=1):
         print(f"Failed to retrieve page dimensions: {e}")
 
 
-def retry_on_stale(max_retries=3, wait_time=1):
+def retry_on_stale(max_retries: int = 3, wait_time: int = 1):
     """
     Decorator to retry a function in case of a StaleElementReferenceException.
 
