@@ -142,8 +142,8 @@
 
         // Set interval to update scraper table every 5 seconds
         setInterval(updateScraperTable, 5000);
-        setInterval(scrapeAllRestaurants, 30 * 60 * 1000);  // 30 minutes in milliseconds
-        setInterval(syncAll, 30 * 60 * 1000);  // 30 minutes in milliseconds
+        {#setInterval(scrapeAllRestaurants, 30 * 60 * 1000);  // 30 minutes in milliseconds#}
+        {#setInterval(syncAll, 30 * 60 * 1000);  // 30 minutes in milliseconds#}
     </script>
 </head>
 <body>

@@ -5,7 +5,7 @@ import threading
 from datetime import datetime
 
 from flask import Flask, render_template, jsonify
-import subprocess
+from apscheduler.schedulers.background import BackgroundScheduler
 
 # Add the parent directory to the system path to allow imports from the higher-level directory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -160,6 +160,7 @@ def init_db():
             """, restaurants)
             conn.commit()
 
+
 @app.route("/")
 def home():
     scraper_info = get_scraper_info()
@@ -180,6 +181,11 @@ def sync_all_files():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(scrape_all, 'interval', minutes=30)  # Scrape every 30 minutes
+scheduler.add_job(sync_all_files, 'interval', minutes=30)  # Sync every 30 minutes
+scheduler.start()
 
 if __name__ == "__main__":
     # Initialize the database when the app starts
