@@ -18,6 +18,30 @@ app = Flask(__name__)
 DATABASE = 'scraper_data.db'
 
 
+# Class to hold the status of scrapers
+class ScraperStatus:
+    def __init__(self):
+        self.status = {
+            'metropol': False,
+            'bicyclette': False,
+            'simpizza': False,
+            'pizza_donna': False,
+            'bocca_ovp': False,
+            's5': False
+        }
+
+    def is_running(self, scraper_name):
+        return self.status.get(scraper_name, False)
+
+    def set_running(self, scraper_name, running):
+        if scraper_name in self.status:
+            self.status[scraper_name] = running
+
+
+# Instantiate the scraper status tracker
+scraper_status = ScraperStatus()
+
+
 # Function to update the database with scraper info
 def update_scraper_info(restaurant_name, products_count):
     last_scraped = datetime.now()
@@ -52,27 +76,31 @@ def update_scraper_status(restaurant_name, status):
 def run_scraper_in_background(restaurant_name):
     """
     Function to run the scraper in a background thread.
-    Updates the database with the number of products, last scraped time, and status.
+    Updates the status of the scraper in the ScraperStatus class.
     """
+    if scraper_status.is_running(restaurant_name):
+        print(f"Scraper for {restaurant_name} is already running. Skipping.")
+        return
+
     try:
-        # Set status to "Running" when scraping starts
+        # Mark the scraper as running
+        scraper_status.set_running(restaurant_name, True)
         update_scraper_status(restaurant_name, "Running")
+        print(f"Starting scraper for {restaurant_name}...")
 
         # Run the scraper for the given restaurant
         result = run_scrapers(restaurant_names=[restaurant_name])
-
-        # Extract the values from the result dictionary
-        restaurant_names = result["restaurant_names"]
         total_products_scraped = result["total_products_scraped"]
 
-        # Update the database with the number of products, last scraped timestamp, and status as "Finished"
         update_scraper_info(restaurant_name, total_products_scraped)
         update_scraper_status(restaurant_name, "Finished")
-
+        print(f"Scraper for {restaurant_name} completed. Products scraped: {total_products_scraped}")
     except Exception as e:
         print(f"Error running scraper for {restaurant_name}: {e}")
-        # If there's an error, set the status to "Failed"
         update_scraper_status(restaurant_name, "Failed")
+    finally:
+        # Mark the scraper as not running
+        scraper_status.set_running(restaurant_name, False)
 
 
 @app.route("/scrape/<restaurant_name>", methods=['POST'])
