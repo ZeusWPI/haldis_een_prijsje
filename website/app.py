@@ -13,6 +13,7 @@ from main import run_scrapers
 from run_sync import sync_gitmate
 
 app = Flask(__name__)
+lock = threading.Lock()
 
 # SQLite database file
 DATABASE = 'scraper_data.db'
@@ -31,11 +32,13 @@ class ScraperStatus:
         }
 
     def is_running(self, scraper_name):
-        return self.status.get(scraper_name, False)
+        with lock:
+            return self.status.get(scraper_name, False)
 
     def set_running(self, scraper_name, running):
-        if scraper_name in self.status:
-            self.status[scraper_name] = running
+        with lock:
+            if scraper_name in self.status:
+                self.status[scraper_name] = running
 
 
 # Instantiate the scraper status tracker
