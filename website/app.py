@@ -4,7 +4,7 @@ import sys
 import threading
 from datetime import datetime
 
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from apscheduler.schedulers.background import BackgroundScheduler
 
 # Add the parent directory to the system path to allow imports from the higher-level directory
@@ -217,6 +217,82 @@ scheduler = BackgroundScheduler()
 scheduler.add_job(scrape_all, 'interval', minutes=30)  # Scrape every 30 minutes
 scheduler.add_job(sync_all_files, 'interval', minutes=30)  # Sync every 30 minutes
 scheduler.start()
+
+
+@app.route("/editor_selector")
+def editor_selector():
+    scraper_info = get_scraper_info()
+    return render_template("editor_selector.html", scraper_info=scraper_info)
+
+
+UPLOAD_FOLDER = 'hlds_files'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+
+# Route to serve the editor page for a specific file
+@app.route('/edit/<filename>', methods=['GET'])
+def edit_file(filename):
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
+    if os.path.exists(filepath):
+        with open(filepath, 'r') as file:
+            content = file.read()
+        header = extract_header(content)
+        return render_template('editor.html', filename=filename, header=header)  # Render the frontend editor
+    else:
+        return f"File {filename}.hlds not found", 404
+
+
+@app.route('/read_file', methods=['GET'])
+def read_file():
+    filename = request.args.get('filename')
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
+
+    if os.path.exists(filepath) and filepath.endswith('.hlds'):
+        with open(filepath, 'r') as file:
+            content = file.read()
+        return jsonify({'content': content})
+    else:
+        return jsonify({'error': f'File {filepath} not found or invalid file type'}), 404
+
+
+@app.route('/save_file', methods=['POST'])
+def save_file():
+    data = request.json
+    filename = data.get('filename')
+    content = data.get('content')
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
+
+    if os.path.exists(filepath) and filepath.endswith('.hlds'):
+        with open(filepath, 'w') as file:
+            file.write(content)
+        return jsonify({'message': 'File saved successfully'})
+    else:
+        return jsonify({'error': 'File not found or invalid file type'}), 404
+
+
+def extract_header(content):
+    # Define the header pattern (this can be customized based on your actual header structure)
+    header_lines = content.splitlines()[:6]  # Assuming the header is the first 5 lines
+    header = {}
+
+    # Default to empty string if a part of the header is missing
+    header['name_key'] = ""
+    header['name_value'] = ""
+    header['osm'] = ""
+    header['phone'] = ""
+    header['address'] = ""
+    header['website'] = ""
+
+    if len(header_lines) >= 5:
+        print(len(header_lines))
+        header['name_key'] = header_lines[1].split(":")[0].strip()
+        header['name_value'] = header_lines[1].split(":")[1].strip()
+        header['osm'] = header_lines[2].split("https://")[1].strip()
+        header['phone'] = " ".join(header_lines[3].split(" ")[1:]).strip()
+        header['address'] = " ".join(header_lines[4].split(" ")[1:]).strip()
+        header['website'] = " ".join(header_lines[5].split(" ")[1:]).strip().split("https://")[1].strip()
+
+    return header
 
 if __name__ == "__main__":
     # Initialize the database when the app starts

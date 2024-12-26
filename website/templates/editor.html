@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLDS File Editor</title>
+    <script>
+        // Function to load the file content
+        function loadFile() {
+            const filename = "{{ filename }}"; // Use Flask variable for the filename
+            fetch(`/read_file?filename=${filename}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.content) {
+                        document.getElementById('fileContent').value = data.content;
+                    } else {
+                        alert(data.error || 'Error loading file');
+                    }
+                })
+                .catch(() => {
+                    alert('Failed to load the file. Please try again.');
+                });
+        }
+
+        // Function to save the file content
+        function saveFile() {
+            const filename = "{{ filename }}"; // Use Flask variable for the filename
+            const content = document.getElementById('fileContent').value;
+
+            fetch('/save_file', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ filename, content }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message || data.error);
+                })
+                .catch(() => {
+                    alert('Failed to save the file. Please try again.');
+                });
+        }
+
+        // Automatically load the file content when the page is loaded
+        window.onload = () => {
+            loadFile();
+        };
+    </script>
+</head>
+<body>
+    <h1>Editing HLDS File: {{ filename }}.hlds</h1>
+
+    <!-- Buttons for loading and saving -->
+    <button onclick="loadFile()">Load</button>
+    <button onclick="saveFile()">Save</button>
+
+    <!-- Display header information directly from Jinja2 -->
+    <div id="header">
+        <p><strong>Name key:</strong> {{ header.name_key }}</p>
+        <p><strong>Name value:</strong> {{ header.name_value }}</p>
+        <p><strong>OSM:</strong> <a href="https://{{ header.osm }}" target="_blank">{{ header.osm }}</a></p>
+        <p><strong>Phone:</strong> {{ header.phone }}</p>
+        <p><strong>Address:</strong> {{ header.address }}</p>
+        <p><strong>Website:</strong> <a href="https://{{ header.website }}" target="_blank">{{ header.website }}</a></p>
+    </div>
+
+    <!-- Textarea for editing the file content -->
+    <div id="editor">
+        <textarea id="fileContent" rows="20" cols="80"></textarea>
+    </div>
+</body>
+</html>

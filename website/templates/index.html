@@ -5,73 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haldis een prijsje</title>
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-    <style>
-        /* General table styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-family: Arial, sans-serif;
-            text-align: left;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background-color: #ff7f00;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Row styling */
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        /* Hover effect for table rows */
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Button styling */
-        button {
-            background-color: #ff7f00;
-            color: white;
-            padding: 8px 16px;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #ff7f00;
-        }
-
-        /* Status column styling */
-        .status {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .status.never-run {
-            color: #ff9800;
-        }
-
-        .status.running {
-            color: #2196f3;
-        }
-
-        .status.finished {
-            color: #ff7f00;
-        }
-
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script>
         function scrapeRestaurant(restaurantName) {
             // Create a fetch request to the backend to start the scraping process
@@ -147,6 +81,13 @@
     </script>
 </head>
 <body>
+    <div class="top-bar">
+        <div>
+            <a href="/">Home</a>
+            <a href="/editor_selector">Editor</a>
+        </div>
+    </div>
+
     <div>
         <h1>Restaurant Scraper</h1>
 

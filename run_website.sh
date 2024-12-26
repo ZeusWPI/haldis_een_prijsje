@@ -7,7 +7,8 @@ set -e
 IMAGE_NAME="haldis_website"
 CONTAINER_NAME="haldis_website_container"
 DOCKERFILE_NAME="Dockerfile"  # Variable for Dockerfile name
-VOLUME_NAME="$(pwd)/hlds_files"
+VOLUME_NAME1="$(pwd)/hlds_files"
+VOLUME_NAME_DB="$(pwd)/scraper_data.db"
 
 NO_REBUILD=false
 
@@ -44,7 +45,7 @@ fi
 
 # Step 3: Run the Docker container
 echo "Running the Docker container..."
-docker run -d -p 5000:5000 -v "$VOLUME_NAME:/haldis_prijsje/hlds_files" --name $CONTAINER_NAME $IMAGE_NAME
+docker run -d -p 5000:5000 -v "$VOLUME_NAME1:/haldis_prijsje/hlds_files" -v "$VOLUME_NAME_DB:/haldis_prijsje/scraper_data.db" --name $CONTAINER_NAME $IMAGE_NAME
 
 # Step 4: Output the URL where the website can be accessed
 echo "Website is now running at: http://127.0.0.1:5000"
