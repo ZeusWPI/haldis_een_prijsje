@@ -11,6 +11,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from main import run_scrapers
 from run_sync import sync_gitmate
+from data_types.location import Location
 
 app = Flask(__name__)
 lock = threading.Lock()
@@ -248,9 +249,10 @@ def read_file():
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
 
     if os.path.exists(filepath) and filepath.endswith('.hlds'):
-        with open(filepath, 'r') as file:
+        with open(filepath, 'r', encoding='utf-8') as file:
             content = file.read()
-        return jsonify({'content': content})
+        header = extract_header(content)
+        return jsonify({'content': content, 'filename': filename, 'header': header})
     else:
         return jsonify({'error': f'File {filepath} not found or invalid file type'}), 404
 
@@ -261,9 +263,29 @@ def save_file():
     filename = data.get('filename')
     content = data.get('content')
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
+    header = data.get('header')  # Get header data from the request
 
+    # Create a Location instance using the header data
+    location = Location(
+        name=": ".join([header.get('name_key', ''), header.get('name_value', '')]),
+        osm=header.get('osm', ''),
+        address=header.get('address', ''),
+        telephone=header.get('phone', ''),
+        website=header.get('website', '')
+    )
+
+    # Format the header using the Location class
+    header_str = str(location)
+    search_str = "========================="
+    header_start = content.find(search_str)
+    header_end = content.find(search_str, header_start + len(search_str))
+
+    if header_start != -1 and header_end != -1:
+        # Replace the header part between "============" with the new header
+        content = content[:header_start] + header_str + content[header_end+len(search_str)+2:] # TODO maybe for linux this need to be +1 on windows it did give 2 empty lines after the header
+    print(content)
     if os.path.exists(filepath) and filepath.endswith('.hlds'):
-        with open(filepath, 'w') as file:
+        with open(filepath, 'w', encoding='utf-8') as file:
             file.write(content)
         return jsonify({'message': 'File saved successfully'})
     else:
@@ -287,10 +309,10 @@ def extract_header(content):
         print(len(header_lines))
         header['name_key'] = header_lines[1].split(":")[0].strip()
         header['name_value'] = header_lines[1].split(":")[1].strip()
-        header['osm'] = header_lines[2].split("https://")[1].strip()
+        header['osm'] = " ".join(header_lines[2].split(" ")[1:]).strip()
         header['phone'] = " ".join(header_lines[3].split(" ")[1:]).strip()
         header['address'] = " ".join(header_lines[4].split(" ")[1:]).strip()
-        header['website'] = " ".join(header_lines[5].split(" ")[1:]).strip().split("https://")[1].strip()
+        header['website'] = " ".join(header_lines[5].split(" ")[1:]).strip()
 
     return header
 
