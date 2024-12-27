@@ -9,6 +9,8 @@ import giteapy
 import tomllib
 from pprint import pprint
 
+from git import GitCommandError
+
 from mattermost_comunication import send_message
 
 # import mattermost_communication
@@ -94,6 +96,10 @@ def delete_stale_local_branches(repo):
 
 
 def checkout_branch(repo, branch_name):
+    # print(repo.git.status())
+    if "have diverged" in repo.git.status():
+        print("Merge is in progress. Aborting merge.")
+        repo.git.merge("--quit")  # Quit any merge process
     repo.git.switch("master")
     prune_remote(repo)
     delete_stale_local_branches(repo)
@@ -107,8 +113,17 @@ def checkout_branch(repo, branch_name):
     if remote_branch_full in remote_branches:
         # If the branch exists on the remote, check it out and pull changes
         print(f"Checking out existing branch: {branch_name}")
-        repo.git.checkout(branch_name)
-        repo.git.pull("origin", branch_name)
+        try:
+            # Ensure there are no merge conflicts or ongoing merges before switching
+            if "have diverged" in repo.git.status():
+                print("Merge is in progress. Aborting merge.")
+                repo.git.merge("--quit")  # Quit any merge process
+
+            repo.git.checkout(branch_name)
+            repo.git.pull("origin", branch_name, "--strategy=ours", "--no-rebase")
+        except GitCommandError as e:
+            print(f"Error during checkout or pull: {e}")
+            raise e
     else:
         # If the branch doesn't exist, create it and push to the remote
         print(f"Branch {branch_name} does not exist on origin. Creating the branch.")
