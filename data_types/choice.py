@@ -1,6 +1,6 @@
 from enum import Enum
 
-from utils import only_keep_UTF_8_chars
+from utils import only_keep_UTF_8_chars, sanitize_id
 
 
 class ChoiceType(Enum):
@@ -16,7 +16,7 @@ class Choice:
 
     def __str__(self):
         self.name = only_keep_UTF_8_chars(self.name.replace("€", " euro "))
-        display_name = only_keep_UTF_8_chars(self.name.lower().replace(
+        display_name = sanitize_id(self.name.lower().replace(
             " ", "_"
         ).replace(
             ".", "_dot_"
@@ -37,7 +37,7 @@ class ChoiceList:
             choices = []
         self.type: ChoiceType = type
         self.choices = choices
-        self.name: str = name
+        self.name: str = sanitize_id(name)
         self.description: str = description
 
     def update_name(self, new_name: str):

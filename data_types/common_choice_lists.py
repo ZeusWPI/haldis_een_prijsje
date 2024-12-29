@@ -1,5 +1,6 @@
 from data_types.choice import ChoiceList, Choice, ChoiceType
 
+
 ############################
 #        metropol          #
 ############################
@@ -85,6 +86,7 @@ def create_metropol_groenten_keuze_list():
     ]
     return groenten_keuze_list
 
+
 def create_metropol_extra_keuze_list():
     extra_keuze_list = ChoiceList(name="extra", description="Welke extra's?", type=ChoiceType.MULTI)
 
@@ -96,6 +98,7 @@ def create_metropol_extra_keuze_list():
         vlees, saus, groenten
     ]
     return extra_keuze_list
+
 
 ############################
 #        simpizza          #

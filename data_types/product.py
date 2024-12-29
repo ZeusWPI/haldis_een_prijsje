@@ -1,7 +1,7 @@
 import re
 
 from data_types.choice import ChoiceList, Choice, ChoiceType
-from utils import only_keep_UTF_8_chars
+from utils import only_keep_UTF_8_chars, sanitize_id
 from typing import List
 
 
@@ -16,7 +16,7 @@ class Product:
     def __str__(self):
         output = ""
         self.name = only_keep_UTF_8_chars(self.name.replace("€", " euro "))
-        self.display_name = only_keep_UTF_8_chars(self.name.lower().replace(
+        self.display_name = sanitize_id(self.name.lower().replace(
             " ", "_"
         ).replace(
             ".", "_dot_"
