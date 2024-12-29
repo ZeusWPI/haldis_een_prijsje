@@ -2,10 +2,14 @@ import os
 import sqlite3
 import sys
 import threading
+import tomllib
 from datetime import datetime
+from functools import wraps
 
 from flask import Flask, render_template, jsonify, request
 from apscheduler.schedulers.background import BackgroundScheduler
+from authlib.integrations.flask_client import OAuth
+from flask import session, redirect, url_for
 
 # Add the parent directory to the system path to allow imports from the higher-level directory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -15,9 +19,110 @@ from data_types.location import Location
 
 app = Flask(__name__)
 lock = threading.Lock()
+oauth = OAuth(app)
 
 # SQLite database file
 DATABASE = 'scraper_data.db'
+
+with open("config.toml", mode="rb") as config_toml:
+    config = tomllib.load(config_toml)
+
+app.config['SECRET_KEY'] = config['flask']['SECRET_KEY']
+
+# Configure Zauth
+zeus = oauth.register(
+    name='zeus',
+    client_id=config['zauth']['ZAUTH_CLIENT_ID'],
+    client_secret=config['zauth']['ZAUTH_CLIENT_SECRET'],
+    authorize_url=config['zauth']['ZAUTH_AUTHORIZE_URL'],
+    access_token_url=config['zauth']['ZAUTH_TOKEN_URL'],
+    # client_kwargs={'scope': 'profile email'},  # Add scopes based on your needs
+)
+
+
+@app.route('/test')
+def test_route():
+    print("Test route hit!", flush=True)
+    return "Test successful!"
+
+
+@app.route('/login')
+def login():
+    """
+    Redirect the user to the Zauth authorization URL.
+    """
+    # state = zeus.client_kwargs.get('state')
+    # print(f"Generated state: {state}")
+    return zeus.authorize_redirect(redirect_uri=config['zauth']['ZAUTH_REDIRECT_URI'])
+
+
+@app.route('/auth/callback')
+def callback():
+    """
+    Handle the callback from Zauth.
+    Exchange the authorization code for an access token and fetch user info.
+    """
+    try:
+        # Fetch the token
+        token = zeus.authorize_access_token()
+
+        # # Use the token to fetch user info from the resource server (if needed)
+        user_info = zeus.get('https://zeus.example.com/api/userinfo').json()  # TODO
+        #
+        # # Store user info in session
+        # session['user'] = user_info
+        # Save the token in the session
+        # session['oauth_token'] = token
+        return jsonify({"message": "Login successful", "user": user_info})
+        # return redirect("/")
+    except Exception as e:
+        return jsonify({"error": "Failed to authenticate", "details": str(e)}), 400
+
+
+@app.route('/logout')
+def logout():
+    """
+    Logout the user by clearing the session.
+    """
+    session.pop('user', None)
+    return jsonify({"message": "Logged out successfully"})
+
+
+@app.route("/profile")
+def get_user_info():
+    # Check if the user is authenticated
+    if 'oauth_token' not in session:
+        return redirect("/login")
+
+    # Set the token in the zeus session
+    zeus.token = session['oauth_token']
+
+    try:
+        # Make a GET request to the resource server to fetch user info
+        response = zeus.get('https://zeus.example.com/api/userinfo')
+
+        if response.status_code == 200:
+            # Parse the JSON response
+            user_info = response.json()
+            return jsonify(user_info)
+
+        else:
+            # Handle errors (e.g., token expired or insufficient permissions)
+            return jsonify({"error": "Failed to fetch user info", "details": response.json()}), response.status_code
+
+    except Exception as e:
+        return jsonify({"error": "An exception occurred while fetching user info", "details": str(e)}), 500
+
+
+def login_required(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if 'user' not in session:
+            return redirect(url_for('login'))
+        return func(*args, **kwargs)
+
+    wrapper.__name__ = func.__name__
+    return wrapper
 
 
 # Class to hold the status of scrapers
@@ -108,6 +213,7 @@ def run_scraper_in_background(restaurant_name):
 
 
 @app.route("/scrape/<restaurant_name>", methods=['POST'])
+@login_required
 def scrape(restaurant_name):
     """
     Start the scraper in a background thread for the given restaurant.
@@ -125,6 +231,7 @@ def scrape(restaurant_name):
 
 
 @app.route("/scrape-all", methods=['POST'])
+@login_required
 def scrape_all():
     """
     Trigger scraping for all restaurants.
@@ -148,6 +255,7 @@ def scrape_all():
 
 
 @app.route("/update-scraper-info")
+@login_required
 def update_scraper_info_page():
     """
     Fetch the scraper information from the database and update the frontend table.
@@ -194,12 +302,14 @@ def init_db():
 
 
 @app.route("/")
+@login_required
 def home():
     scraper_info = get_scraper_info()
     return render_template('index.html', scraper_info=scraper_info)
 
 
 @app.route("/sync-all", methods=["POST"])
+@login_required
 def sync_all_files():
     """
     Sync all files to GitMate.
@@ -221,6 +331,7 @@ scheduler.start()
 
 
 @app.route("/editor_selector")
+@login_required
 def editor_selector():
     scraper_info = get_scraper_info()
     return render_template("editor_selector.html", scraper_info=scraper_info)
@@ -232,6 +343,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Route to serve the editor page for a specific file
 @app.route('/edit/<filename>', methods=['GET'])
+@login_required
 def edit_file(filename):
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
     if os.path.exists(filepath):
@@ -244,6 +356,7 @@ def edit_file(filename):
 
 
 @app.route('/read_file', methods=['GET'])
+@login_required
 def read_file():
     filename = request.args.get('filename')
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], f"{filename}.hlds")
@@ -258,6 +371,7 @@ def read_file():
 
 
 @app.route('/save_file', methods=['POST'])
+@login_required
 def save_file():
     data = request.json
     filename = data.get('filename')
@@ -282,7 +396,8 @@ def save_file():
 
     if header_start != -1 and header_end != -1:
         # Replace the header part between "============" with the new header
-        content = content[:header_start] + header_str + content[header_end+len(search_str)+2:] # TODO maybe for linux this need to be +1 on windows it did give 2 empty lines after the header
+        content = content[:header_start] + header_str + content[header_end + len(
+            search_str) + 2:]  # TODO maybe for linux this need to be +1 on windows it did give 2 empty lines after the header
     print(content)
     if os.path.exists(filepath) and filepath.endswith('.hlds'):
         with open(filepath, 'w', encoding='utf-8') as file:
@@ -315,6 +430,7 @@ def extract_header(content):
         header['website'] = " ".join(header_lines[5].split(" ")[1:]).strip()
 
     return header
+
 
 if __name__ == "__main__":
     # Initialize the database when the app starts
