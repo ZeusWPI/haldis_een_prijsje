@@ -16,6 +16,14 @@
             <a href="/">Home</a>
             <a href="/editor_selector">Editor</a>
         </div>
+
+        <!-- Logout button on the right -->
+        <div>
+            {% if user %}
+                <span>Welcome, {{ user['username'] }}</span>
+            {% endif %}
+            <a href="/logout">logout</a>
+        </div>
     </div>
     <div>
         <h1>Hlds file editor</h1>
