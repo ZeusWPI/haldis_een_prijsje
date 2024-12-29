@@ -12,6 +12,12 @@ from requests.exceptions import ConnectionError
 from selenium.common.exceptions import StaleElementReferenceException
 
 
+def sanitize_id(input_str):
+    # Keep only characters matching the pattern [a-z0-9_-]
+    sanitized = re.sub(r'[^a-z0-9_-]', '', input_str.lower().replace(" ", "_"))
+    return sanitized
+
+
 def timer(func: Callable) -> Callable:
     """Print the runtime of the decorated function"""
 
@@ -172,7 +178,8 @@ def parse_pdf_with_strip_split_enters(file_path: str, coords: Tuple[int, int, in
     return output.strip().split("\n")
 
 
-def parse_pdf_section(pdf_url: str, local_file_path: str, coords: Tuple[int, int, int, int], page_number: int = 1) -> List:
+def parse_pdf_section(pdf_url: str, local_file_path: str, coords: Tuple[int, int, int, int],
+                      page_number: int = 1) -> List:
     """
     Downloads a PDF, retrieves its dimensions, and extracts text from a specified section.
 
