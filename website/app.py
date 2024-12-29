@@ -6,6 +6,7 @@ import tomllib
 from datetime import datetime
 from functools import wraps
 
+import requests
 from flask import Flask, render_template, jsonify, request
 from apscheduler.schedulers.background import BackgroundScheduler
 from authlib.integrations.flask_client import OAuth
@@ -66,15 +67,26 @@ def callback():
         # Fetch the token
         token = zeus.authorize_access_token()
 
-        # # Use the token to fetch user info from the resource server (if needed)
-        user_info = zeus.get('https://zeus.example.com/api/userinfo').json()  # TODO
-        #
-        # # Store user info in session
-        # session['user'] = user_info
-        # Save the token in the session
-        # session['oauth_token'] = token
-        return jsonify({"message": "Login successful", "user": user_info})
-        # return redirect("/")
+        # Extract the access token from the response
+        access_token = token.get("access_token")
+        if not access_token:
+            return jsonify({"error": "No access token returned"}), 400
+
+        # Use the access token to fetch user info from the resource server
+        headers = {"Authorization": f"Bearer {access_token}"}
+        response = requests.get("https://zauth.zeus.gent/current_user", headers=headers)
+
+        # Check if the request was successful
+        if response.status_code != 200:
+            return jsonify({"error": "Failed to fetch user info", "details": response.text}), response.status_code
+
+        user_info = response.json()
+
+        # Store the user info and token in the session (if needed)
+        session['user'] = user_info
+        session['oauth_token'] = token
+        # return jsonify({"message": "Login successful", "user": user_info})
+        return redirect("/")
     except Exception as e:
         return jsonify({"error": "Failed to authenticate", "details": str(e)}), 400
 
@@ -85,7 +97,9 @@ def logout():
     Logout the user by clearing the session.
     """
     session.pop('user', None)
-    return jsonify({"message": "Logged out successfully"})
+    session.pop('oauth_token', None)
+    # return jsonify({"message": "Logged out successfully"})
+    return redirect('/')
 
 
 @app.route("/profile")
@@ -304,8 +318,9 @@ def init_db():
 @app.route("/")
 @login_required
 def home():
+    user = session.get('user', None)
     scraper_info = get_scraper_info()
-    return render_template('index.html', scraper_info=scraper_info)
+    return render_template('index.html', scraper_info=scraper_info, user=user)
 
 
 @app.route("/sync-all", methods=["POST"])
@@ -436,4 +451,4 @@ if __name__ == "__main__":
     # Initialize the database when the app starts
     init_db()
 
-    app.run(host="0.0.0.0", port=5000, threaded=True, debug=True)
+    app.run(host="0.0.0.0", port=5001, threaded=True, debug=True)
