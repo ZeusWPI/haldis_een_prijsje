@@ -245,7 +245,7 @@ def scrape(restaurant_name):
 
 
 @app.route("/scrape-all", methods=['POST'])
-@login_required
+# @login_required
 def scrape_all():
     """
     Trigger scraping for all restaurants.
@@ -324,7 +324,7 @@ def home():
 
 
 @app.route("/sync-all", methods=["POST"])
-@login_required
+# @login_required
 def sync_all_files():
     """
     Sync all files to GitMate.
