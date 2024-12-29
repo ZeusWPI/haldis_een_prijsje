@@ -348,8 +348,9 @@ scheduler.start()
 @app.route("/editor_selector")
 @login_required
 def editor_selector():
+    user = session.get('user', None)
     scraper_info = get_scraper_info()
-    return render_template("editor_selector.html", scraper_info=scraper_info)
+    return render_template("editor_selector.html", scraper_info=scraper_info, user=user)
 
 
 UPLOAD_FOLDER = 'hlds_files'
