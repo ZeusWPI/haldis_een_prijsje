@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haldis een prijsje</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+    </script>
+</head>
+<body>
+    <!-- Top bar navigation -->
+    <div class="top-bar">
+        <div>
+            <a href="/">Home</a>
+            <a href="/editor_selector">Editor</a>
+        </div>
+    </div>
+    <div>
+        <h1>Hlds file editor</h1>
+    </div>
+
+    <div>
+        <table id="scraper-table">
+            <thead>
+                <tr>
+                    <th>Restaurant</th>
+                    <th>Products Scraped</th>
+                    <th>Last Scraped</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for scraper in scraper_info %}
+                <tr>
+                    <td>{{ scraper[0] }}</td>
+                    <td>{{ scraper[1] }}</td>
+                    <td>{{ scraper[2] }}</td>
+                    <td class="status {% if scraper[3] == 'running' %}running{% elif scraper[3] == 'finished' %}finished{% else %}never-run{% endif %}">{{ scraper[3] }}</td>
+                    <td><button onclick="window.location.href='/edit/{{ scraper[0] }}'" class="edit-button">Edit</button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

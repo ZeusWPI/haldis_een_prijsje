@@ -1,0 +1,86 @@
+/* Top bar styling */
+.top-bar {
+    background-color: #ff7f00;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #ff7f00;
+    color: white;
+    font-weight: bold;
+}
+
+/* Row styling */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button styling */
+button {
+    background-color: #ff7f00;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f00;
+}
+
+/* Status column styling */
+.status {
+    font-weight: bold;
+    color: #333;
+}
+
+.status.never-run {
+    color: #ff9800;
+}
+
+.status.running {
+    color: #2196f3;
+}
+
+.status.finished {
+    color: #ff7f00;
+}

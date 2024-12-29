@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLDS File Editor</title>
+    <script>
+        // Function to load the file content
+        function loadFile() {
+            const filename = "{{ filename }}"; // Use Flask variable for the filename
+            fetch(`/read_file?filename=${filename}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.content) {
+                        document.getElementById('fileContent').textContent = data.content;
+
+                        const header = data.header || {};
+                        document.getElementById('name_key').value = header.name_key || "";
+                        document.getElementById('name_value').value = header.name_value || "";
+                        document.getElementById('osm').value = header.osm || "";
+                        document.getElementById('phone').value = header.phone || "";
+                        document.getElementById('address').value = header.address || "";
+                        document.getElementById('website').value = header.website || "";
+                    } else {
+                        alert(data.error || 'Error loading file');
+                    }
+                })
+                .catch(() => {
+                    alert('Failed to load the file. Please try again.');
+                });
+        }
+
+        // Function to save the file content
+        function saveFile() {
+            const filename = "{{ filename }}"; // Use Flask variable for the filename
+            const content = document.getElementById('fileContent').textContent;
+
+            // Collect header values from the input fields
+            const header = {
+                name_key: document.getElementById('name_key').value,
+                name_value: document.getElementById('name_value').value,
+                osm: document.getElementById('osm').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                website: document.getElementById('website').value
+            };
+
+            // Show a confirmation dialog before saving
+            const userConfirmed = confirm('Warning: The current data will be overwritten. Do you want to continue?');
+
+            if (userConfirmed) {
+                fetch('/save_file', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({filename, content, header}),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message || data.error);
+                        loadFile()
+                    })
+                    .catch(() => {
+                        alert('Failed to save the file. Please try again.');
+                    });
+            }else{
+                // Do nothing if the user clicks "Cancel"
+                alert('Save operation canceled.');
+            }
+        }
+
+        // Automatically load the file content when the page is loaded
+        window.onload = () => {
+            loadFile();
+        };
+    </script>
+</head>
+<body>
+    <h1>Editing HLDS File: {{ filename }}.hlds</h1>
+
+    <!-- Buttons for loading and saving -->
+    <button onclick="loadFile()">Load</button>
+    <button onclick="saveFile()">Save</button>
+
+    <!-- Display header information directly from Jinja2 -->
+    <div id="header">
+        <label for="name_key"><strong>Name key:</strong></label>
+        <input type="text" id="name_key" value="{{ header.name_key }}" placeholder="Enter name key"  style="width: 10%;">
+        <br>
+
+        <label for="name_value"><strong>Name value:</strong></label>
+        <input type="text" id="name_value" value="{{ header.name_value }}" placeholder="Enter name value"  style="width: 10%;">
+        <br>
+
+        <label for="osm"><strong>OSM:</strong></label>
+        <input type="text" id="osm" value="{{ header.osm }}" placeholder="Enter OSM URL"  style="width: 35%;">
+        <br>
+
+        <label for="phone"><strong>Phone:</strong></label>
+        <input type="text" id="phone" value="{{ header.phone }}" placeholder="Enter phone number"  style="width: 10%;">
+        <br>
+
+        <label for="address"><strong>Address:</strong></label>
+        <input type="text" id="address" value="{{ header.address }}" placeholder="Enter address"  style="width: 15%;">
+        <br>
+
+        <label for="website"><strong>Website:</strong></label>
+        <input type="text" id="website" value="{{ header.website }}" placeholder="Enter website URL"  style="width: 35%;">
+    </div>
+
+
+    <!-- Textarea for editing the file content -->
+    <div id="editor">
+        <pre id="fileContent" rows="20" cols="80"></pre>
+    </div>
+</body>
+</html>
