@@ -71,7 +71,9 @@ def init_sync():
 def get_repo():
     if os.path.exists(REPO_FOLDER):
         print("Repo already exists")
+        print(f"Getting it from {REPO_FOLDER}")
         repo = git.Repo(REPO_FOLDER)
+        print(f"Done getting it from {REPO_FOLDER}")
     else:
         print("Cloning repo")
         repo = git.Repo.clone_from(
