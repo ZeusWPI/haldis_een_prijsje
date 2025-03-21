@@ -72,7 +72,11 @@ def get_repo():
     if os.path.exists(REPO_FOLDER):
         print("Repo already exists")
         print(f"Getting it from {REPO_FOLDER}")
-        repo = git.Repo(REPO_FOLDER)
+        try:
+            repo = git.Repo(REPO_FOLDER)
+        except Exception as e:
+            print(f"error: {e}")
+
         print(f"Done getting it from {REPO_FOLDER}")
     else:
         print("Cloning repo")
