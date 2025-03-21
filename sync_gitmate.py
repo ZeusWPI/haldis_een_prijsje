@@ -34,21 +34,35 @@ conf = {
 
 
 def init_sync():
+    print("Initializing sync...")
     repo = get_repo()
+    print("Repository initialized:", repo)
+
+    print(f"Setting remote URL for origin with token")
     repo.git.remote("set-url", "origin", f"https://git:{TOKEN}@git.zeus.gent/{GIT_ORG}/{GIT_REPO}.git")
+    print(f"Remote URL set for {GIT_ORG}/{GIT_REPO}")
 
     configuration = giteapy.Configuration()
+    print("Configuration object created:", configuration)
+
     configuration.host = f"https://{config['gitea']['server_url']}/api/v1"
+    print(f"Set configuration host: {configuration.host}")
     configuration.debug = False
+    print("Debug mode set to:", configuration.debug)
 
     api_client = giteapy.ApiClient(configuration)
+    print("API client created:", api_client)
+
     api_client.default_headers["Authorization"] = f"token {TOKEN}"
+    print(f"Authorization header set with token")
 
     # create an instance of the API class
     api_instance = giteapy.RepositoryApi(api_client)
+    print("API instance created:", api_instance)
 
     print(f"Checking pull requests for {GIT_ORG}/{GIT_REPO}")
 
+    print("Fetching repository info...")
     print(api_instance.repo_get(GIT_ORG, GIT_REPO))  # print info about the repo
     print("repo:", repo)
     return repo, api_instance
