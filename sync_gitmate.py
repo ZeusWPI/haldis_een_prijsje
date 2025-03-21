@@ -35,6 +35,7 @@ conf = {
 
 def init_sync():
     repo = get_repo()
+    repo.git.remote("set-url", "origin", f"https://git:{TOKEN}@git.zeus.gent/{GIT_ORG}/{GIT_REPO}.git")
 
     configuration = giteapy.Configuration()
     configuration.host = f"https://{config['gitea']['server_url']}/api/v1"
@@ -44,8 +45,12 @@ def init_sync():
     api_client.default_headers["Authorization"] = f"token {TOKEN}"
 
     # create an instance of the API class
-    api_instance = giteapy.RepositoryApi(giteapy.ApiClient(configuration))
+    api_instance = giteapy.RepositoryApi(api_client)
 
+    print(f"Checking pull requests for {GIT_ORG}/{GIT_REPO}")
+
+    print(api_instance.repo_get(GIT_ORG, GIT_REPO))  # print info about the repo
+    print("repo:", repo)
     return repo, api_instance
 
 
@@ -56,9 +61,8 @@ def get_repo():
     else:
         print("Cloning repo")
         repo = git.Repo.clone_from(
-            f"https://{config['gitea']['server_url']}/{GIT_ORG}/{GIT_REPO}",
+            f"https://git:{TOKEN}@{config['gitea']['server_url']}/{GIT_ORG}/{config['gitea']['remote_repo']}",
             REPO_FOLDER,
-            env={"GIT_ASKPASS": "echo", "GIT_USERNAME": TOKEN}
         )
         with repo.config_writer() as cw:
             cw.set_value("user", "email", config["gitea"]["commit_user_email"])

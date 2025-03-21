@@ -232,16 +232,17 @@ def scrape(restaurant_name):
     """
     Start the scraper in a background thread for the given restaurant.
     """
-    try:
-        # Start a new thread to run the scraper for the given restaurant
-        scraper_thread = threading.Thread(target=run_scraper_in_background, args=(restaurant_name,))
-        scraper_thread.start()
+    with app.app_context():  # Ensure the function runs inside the Flask app context
+        try:
+            # Start a new thread to run the scraper for the given restaurant
+            scraper_thread = threading.Thread(target=run_scraper_in_background, args=(restaurant_name,))
+            scraper_thread.start()
 
-        return jsonify({"message": f"Scraping started for {restaurant_name}"}), 200
+            return jsonify({"message": f"Scraping started for {restaurant_name}"}), 200
 
-    except Exception as e:
-        # If there's an error, return the error message in JSON format
-        return jsonify({"error": str(e)}), 500
+        except Exception as e:
+            # If there's an error, return the error message in JSON format
+            return jsonify({"error": str(e)}), 500
 
 
 @app.route("/scrape-all", methods=['POST'])
@@ -329,14 +330,15 @@ def sync_all_files():
     """
     Sync all files to GitMate.
     """
-    try:
-        # Call the `sync_gitmate` function without arguments to sync all files
-        print("Syncing all files to GitMate...")
-        sync_gitmate()
-        print("Synced all files to GitMate")
-        return jsonify({"message": "All files synced successfully."}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    with app.app_context():  # Ensure the function runs inside the Flask app context
+        try:
+            # Call the `sync_gitmate` function without arguments to sync all files
+            print("Syncing all files to GitMate...")
+            sync_gitmate()
+            print("Synced all files to GitMate")
+            return jsonify({"message": "All files synced successfully."}), 200
+        except Exception as e:
+            return jsonify({"error": str(e)}), 500
 
 
 scheduler = BackgroundScheduler()
