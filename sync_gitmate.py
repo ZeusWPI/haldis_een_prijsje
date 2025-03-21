@@ -207,9 +207,9 @@ def sync_file(repo, api_instance, file_info):
                 )
         else:
             print("  Merge request was already open.")
-            send_message(
-                conf,
-                f"[hlds sync] Merge request was already open for git menu of {sync_to}"
-            )
+            # send_message(
+            #     conf,
+            #     f"[hlds sync] Merge request was already open for git menu of {sync_to}"
+            # )
     else:
         print("  Menu has no changes.")
