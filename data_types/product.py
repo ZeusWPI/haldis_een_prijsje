@@ -28,7 +28,7 @@ class Product:
 
         self.name = re.sub(r'\s+', ' ', self.name).strip()
         if self.description != "":
-            output += f"dish {self.display_name}: {self.name} -- {self.description} € {self.price}\n"
+            output += f"dish {self.display_name}: {self.name}  € {self.price} -- {self.description}\n"
         else:
             output += f"dish {self.display_name}: {self.name}  € {self.price}\n"
         # for choiceList in self.choiceLists:
