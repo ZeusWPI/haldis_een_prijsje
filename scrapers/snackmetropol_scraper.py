@@ -3,7 +3,7 @@ import time
 from selenium.common import StaleElementReferenceException
 from selenium.webdriver.common.by import By
 
-from data_types.choice import ChoiceList, Choice
+from data_types.choice import ChoiceList, Choice, ChoiceType
 from data_types.location import Location
 from data_types.product import Product, merge_products_by_sizes
 from scrapers.scraper import Scraper
@@ -131,7 +131,8 @@ class MetropolScraper(Scraper):
                             sb.wait_for_element_visible(f"#ui-accordion-accordion-panel-{index}")
                             keuzelijst = ChoiceList(
                                 name=sb.get_text(f"#food-variety-header-{index}").strip(),
-                                description="Welke " + sb.get_text(f"#food-variety-header-{index}").strip()
+                                description="Welke " + sb.get_text(f"#food-variety-header-{index}").strip(),
+                                type=ChoiceType.MULTI
                             )
                             # Locate the main div by ID
                             parent_div_id = f"ui-accordion-accordion-panel-{index}"
