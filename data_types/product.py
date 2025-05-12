@@ -26,6 +26,16 @@ class Product:
             "€", "_euro_"
         ))
 
+        self.description = self.description.lower().replace(
+            " ", "_"
+        ).replace(
+            ".", "_dot_"
+        ).replace(
+            "+", "_plus_"
+        ).replace(
+            "€", "_euro_"
+        )
+
         self.name = re.sub(r'\s+', ' ', self.name).strip()
         if self.description != "":
             output += f"dish {self.display_name}: {self.name} -- {self.description} € {self.price}\n"
