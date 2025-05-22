@@ -264,7 +264,7 @@ def do_scrape_all():
         return False, str(e)
 
 @app.route("/scrape-all", methods=['POST'])
-def scrape_all_route():
+def scrape_all():
     success, message = do_scrape_all()
     if success:
         return jsonify({"message": message}), 200
