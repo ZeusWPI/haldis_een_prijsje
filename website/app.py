@@ -245,28 +245,31 @@ def scrape(restaurant_name):
             return jsonify({"error": str(e)}), 500
 
 
-@app.route("/scrape-all", methods=['POST'])
-# @login_required
-def scrape_all():
-    """
-    Trigger scraping for all restaurants.
-    """
+def do_scrape_all():
     try:
-        # Get all the restaurant names from the database
         with sqlite3.connect(DATABASE) as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT name FROM scrapers")
             restaurant_names = [row[0] for row in cursor.fetchall()]
 
-        # Run scrapers in background for all restaurants
         for restaurant_name in restaurant_names:
-            # Start each scraper in a background thread
-            scraper_thread = threading.Thread(target=run_scraper_in_background, args=(restaurant_name,))
+            scraper_thread = threading.Thread(
+                target=run_scraper_in_background,
+                args=(restaurant_name,)
+            )
             scraper_thread.start()
 
-        return jsonify({"message": "Scraping started for all restaurants."}), 200
+        return True, "Scraping started for all restaurants."
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return False, str(e)
+
+@app.route("/scrape-all", methods=['POST'])
+def scrape_all_route():
+    success, message = do_scrape_all()
+    if success:
+        return jsonify({"message": message}), 200
+    else:
+        return jsonify({"error": message}), 500
 
 
 @app.route("/update-scraper-info")
