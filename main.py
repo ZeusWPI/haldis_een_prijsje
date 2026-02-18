@@ -116,7 +116,7 @@ def run_scrapers(
         tasks.append(run_bocca_ovp)
     if run_everything or "pizza_donna" in [name.lower() for name in restaurant_names]:
         tasks.append(run_pizza_donna)
-    if run_everything or "s5" in [name.lower() for name in restaurant_names]:
+    if "s5" in [name.lower() for name in restaurant_names]:
         tasks.append(run_s5)
 
     # print(f"Restaurants: {args.restaurant_name},evaluates to {"everything because run_everything is selected" if run_everything else restaurant_names}")
