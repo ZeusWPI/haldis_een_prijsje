@@ -6,177 +6,83 @@ pizza_donna: Pizza Donna
 	website https://primadonnagent.be/
 ==========================
 
-dish amaretto: Amaretto  € 6.5
-dish aperol: Aperol  € 7.0
-dish bacardi_cola: Bacardi Cola  € 9.5
-dish bolognese: Bolognese -- Kaas, bolognaisesaus, kruiden € 8.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish bolognese_de_luxe: Bolognese De Luxe -- Kaas, bolognaisesaus, kruiden, extra gehakt € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish calzone: Calzone -- Dubbelgevouwen pizza met kaas, hesp, salami, paprika, champignons, bolognaisesaus € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish calzone_vegetariana: Calzone Vegetariana -- Dubbelgevouwen pizza met kaas, tomatensaus, paprika, olijven, champignons, ui, artisjokken, kruiden € 10.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish campari_orange: Campari Orange  € 9.5
-dish chocolademousse: Chocolademousse  € 4.5
-dish cipolla: Cipolla -- Kaas, tomatensaus, ui, spek, ei, kruiden € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish cola: Cola  € 2.4
-dish cola_light_/_zero: Cola Light / Zero  € 2.4
-dish csar: Csar -- Kaas, bolognaisesaus, kip, gehakt, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish diabolo: Diabolo -- Kaas, tomatensaus, pikante peper, pikante salami, gehakt, ui, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish dolce_vita: Dolce Vita -- Kaas, tomatensaus, spinazie, ei, kruiden € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish exotic: Exotic -- Kaas, tomatensaus, hesp, ananas, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish fanta: Fanta  € 2.4
-dish fruitsap: Fruitsap  € 2.4
-dish funghi: Funghi -- Kaas, tomatensaus, champignons, kruiden € 7.0
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish futti_di_mare: Futti di Mare -- Kaas, tomatensaus, gemende zeevruchten, kruiden € 10.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish gerookte_ham_&_rucola: Gerookte ham & Rucola -- Kaas, tomatensaus, gerookte ham, rucola, kruiden € 10.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish gin_tonic: Gin Tonic  € 9.5
-dish gini: Gini  € 2.4
-dish hawai: Hawai -- Kaas, tomatensaus, ananas, kip, kruiden € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish la_donna: La Donna -- Kaas, bolognaisesaus, hesp, gehakt, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish lasagna: Lasagna  € 10.0
-dish limoncello: Limoncello  € 6.5
-dish lookbroodje_met_ham_en_kaas: Lookbroodje met ham en kaas  € 4.0
-dish lookbroodje_met_ham,_tomaat_en_kaas: Lookbroodje met ham, tomaat en kaas  € 4.5
-dish lookbroodje_met_kaas: Lookbroodje met kaas  € 3.5
-dish lookbroodje_natuur: Lookbroodje natuur  € 3.0
-dish macaroni_met_kaas_&_hesp: Macaroni met kaas & hesp  € 10.0
-dish mamma_mia: Mamma Mia -- Kaas, tomatensaus, hesp, kruiden € 7.0
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish margherita: Margherita -- Kaas, tomatensaus, kruiden € 6.0
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish martini_bellini: Martini Bellini  € 6.5
-dish martini_bianco: Martini Bianco  € 6.0
-dish michelangelo: Michelangelo -- Kaas, tomatensaus, hesp, schijfjes verse tomaat, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish milano: Milano -- Bolognaisesaus, hesp, spek, champignons, ui, feta, kruiden € 11.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish napolitana: Napolitana -- Kaas, tomatensaus, ansjovis, kappertjes, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish parma: Parma -- Kaas, tomatensaus, hesp, champignons, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish peperoni: Peperoni -- Kaas, tomatensaus, pikante salami, pikante pepers, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish prima_donna: Prima Donna -- Kaas, tomatensaus, room, pikante salami, look, champignons, artisjokken, verse tomaat, kruiden € 11.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish quattro_formaggi: Quattro Formaggi -- Kaas, tomatensaus, gorgonzola, feta en belpaese kaas, kruiden € 10.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish quattro_stagioni: Quattro Stagioni -- Kaas, tomatensaus, hesp, salami, paprika, champignons, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish ricard: Ricard  € 5.5
-dish roma: Roma -- Kaas, tomatensaus, gehakt, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish romana: Romana -- Kaas, tomatensaus, tonijn, mas, paprika, pikante pepers, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish san_marco: San Marco -- Kaas, tomatensaus, spek, room, look, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish scampi: Scampi -- Kaas, tomatensaus, scampi's, kruiden € 10.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish siciliano: Siciliano -- Kaas, tomatensaus, salami, ansjovis, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish soronto: Soronto -- Kaas, tomatensaus, ui, salami, champignons, paprika, mas, ananas, kip, extra kaas, ei, kruiden € 11.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish spa: Spa  € 2.4
-dish spaghetti_bolognese: Spaghetti Bolognese  € 10.0
-dish sprite: Sprite  € 2.4
-dish tiramisu: Tiramisu  € 4.5
-dish torno: Torno -- Kaas, tomatensaus, salami, hesp, kruiden € 8.25
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish tropical: Tropical -- Kaas, tomatensaus, hesp, kip, ananas, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish turkisch: Turkisch -- Kaas, tomatensaus, ui, paprika, champignons, kip, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish valentino: Valentino -- Kaas, tomatensaus, ui, ansjovis, tonijn, kruiden € 9.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish van_de_chef: Van de Chef -- Kaas, tomatensaus, ui, paprika, champignons, gehakt, asperges, verse tomaten, kruiden € 11.5
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish vegetariana: Vegetariana -- Kaas, tomatensaus, ui, paprika, champignons, olijven, mas, artisjok, kruiden € 10.2
-	single_choice what size?: 
-		small: small  € 0.0
-		medium: medium  € 0.5
-dish vodka_cola: Vodka Cola  € 9.5
-dish whisky_cola: Whisky Cola  € 9.5
-dish witte_of_rode_porto: Witte of rode Porto  € 6.0
-dish ice_tea: ice Tea  € 2.5
-dish vittel: vittel  € 2.4
+dish amaretto_: Amaretto  € 6,50
+dish aperol_: Aperol  € 9,00
+dish bbq_chicken_: BBQ Chicken -- kaas,_barbecuesaus,_kip,_paprika,_ui_ € 11,20
+dish bacardi_cola_: Bacardi Cola  € 12,00
+dish bolognese_deluxe_: Bolognese Deluxe -- kaas,_bolognesesaus,_gehakt,_kruiden_ € 10,50
+dish calzone_: Calzone -- dubbelgevouwen_pizza_met_kaas,_hesp,_salami,_paprika,_champignons,_bolognesesaus,_kruiden_ € 11,50
+dish calzone_vegetariana_: Calzone Vegetariana -- dubbelgevouwen_pizza_met_kaas,_tomatensaus,_paprika,_olijven,_champignons,_ui,_artisjokken,_maïs,_kruiden_ € 11,50
+dish campari_orange_: Campari Orange  € 9,50
+dish cappuccino_: Cappuccino  € 4,00
+dish chocomousse_: Chocomousse -- _ € 5,00
+dish cipolla_: Cipolla -- kaas,_tomatensaus,_ui,_spek,_ei,_kruiden_ € 10,50
+dish cola_: Cola  € 2,50
+dish cola_zero_: Cola zero  € 2,50
+dish csar_: Csar -- kaas,_bolognesesaus,_kip,_gehakt,_kruiden_ € 11,20
+dish diabolo_: Diabolo -- kaas,_tomatensaus,_pikante_peper,_pikante_salami,_gehakt,_ui,_kruiden_ € 11,20
+dish dolce_vita_: Dolce Vita -- kaas,_tomatensaus,_spinazie,_ei,_room,_kruiden_ € 10,50
+dish duvel_: Duvel  € 4,50
+dish espresso_: Espresso  € 3,50
+dish exotic_: Exotic -- kaas,_tomatensaus,_hesp,_ananas,_kruiden_ € 9,25
+dish fanta_: Fanta  € 2,50
+dish fruitsap_: Fruitsap  € 3,00
+dish frutti_di_mare_: Frutti Di Mare -- kaas,_tomatensaus,_gemengde_zeevruchten,_kruiden_ € 11,50
+dish funghi_: Funghi -- kaas,_tomatensaus,_champignons,_kruiden_ € 8,00
+dish gerookte_ham__rucola_: Gerookte Ham & Rucola -- kaas,_gerookte_ham,_rucola,_kruiden_ € 11,50
+dish gin_tonic_: Gin Tonic  € 12,00
+dish gini_: Gini  € 2,50
+dish hawaii_: Hawaii -- kaas,_tomatensaus,_ananas,_kip,_kruiden_ € 10,50
+dish hoegaarden_: Hoegaarden  € 3,50
+dish ice_tea_: Ice Tea  € 2,70
+dish koffie_: Koffie  € 3,50
+dish kriek_max_: Kriek (Max)  € 3,50
+dish la_donna_: La Donna -- kaas,_bolognesesaus,_hesp,_gehakt,_kruiden_ € 11,20
+dish lasagne_: Lasagne -- _ € 12,00
+dish leffe_blond_: Leffe Blond  € 4,50
+dish leffe_donker_: Leffe Donker  € 4,50
+dish limoncello_: Limoncello  € 6,50
+dish lookbrood_met_kaas_: Lookbrood met kaas -- _ € 3,50
+dish lookbrood_met_kaas_en_hesp_: Lookbrood met kaas en hesp -- _ € 4,00
+dish lookbrood_met_kaas_hesp_verse_tomaat_: Lookbrood met kaas, hesp, verse tomaat -- _ € 4,50
+dish lookbrood_natuur_: Lookbrood natuur -- _ € 3,00
+dish macaroni_: Macaroni -- met_hesp_en_kaas_ € 12,00
+dish mama_mia_: Mama Mia -- kaas,_tomatensaus,_hesp,_kruiden_ € 8,00
+dish margherita__: Margherita -- kaas,_tomatensaus,_kruiden_ € 7,00
+dish martini_bellini_: Martini Bellini  € 6,50
+dish martini_bianco_: Martini Bianco  € 6,00
+dish michelangelo_: Michelangelo -- kaas,_tomatensaus,_hesp,_verse_schijfjes_tomaat,_kruiden_ € 9,25
+dish milano_: Milano -- bolognesesaus,_hesp,_spek,_champignons,_ui,_feta,_kruiden_ € 12,50
+dish napolitana_: Napolitana -- kaas,_tomatensaus,_ansjovis,_kappertjes,_kruiden_ € 9,25
+dish palm_: Palm  € 3,50
+dish parma_: Parma -- kaas,_tomatensaus,_hesp,_champignons,_kruiden_ € 9,25
+dish pepperoni_: Pepperoni -- kaas,_tomatensaus,_pikante_salami,_pikante_pepers,_kruiden_ € 9,25
+dish pils_: Pils  € 2,50
+dish prima_donna_: Prima Donna -- kaas,_tomatensaus,_roomsaus,_pikante_salami,_look,_champignons,_asperges,_artisjokken,_verse_schijfjes_tomaat,_kruiden_ € 12,50
+dish quattro_fromaggi_: Quattro Fromaggi -- kaas,_tomatensaus,_gorgonzola,_fetakaas,_bel_paese,_kruiden_ € 11,50
+dish quattro_stagioni_: Quattro Stagioni -- kaas,_tomatensaus,_hesp,_salami,_paprika,_champignons,_kruiden_ € 11,20
+dish ricard_: Ricard  € 5,50
+dish rode_porto_: Rode porto  € 6,00
+dish roma_: Roma -- kaas,_tomatensaus,_gehakt,_ei,_kruiden_ € 9,25
+dish romana_: Romana -- kaas,_tomatensaus,_tonijn,_maïs,_paprika,_pikante_peper,_kruiden_ € 11,20
+dish san_marco_: San Marco -- kaas,_tomatensaus,_look,_spek,_room,_kruiden_ € 11,20
+dish scampi_: Scampi -- kaas,_tomatensaus,_scampi,_look,_room,_kruiden_ € 11,50
+dish siciliano_: Siciliano -- kaas,_tomatensaus,_salami,_ansjovis,_kruiden_ € 9,25
+dish soronto_: Soronto -- kaas,_tomatensaus,_ui,_salami,_champignons,_paprika,_maïs,_ananas,_kip,_extra_kaas,_ei,_kruiden_ € 12,50
+dish spa_: Spa  € 2,50
+dish spaghetti_bolognese_: Spaghetti Bolognese -- tomatensaus,_groenten,_gehakt_ € 12,00
+dish sprite_: Sprite  € 2,50
+dish tiramisu_: Tiramisu -- _ € 5,00
+dish torno_: Torno -- kaas,_tomatensaus,_salami,_hesp,_kruiden_ € 9,25
+dish tropical_: Tropical -- kaas,_tomatensaus,_hesp,_kip,_ananas,_kruiden_ € 11,20
+dish turkisch_: Turkisch -- kaas,_tomatensaus,_ui,_paprika,_champignons,_kip,_kruiden_ € 11,20
+dish valentino_: Valentino -- kaas,_tomatensaus,_tonijn,_ui,_ansjovis,_kruiden_ € 10,50
+dish van_de_chef_: Van De Chef -- kaas,_tomatensaus,_ui,_paprika,_champignons,_gehakt,_asperges,_verse_schijfjes_tomaat,_kruiden_ € 12,50
+dish vegetariana_: Vegetariana -- kaas,_tomatensaus,_ui,_paprika,_champignons,_olijven,_maïs,_artisjokken,_kruiden_ € 11,20
+dish vegetarische_pasta_: Vegetarische Pasta -- gemengde_groentjes,_tomatensaus,_kaas_ € 12,00
+dish vittel_: Vittel  € 2,50
+dish vodka_cola_: Vodka Cola  € 12,00
+dish water_15l_: Water 1,5L  € 10,00
+dish water_12l_: Water 1/2L  € 5,00
+dish whisky_cola_: Whisky Cola  € 12,00
+dish witte_porto_: Witte porto  € 6,00

@@ -6,35 +6,35 @@ bicyclette: Bicyclette
 	website https://labicyclettepastabar.be/
 ==========================
 
-dish alfredo: Alfredo -- saus van Parmezaanse kaas met kippenspek & look € 6.0
+dish alfredo: Alfredo -- saus_van_parmezaanse_kaas_met_kippenspek_&_look € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish bolognaise: Bolognaise -- tomatensaus & gehakt € 6.0
+dish bolognaise: Bolognaise -- tomatensaus_&_gehakt € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish carbonara: Carbonara -- kaassaus met kalkoenhamblokjes & champignons € 6.0
+dish carbonara: Carbonara -- kaassaus_met_kalkoenhamblokjes_&_champignons € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish kaas_&_ham: Kaas & ham -- kaassaus & kalkoenhamblokjes € 6.0
+dish kaas__ham: Kaas & ham -- kaassaus_&_kalkoenhamblokjes € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish napolitana__diabolique: Napolitana Diabolique -- tomaten & gemixte groenten – pikante tomatensaus € 6.0
+dish napolitana__diabolique: Napolitana Diabolique -- tomaten_&_gemixte_groenten_–_pikante_tomatensaus € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
@@ -42,17 +42,17 @@ dish napolitana__diabolique: Napolitana Diabolique -- tomaten & gemixte groenten
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
 dish portie_kaas: Portie kaas  € 0.5
-dish portie_kaas_&_saus: Portie kaas & saus  € 1.5
+dish portie_kaas__saus: Portie kaas & saus  € 1.5
 dish portie_saus: Portie saus  € 1.0
-dish potje_kaas_(apart): Potje kaas (apart)  € 0.6
-dish roze_peperroomsaus: Roze peperroomsaus -- met kippenballetjes € 6.0
+dish potje_kaas_apart: Potje kaas (apart)  € 0.6
+dish roze_peperroomsaus: Roze peperroomsaus -- met_kippenballetjes € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish thai_chicken: Thai chicken -- Thaise currysaus & kipreepjes € 6.0
+dish thai_chicken: Thai chicken -- thaise_currysaus_&_kipreepjes € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
@@ -66,14 +66,14 @@ dish vierkazen: Vierkazen -- vierkazensaus € 6.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish wekelijkse_special: Wekelijkse special -- saus van de week € 6.0
+dish wekelijkse_special: Wekelijkse special -- saus_van_de_week € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
 		medium: Medium  € 2.0
 		large: Large  € 3.0
 		glutenvrij: Glutenvrij  € 4.0
-dish zalm: Zalm -- bieslooksaus & gerookte zalm € 6.0
+dish zalm: Zalm -- bieslooksaus_&_gerookte_zalm € 6.0
 	single_choice : 
 		mini: Mini  € 0.0
 		small: Small  € 1.0
